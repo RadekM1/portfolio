@@ -4,7 +4,7 @@ import React from "react"
 
 interface MobileMenuProps{
   isSideNavOpen : boolean,
-  setIsSideNavOpen: (value: boolean) => void;
+  setIsSideNavOpen: () => void;
 }
 
 const MobileMenu = ({isSideNavOpen, setIsSideNavOpen} : MobileMenuProps) => {
