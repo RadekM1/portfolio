@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X5 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="111.349mm" height="101.402mm" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 937 854"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#2B2A29;stroke-width:1.68343}
+    .fil7 {fill:none}
+    .fil4 {fill:#4E565A}
+    .fil1 {fill:#FFED00}
+    .fil10 {fill:#292934}
+    .fil6 {fill:#5C4E46}
+    .fil3 {fill:#99B6C8}
+    .fil0 {fill:#CFE3EB}
+    .fil8 {fill:#FF8C81}
+    .fil2 {fill:white}
+    .fil9 {fill:#D3D3D4}
+    .fil5 {fill:#FEFEFE}
+   ]]>
+  </style>
+ </defs>
+ <g id="Vrstva_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="937,740 937,113 0,113 0,740 855,740 "/>
+  <ellipse class="fil1" transform="matrix(0.373736 0.000547856 -0.000698185 0.388305 211.414 221.49)" rx="187" ry="163"/>
+  <path class="fil2" d="M678 328c-3,-2 -4,-4 -4,-7 0,-7 9,-12 20,-12 10,0 19,4 20,10 6,-1 13,-2 19,-2 19,0 35,7 44,15 4,-3 11,-5 19,-5 4,0 8,1 11,1 8,-7 20,-12 36,-12 16,0 31,6 38,14l4 0c13,0 23,6 23,13 0,7 -10,12 -23,12 -4,0 -6,-1 -9,-1 -10,7 -21,10 -34,10l-1 0c-3,5 -10,9 -20,9 -3,0 -5,0 -8,-1 -6,7 -18,10 -31,10 -14,0 -26,-4 -33,-12 -5,1 -11,1 -16,1 -16,0 -30,-4 -39,-12 -3,1 -6,1 -10,1 -16,0 -30,-8 -30,-18 0,-7 10,-14 24,-15z"/>
+  <polygon class="fil3" points="0,683 0,740 937,740 937,717 834,695 782,723 408,676 311,711 126,679 "/>
+  <polygon class="fil4" points="593,667 507,740 808,740 744,697 727,671 715,654 651,561 633,613 603,665 "/>
+  <polygon class="fil2" points="651,559 659,598 673,620 693,657 693,657 627,699 628,676 654,642 646,604 "/>
+  <polygon class="fil2" points="593,667 545,707 603,695 "/>
+  <polygon class="fil2" points="716,653 700,675 677,712 706,688 744,695 "/>
+  <path class="fil2" d="M582 455c-1,-2 -2,-4 -2,-7 0,-7 4,-12 10,-12 5,0 9,4 10,10 3,-1 6,-2 9,-2 9,0 18,7 22,15 2,-3 6,-5 9,-5 2,0 4,1 6,1 4,-7 10,-12 18,-12 8,0 16,6 19,14l2 0c6,0 11,6 11,13 0,7 -5,12 -11,12 -2,0 -3,-1 -4,-1 -5,7 -11,10 -17,10l-1 0c-1,5 -5,9 -10,9 -1,0 -2,0 -4,-1 -3,7 -9,10 -16,10 -7,0 -13,-4 -16,-12 -3,1 -6,1 -8,1 -8,0 -15,-4 -19,-12 -1,1 -3,1 -5,1 -8,0 -15,-8 -15,-18 0,-7 5,-14 12,-15z"/>
+  <path class="fil2" d="M267 353c-1,-2 -2,-4 -2,-7 0,-7 4,-12 10,-12 5,0 9,4 10,10 3,-1 6,-2 9,-2 9,0 18,7 22,15 2,-3 6,-5 9,-5 2,0 4,1 6,1 4,-7 10,-12 18,-12 8,0 16,6 19,14l2 0c6,0 11,6 11,13 0,7 -5,12 -11,12 -2,0 -3,-1 -4,-1 -5,7 -11,10 -17,10l-1 0c-1,5 -5,9 -10,9 -1,0 -2,0 -4,-1 -3,7 -9,10 -16,10 -7,0 -13,-4 -16,-12 -3,1 -6,1 -8,1 -8,0 -15,-4 -19,-12 -1,1 -3,1 -5,1 -8,0 -15,-8 -15,-18 0,-7 5,-14 12,-15z"/>
+  <polygon class="fil4" points="118,740 313,740 219,543 204,631 "/>
+  <polygon class="fil2" points="197,639 158,690 216,678 "/>
+  <polygon class="fil5" points="219,543 239,611 207,612 "/>
+  <polygon class="fil2" points="263,636 214,657 260,708 277,665 "/>
+  <polygon class="fil2" points="197,639 158,690 216,678 "/>
+  <g id="_469254704">
+   <polygon class="fil6" points="501,113 0,113 0,740 355,740 "/>
+   <rect class="fil7 str0" x="110" y="448" width="42" height="5"/>
+   <polygon class="fil8" points="52,214 314,214 314,255 52,255 "/>
+   <polygon class="fil9" points="52,287 216,287 216,328 52,328 "/>
+   <polygon class="fil1" points="250,287 461,287 451,328 250,328 "/>
+   <polygon class="fil8" points="52,364 443,364 433,405 52,405 "/>
+   <polygon class="fil1" points="52,437 216,437 216,478 52,478 "/>
+   <polygon class="fil9" points="250,437 426,437 416,478 250,478 "/>
+   <polygon class="fil9" points="52,515 178,515 178,556 52,556 "/>
+   <polygon class="fil3" points="52,591 113,591 113,632 52,632 "/>
+   <polygon class="fil8" points="204,515 408,515 398,556 204,556 "/>
+   <polygon class="fil1" points="152,591 390,591 381,632 152,632 "/>
+  </g>
+  <rect class="fil10" transform="matrix(2.83957 0.729318 -0.241269 1.04848 521.979 -6.56536)" width="21" height="812" rx="45" ry="45"/>
+ </g>
+</svg>

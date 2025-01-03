@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X5 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="29.2961mm" height="28.2368mm" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2931 2825"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil5 {fill:#77B4E3}
+    .fil4 {fill:#B0D4F1}
+    .fil7 {fill:#389E4D}
+    .fil6 {fill:#CCB5DB}
+    .fil2 {fill:#F0F2F0}
+    .fil1 {fill:#FDFDFD}
+    .fil3 {fill:white}
+    .fil0 {fill:url(#id0)}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="-0" y1="1132.2" x2="2930.64" y2="1132.2">
+   <stop offset="0" style="stop-color:#5CA595"/>
+   <stop offset="1" style="stop-color:#257D4F"/>
+  </linearGradient>
+ </defs>
+ <g id="Vrstva_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M256 0l2419 0c141,0 256,62 256,138l0 1989c0,76 -115,138 -256,138l-2419 0c-141,0 -256,-62 -256,-138l0 -1989c0,-76 115,-138 256,-138z"/>
+  <polygon class="fil1" points="0,2678 2931,2678 2931,441 0,441 "/>
+  <path class="fil2" d="M256 441l2419 0c141,0 256,65 256,145l0 2094c0,80 -115,145 -256,145l-2419 0c-141,0 -256,-65 -256,-145l0 -2094c0,-80 115,-145 256,-145z"/>
+  <polygon class="fil3" points="2041,307 2753,307 2753,139 2041,139 "/>
+  <polygon class="fil3" points="2292,307 2497,307 2497,139 2292,139 "/>
+  <polygon class="fil3" points="2041,307 2246,307 2246,139 2041,139 "/>
+  <polygon class="fil4" points="234,1575 2076,1575 2076,687 234,687 "/>
+  <polygon class="fil5" points="2076,687 1155,1131 234,687 "/>
+  <polygon class="fil6" points="259,1871 1836,1871 1836,1728 259,1728 "/>
+  <polygon class="fil6" points="255,2122 1990,2122 1990,1980 255,1980 "/>
+  <polygon class="fil6" points="255,2402 2406,2402 2406,2260 255,2260 "/>
+  <polygon class="fil7" points="2246,307 2292,307 2292,139 2246,139 "/>
+  <polygon class="fil7" points="2497,307 2543,307 2543,139 2497,139 "/>
+ </g>
+</svg>

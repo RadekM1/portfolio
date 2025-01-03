@@ -1,0 +1,173 @@
+@keyframes LogoPosunJedna {
+    0% {
+        transform: translateX(30%) translateY(20%);
+        opacity: 0%;
+    }
+    100% {transform: trans(0%);}
+}
+@keyframes LogoPosunDva {
+    0% {
+        transform: translateX(-20%) translateY(-20%);    
+        opacity: 0%;
+    }
+    100% {transform: trans(0%);}
+}
+@keyframes LogoPosunTri {
+    0% {
+        transform: translateX(5%);
+        opacity: 0%;
+    }
+    100% {transform: trans(0%);}
+}
+@keyframes LogoPosunCtyri {
+    0% {
+        transform: translateX(20%);
+        opacity: 0%;
+    }
+    100% {transform: trans(0%);}
+}
+@keyframes MikrogravitaceJedna {
+    0%, 100% {
+        transform: translateX(0%) translateY(0%);
+    }
+    25%, 75% {
+        transform: translateX(-2%) translateY(-2%);
+    }
+    50% {
+        transform: translateX(2%) translateY(2%);
+    }
+}
+
+@keyframes MikrogravitaceDva {
+    0%, 100% {
+        transform: translateX(0%) translateY(0%);
+    }
+    20% {
+        transform: translateX(-3%) translateY(-3%);
+    }
+    40% {
+        transform: translateX(3%) translateY(3%);
+    }
+    60% {
+        transform: translateX(-3%) translateY(3%);
+    }
+    80% {
+        transform: translateX(3%) translateY(-3%);
+    }
+}
+
+@keyframes MikrogravitaceTri {
+    0%, 100% {
+        transform: translateX(0%) translateY(0%);
+    }
+    15%, 85% {
+        transform: translateX(-4%) translateY(-1%);
+    }
+    30%, 70% {
+        transform: translateX(4%) translateY(1%);
+    }
+    45%, 55% {
+        transform: translateX(0%) translateY(-3%);
+    }
+}
+
+@keyframes MikrogravitaceCtyri {
+    0%, 100% {
+        transform: translateX(0%) translateY(0%);
+    }
+    20% {
+        transform: translateX(-1%) translateY(-1%);
+    }
+    40% {
+        transform: translateX(2%) translateY(-2%);
+    }
+    60% {
+        transform: translateX(-3%) translateY(1%);
+    }
+    80% {
+        transform: translateX(1%) translateY(3%);
+    }
+}
+
+
+.container_logo{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.postavaLogo{
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    height: 60%;
+    z-index: 20;    
+}
+.tabJedna{
+    top: 5%;
+    left: 2%;
+    height: 25%;
+    z-index: 3;
+    position: absolute;
+    overflow: hidden;
+    animation: LogoPosunJedna 2s ease-out 1 forwards, 
+    MikrogravitaceJedna 10s ease-in-out infinite 2s;
+    will-change: transform;
+}
+.tabDva{
+    position: absolute;
+    top: 52%;
+    left: 2%;
+    height: 25%;
+    z-index: 2;
+    animation: LogoPosunDva;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    overflow: hidden;
+    animation-fill-mode: forwards;
+    animation: LogoPosunDva 2s ease-out 1 forwards, 
+    MikrogravitaceDva 10s ease-in-out infinite 2s;
+    will-change: transform;
+
+}
+.tabTri{
+    position: absolute;
+    top: 6%;
+    left: 40%;
+    height: 20%;
+    z-index: 1;
+    animation: LogoPosunTri;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    overflow: hidden;
+    animation-fill-mode: forwards;
+    animation: LogoPosunTri 2s ease-out 1 forwards, 
+    MikrogravitaceTri 10s ease-in-out infinite 2s;
+    will-change: transform;
+
+}
+.tabCtyri{
+    position: absolute;
+    top: 30%;
+    left: 22%;
+    height: 20%;
+    z-index: 4;
+    animation: MikrogravitaceCtyri;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+    animation-fill-mode: forwards;
+    animation: LogoPosunCtyri 2s ease-out 1 forwards, 
+    MikrogravitaceCtyri 10s ease-in-out infinite 2s;
+    will-change: transform;
+}
+.postavaLogoVelke{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    height: 62%;
+    z-index: 20;    
+}

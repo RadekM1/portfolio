@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X5 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="37.3396mm" height="28.2369mm" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 3734 2824"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#FEFEFE}
+    .fil6 {fill:#ADC7D1}
+    .fil5 {fill:#CFE3EB}
+    .fil2 {fill:#EDEDED}
+    .fil4 {fill:#FA4F1C}
+    .fil3 {fill:white}
+    .fil1 {fill:url(#id0)}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="-0" y1="1131.73" x2="3733.7" y2="1131.73">
+   <stop offset="0" style="stop-color:#389E4D"/>
+   <stop offset="0.301961" style="stop-color:#308D41"/>
+   <stop offset="1" style="stop-color:#277B35"/>
+  </linearGradient>
+ </defs>
+ <g id="Vrstva_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="3291,1710 3156,1710 3129,1652 3264,1652 "/>
+  <path class="fil1" d="M326 0l3082 0c179,0 326,62 326,138l0 1988c0,76 -147,138 -326,138l-3082 0c-179,0 -326,-62 -326,-138l0 -1988c0,-76 147,-138 326,-138z"/>
+  <polygon class="fil2" points="0,2677 3734,2677 3734,441 0,441 "/>
+  <path class="fil2" d="M326 441l3082 0c179,0 326,65 326,145l0 2093c0,80 -147,145 -326,145l-3082 0c-179,0 -326,-65 -326,-145l0 -2093c0,-80 147,-145 326,-145z"/>
+  <polygon class="fil3" points="3248,314 3453,314 3453,146 3248,146 "/>
+  <polygon class="fil3" points="2992,314 3197,314 3197,146 2992,146 "/>
+  <polygon class="fil3" points="2741,314 2946,314 2946,146 2741,146 "/>
+  <path class="fil4" d="M972 976c300,0 543,243 543,543 0,300 -243,543 -543,543 -300,0 -543,-243 -543,-543 0,-300 243,-543 543,-543z"/>
+  <polygon class="fil5" points="1337,1519 751,1151 751,1887 "/>
+  <polygon class="fil5" points="1844,1231 3452,1231 3452,1030 1844,1030 "/>
+  <polygon class="fil5" points="1844,1604 2397,1604 2397,1403 1844,1403 "/>
+  <polygon class="fil6" points="1844,1999 3266,1999 3266,1798 1844,1798 "/>
+ </g>
+</svg>
