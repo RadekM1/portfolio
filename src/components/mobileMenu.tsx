@@ -2,12 +2,14 @@
 
 import React from "react"
 
-interface MobileMenuProps{
-  isSideNavOpen : boolean,
-  setIsSideNavOpen: () => void;
+interface MobileMenuProps {
+  isSideNavOpen: boolean;
+    // @ts-ignore
+  // eslint-disable-next-line no-unused-vars
+  setIsSideNavOpen: (value: boolean) => void;
 }
 
-const MobileMenu = ({isSideNavOpen, setIsSideNavOpen} : MobileMenuProps) => {
+const MobileMenu: React.FC<MobileMenuProps> = ({ isSideNavOpen, setIsSideNavOpen }) => {
 
 
   return (
@@ -211,7 +213,7 @@ const MobileMenu = ({isSideNavOpen, setIsSideNavOpen} : MobileMenuProps) => {
         className={`fixed top-0 bottom-0 backdrop-blur-sm mt-[4.05rem] left-0 right-0 z-30 transition-colors lg:hidden ${
           isSideNavOpen ? "block" : "hidden"
         }`}
-        onClick={() => setIsSideNavOpen(false)}
+        onClick={()=>setIsSideNavOpen(false)}
       ></div>
       {/*  <!-- End Side navigation menu with user profile and alert message --> */}
     </>
