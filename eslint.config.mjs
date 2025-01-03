@@ -1,25 +1,18 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import tseslint from "typescript-eslint";
-import pluginReact from "eslint-plugin-react";
+import js from '@eslint/js'
+import { FlatCompat } from '@eslint/eslintrc'
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
-export default [
+const compat = new FlatCompat({
+  baseDirectory: import.meta.dirname,
+  recommendedConfig: js.configs.recommended,
+})
+
+const eslintConfig = [
+  ...compat.config({
+    extends: ['eslint:recommended', 'next'],
+  }),
   {
-    files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
-    languageOptions: {
-      globals: { ...globals.browser, ...globals.node },
-    },
-    settings: {
-      react: {
-        version: "detect",
-      },
-    },
-    rules: {
-      "react/react-in-jsx-scope": "off", // Vypnutí tohoto pravidla
-    },
+    ignores: ['.next/*'],  
   },
-  pluginJs.configs.recommended,
-  ...tseslint.configs.recommended,
-  pluginReact.configs.flat.recommended,
-];
+]
+
+export default eslintConfig

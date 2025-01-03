@@ -8,17 +8,22 @@ import React from "react";
 
 export default function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
-  const [themeIcon, setThemeIcon] = useState(null);
+  const [themeIcon, setThemeIcon] = useState<'light' | 'dark' | null>(null)
 
   useEffect(() => {
-    setThemeIcon(resolvedTheme);
+    if (resolvedTheme) {
+      if (resolvedTheme === 'light' || resolvedTheme === 'dark') {
+        setThemeIcon(resolvedTheme);
+      }
+    }
   }, [resolvedTheme]);
 
   return (
     <button
       onClick={() => {
-        setTheme(resolvedTheme === 'light' ? 'dark' : 'light');
-        setThemeIcon(resolvedTheme);
+        const newTheme = resolvedTheme === 'light' ? 'dark' : 'light';
+        setTheme(newTheme);
+        setThemeIcon(newTheme);  
       }}
     >
       {themeIcon === 'light' && (
