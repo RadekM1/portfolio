@@ -1,22 +1,22 @@
-'use client'
+"use client";
 
-import React from "react"
+import React from "react";
 
 interface MobileMenuProps {
   isSideNavOpen: boolean;
-    // @ts-ignore
+  // @ts-ignore
   // eslint-disable-next-line no-unused-vars
   setIsSideNavOpen: (value: boolean) => void;
 }
 
-const MobileMenu: React.FC<MobileMenuProps> = ({ isSideNavOpen, setIsSideNavOpen }) => {
-
-
+const MobileMenu: React.FC<MobileMenuProps> = ({
+  isSideNavOpen,
+  setIsSideNavOpen,
+}) => {
   return (
     <>
       {/*  <!-- Component: Side navigation menu with user profile and alert message --> */}
       {/*  <!-- Mobile trigger --> */}
-
 
       {/*  <!-- Side Navigation --> */}
       <aside
@@ -26,7 +26,6 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isSideNavOpen, setIsSideNavOpen
           isSideNavOpen ? "translate-x-0" : " -translate-x-full"
         }`}
       >
-
         <nav
           aria-label="side navigation"
           className="flex-1 divide-y divide-slate-100 overflow-auto"
@@ -87,7 +86,6 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isSideNavOpen, setIsSideNavOpen
                   <div className="flex w-full flex-1 flex-col items-start justify-center gap-0 overflow-hidden truncate text-sm">
                     Skills
                   </div>
-
                 </a>
               </li>
               <li className="px-3">
@@ -177,34 +175,33 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isSideNavOpen, setIsSideNavOpen
             </ul>
           </div>
           <div>
-            <ul className="flex flex-1 flex-col gap-1 py-3">
-            </ul>
+            <ul className="flex flex-1 flex-col gap-1 py-3"></ul>
           </div>
           <div className="flex flex-col items-center gap-4 border-b border-slate-200 p-6">
-          <div className="shrink-0">
-            <a
-              href="#"
-              className="relative flex h-12 w-12 items-center justify-center rounded-full text-white"
-            >
-              <img
-                src="/avatar_rm.jpg"
-                alt="user name"
-                title="user name"
-                width="48"
-                height="48"
-                className="max-w-full rounded-full"
-              />
-              <span className="absolute bottom-0 right-0 inline-flex items-center justify-center gap-1 rounded-full border-2 border-white bg-green-500 p-1 text-sm text-white">
-                <span className="sr-only"> online </span>
-              </span>
-            </a>
+            <div className="shrink-0">
+              <a
+                href="#"
+                className="relative flex h-12 w-12 items-center justify-center rounded-full text-white"
+              >
+                <img
+                  src="/avatar_rm.jpg"
+                  alt="user name"
+                  title="user name"
+                  width="48"
+                  height="48"
+                  className="max-w-full rounded-full"
+                />
+                <span className="absolute bottom-0 right-0 inline-flex items-center justify-center gap-1 rounded-full border-2 border-white bg-green-500 p-1 text-sm text-white">
+                  <span className="sr-only"> online </span>
+                </span>
+              </a>
+            </div>
+            <div className="flex min-h-[2rem] w-full min-w-0 flex-col items-start justify-center gap-0 text-center">
+              <h4 className="w-full truncate text-base text-slate-700">
+                Radek Morong
+              </h4>
+            </div>
           </div>
-          <div className="flex min-h-[2rem] w-full min-w-0 flex-col items-start justify-center gap-0 text-center">
-            <h4 className="w-full truncate text-base text-slate-700">
-              Radek Morong
-            </h4>
-          </div>
-        </div>
         </nav>
       </aside>
 
@@ -213,10 +210,10 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isSideNavOpen, setIsSideNavOpen
         className={`fixed top-0 bottom-0 backdrop-blur-sm mt-[4.05rem] left-0 right-0 z-30 transition-colors lg:hidden ${
           isSideNavOpen ? "block" : "hidden"
         }`}
-        onClick={()=>setIsSideNavOpen(false)}
+        onClick={() => setIsSideNavOpen(false)}
       ></div>
       {/*  <!-- End Side navigation menu with user profile and alert message --> */}
     </>
-  )
-}
-export default MobileMenu
+  );
+};
+export default MobileMenu;

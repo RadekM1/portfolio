@@ -1,18 +1,18 @@
-import js from '@eslint/js'
-import { FlatCompat } from '@eslint/eslintrc'
+import js from "@eslint/js";
+import { FlatCompat } from "@eslint/eslintrc";
 
 const compat = new FlatCompat({
   baseDirectory: import.meta.dirname,
   recommendedConfig: js.configs.recommended,
-})
+});
 
 const eslintConfig = [
   ...compat.config({
-    extends: ['eslint:recommended', 'next'],
+    extends: ["eslint:recommended", "next", "plugin:prettier/recommended"],
   }),
   {
-    ignores: ['.next/*'],  
+    ignores: [".next/*", ".prettierrc.js"],
   },
-]
+];
 
-export default eslintConfig
+export default eslintConfig;
