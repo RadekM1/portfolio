@@ -34,7 +34,6 @@ export default async function RootLayout({
         >
           <header className=""></header>
           <main>{children}</main>
-          <footer>footer context</footer>
         </ThemeProvider>
       </body>
     </html>

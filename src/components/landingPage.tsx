@@ -1,20 +1,16 @@
-import { gridStyle } from "../lib/constants";
 import LandingPageANim from "./landingPageAnim";
 
 const LandingPage = () => {
   return (
-    <div className="flex relative flex-col lg:flex-row w-full flex-grow justify-center">
-      <div
-        style={{ maskImage: "linear-gradient(transparent, #FAF9F6)" }}
-        className={gridStyle}
-      ></div>
+    <div className="flex flex-col items-center lg:flex-row w-full flex-grow justify-center">
+      <div style={{ maskImage: "linear-gradient(transparent, #FAF9F6)" }}></div>
       <div className="w-full flex-grow flex-col  flex justify-center  text-center items-center h-2/3 lg:h-full ">
         <div className="flex flex-col  md:text-start md:w-[500px] w-full">
-          <span className="flex mt-2 animate-slidein500 opacity-0 whitespace-nowrap justify-center items-center mb-2 md:mb-5 text-3xl sm:text-3xl md:text-4xl w-full flex-grow lg:text-5xl dark:text-white z-20 bg-gradient-to-l text-gray-600">
+          <span className="flex mt-2 animate-slidein500 opacity-0 whitespace-nowrap justify-center items-center mb-2 md:mb-5 text-3xl sm:text-4xl md:text-5xl w-full flex-grow lg:text-5xl dark:text-white z-20 bg-gradient-to-l text-gray-600">
             Vývoj
             <span className="text-rose-500">&nbsp;webových aplikací</span>
           </span>
-          <span className="z-10 mb-2 opacity-0 text-sm animate-slidein1000 dark:text-gray-300 font-thin mx-2 md:text-base text-center">
+          <span className="z-10 mb-2 opacity-0 text-xs sm:text-base animate-slidein1000 dark:text-gray-300 font-thin mx-2  md:text-base text-center">
             Od jednoduchých webů po automatizaci enterprise procesů
           </span>
         </div>

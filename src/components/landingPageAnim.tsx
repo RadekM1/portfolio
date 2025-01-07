@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 
 const LandingPageANim = () => {
   return (
-    <div className="w-full self-center mb-10 md:mb-0 sm:w-2/3 h-full lg:h-[90%] ">
+    <div className="w-full self-center sm:w-2/3 mb-10 sm:mb-5 lg:mb-0 h-full lg:h-[90%] ">
       <div className={styles.container_logo}>
         <img
           src="vector/logo_postava.svg"
