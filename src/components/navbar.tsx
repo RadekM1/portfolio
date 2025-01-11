@@ -11,8 +11,8 @@ const Navbar = () => {
   return (
     <>
       {/*<!-- Component: Navbar with Icons --> */}
-      <header className=" fixed z-40 w-full dark:text-white dark:bg-slate-800/90 border-b border-b-gray-300 dark:border-b-gray-700 bg-white/90 backdrop-blur-sm ">
-        <div className="flex relative max-w-screen-2xl mx-4 ">
+      <header className=" fixed z-40 w-full dark:text-white flex-grow justify-center flex font-roboto dark:bg-slate-800/90 border-b border-b-gray-300 dark:border-b-gray-700 bg-white/90 backdrop-blur-sm ">
+        <div className="flex relative w-full max-w-screen-2xl mx-4 ">
           <nav
             aria-label="main navigation"
             className="flex sticky top-0  h-[4rem] w-full flex-grow justify-between font-medium text-slate-700"

@@ -98,10 +98,10 @@
 }
 .postavaLogo{
     position: absolute;
-    top: 30%;
+    top: 24%;
     left: 60%;
     height: 60%;
-    z-index: 20;    
+    z-index: 30;    
 }
 .tabJedna{
     top: 5%;
@@ -133,9 +133,9 @@
 }
 .tabTri{
     position: absolute;
-    top: 6%;
+    top: 3%;
     left: 40%;
-    height: 20%;
+    height: 17%;
     z-index: 1;
     animation: LogoPosunTri;
     animation-duration: 2s;
@@ -164,10 +164,201 @@
     MikrogravitaceCtyri 10s ease-in-out infinite 2s;
     will-change: transform;
 }
-.postavaLogoVelke{
+
+.conteinerFrontend{
+    display: flex;
     position: absolute;
-    top: 30%;
-    left: 15%;
-    height: 62%;
-    z-index: 20;    
+    width: 200px;
+}
+
+.animaceFrontend{
+    animation: posunFrontEnd;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes posunFrontEnd {
+    0% {transform: translateX(0px);}
+    50% {transform: translateX(-30px);}
+    100% {transform: translateX(0px);}
+}
+
+.FrontEndZ3{
+    top: -8px;
+    right: 90px;
+    height: 87px;
+    z-index: 3;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+
+}
+.FrontEndZ2{
+    top: -2px;
+    right: 94px;
+    width: 131px;
+    z-index: 2;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+
+}
+.FrontEndZ1{
+    top: -30px;
+    right: 73px;
+    width: 172px;
+    height: 140px;
+    z-index: 1;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+}
+.animaceFrontend{
+    animation: posunFrontEnd;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+.signalJedna{
+    position:absolute;
+    z-index: 3;
+    top: -44px;
+    left: 195px;
+    fill: #c6c9d0;
+    animation: signalPrvni;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.signalDva{
+    position:absolute;
+    z-index: 4;
+    top: -50px;
+    left: 188px;
+    fill: #c6c9d0;
+    animation: signalDruhy;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+.signalTri{
+    position:absolute;
+    z-index: 5;
+    top: -55px;
+    left: 180px;
+    fill: #c6c9d0;
+    animation: signalTreti;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.serverKontejner{
+    display: flex;
+    position: absolute;
+    width: 250px;
+}
+.serverPrvni{
+    position:absolute;
+    width: 130px;
+    height: 16px;
+    top: 10px;
+    border-radius: 5px;
+    background-color: #303645;
+    right: 145px;
+}
+.serverDruhy{
+    position:absolute;
+    width: 130px;
+    height: 16px;
+    border-radius: 5px;
+    background-color: #303645;
+    top: 29px;
+    right: 145px;
+}
+.serverTreti{
+    position:absolute;
+    width: 130px;
+    height: 16px;
+    border-radius: 5px;
+    background-color: #303645;
+    top:48px;
+    right: 145px;
+}
+.blikServerZlutaKostkaJedna{
+    width: 5px;
+    height: 5px;
+    background-color: #CFD148;
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    animation: blikZluta;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+.blikServerZlutaKostkaDva{
+    width: 5px;
+    height: 5px;
+    background-color: #CFD148;
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    animation: blikZluta;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.blikServerZlutaKostkaTri{
+    width: 5px;
+    height: 5px;
+    background-color: #CFD148;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    animation: blikZluta;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.blikServerZelenaKostkaJedna{
+    width: 5px;
+    height: 5px;
+    background-color: #5ED95B;
+    position: absolute;
+    top: 55px;
+    left: 0px;
+    animation: blikZelena;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.blikServerZelenaKostkaDva{
+    width: 5px;
+    height: 5px;
+    background-color: #5ED95B;
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    animation: blikZelena;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.blikServerZelenaKostkaTri{
+    width: 5px;
+    height: 5px;
+    background-color: #5ED95B;
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    animation: blikZelena;
+    animation-duration: 2.3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blikZluta {
+    from { background-color: #CFD148;}
+    to { background-color: #8c8d91;}
+    }    
+@keyframes blikZelena {
+    from { background-color: #5ED95B;}
+    to { background-color: #8c8d91;}        
 }

@@ -1,18 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Creator: CorelDRAW X5 -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="136.121mm" height="85.3359mm" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 5245 3288"
- xmlns:xlink="http://www.w3.org/1999/xlink">
- <defs>
-  <style type="text/css">
-   <![CDATA[
-    .fil0 {fill:#1F1B20}
-   ]]>
-  </style>
- </defs>
- <g id="Vrstva_x0020_1">
-  <metadata id="CorelCorpID_0Corel-Layer"/>
-  <path class="fil0" d="M128 2992l4995 0 0 -2764 -4995 0 0 2764zm99 -2992l4791 0c125,0 227,102 227,227l0 3061 -5245 0 0 -3061c0,-125 102,-227 227,-227z"/>
- </g>
+<svg width="515" height="323" viewBox="0 0 515 323" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.5553 293.488H502.506V22.3717H12.5553V293.488ZM22.266 0.00756836H492.207C504.468 0.00756836 514.473 10.0126 514.473 22.2736V322.522H0V22.2736C0 10.0126 10.005 0.00756836 22.266 0.00756836Z" fill="#80858B"/>
 </svg>

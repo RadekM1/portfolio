@@ -11,7 +11,7 @@ const eslintConfig = [
     extends: ["eslint:recommended", "next", "plugin:prettier/recommended"],
   }),
   {
-    ignores: [".next/*", ".prettierrc.js"],
+    ignores: [".next/*", ".prettierrc.js", "out/*"],
   },
 ];
 
