@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="flex w-auto mx-1 font-roboto text-center overflow-hidden flex-col">
+      <main className="flex w-auto font-roboto text-center overflow-hidden flex-col">
         <LandingPage />
         <article className="flex flex-col w-full items-center text-center">
           <SecondPage />

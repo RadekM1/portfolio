@@ -33,7 +33,7 @@ const StepThree = () => {
           alt="třetí krok - zpracování schválené varianty"
         />
         <div
-          className={`absolute z-0 top-2 -right-2 ${inView && "dark:bg-blue-800 ease-in-out transition delay-300 duration-500"} blur-xl rounded-full overflow-hidden w-[100%] h-[100%]`}
+          className={`absolute z-0 top-2 -right-2 ${inView && "dark:bg-blue-800/70 ease-in-out transition delay-300 duration-500"} blur-xl rounded-full overflow-hidden w-[100%] h-[100%]`}
         ></div>
       </div>
     </div>

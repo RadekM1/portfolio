@@ -9,6 +9,8 @@ const TechStack = () => {
       ></div>
       <div className="absolute dark:bg-indigo-800/40 w-[50%] h-[9%] blur-3xl top-10 -right-44 rotate-12"></div>
       <div className="absolute dark:bg-indigo-800/60 w-[10%] h-[5%] blur-3xl top-10 right-0 rotate-12"></div>
+      <div className="absolute dark:bg-blue-800/40 w-[70%] h-[10%] blur-[80px] bottom-0 left-0 -rotate-[20deg]"></div>
+      <div className="absolute dark:bg-indigo-800/40 w-[50%] h-[10%] blur-3xl bottom-44 -right-10 -rotate-[20deg]"></div>
       <TechStackMain />
     </section>
   );

@@ -1,7 +1,45 @@
+"use client";
+
+import { useState } from "react";
+import { SectionTitle } from "../sectionTitle";
+import { PieChartComponent } from "../ui/pieChart";
+import { AreaChartComponent } from "../ui/areaChart";
+import { useInView } from "react-intersection-observer";
+
 const AboutMe = () => {
+  const [visitors, setVisitors] = useState<number>(300);
+  const [days, setDays] = useState<string>("90d");
+
+  const { ref, inView } = useInView({
+    threshold: 0.7,
+    triggerOnce: true,
+  });
+
   return (
-    <section className="flex-col h-64 flex  w-full justify-center text-center items-center border-t-[1px] border-t-gray-300 dark:border-t-gray-700 bg-green-200 z-10">
-      O mně sekce
+    <section className="flex-col flex w-full justify-center text-center items-center border-t-[1px] border-t-gray-300 dark:border-t-gray-700 dark:bg-slate-900 bg-white z-10">
+      <SectionTitle title="O mně" />
+
+      <p className="text-xl mb-5 max-w-[650px]">
+        Hodně mně baví komplexní systémy, propojit vše dohromady a vizualizace.
+        Spousta grafů a tabulek? To je něco pro mě &#129321;
+      </p>
+      <img
+        className="max-h-48 m-10  self-center"
+        src="vector/me.svg"
+        alt="vektor já ikonka"
+      />
+
+      <div
+        ref={ref}
+        className="flex flex-row min-h-96 w-full max-w-[1200px] justify-center md:flex-row "
+      >
+        {inView && (
+          <>
+            <AreaChartComponent setDays={setDays} setVisitors={setVisitors} />
+            <PieChartComponent days={days} input={visitors} />
+          </>
+        )}
+      </div>
     </section>
   );
 };

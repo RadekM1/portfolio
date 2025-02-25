@@ -21,7 +21,7 @@ const StepFour = () => {
         />
         <div
           className={`absolute top-6
-           ${inView && "dark:bg-blue-800 ease-in-out transition delay-300 duration-500"} blur-2xl rounded-full overflow-hidden w-[100%] h-[90%]`}
+           ${inView && "dark:bg-blue-800/70 ease-in-out transition delay-300 duration-500"} blur-2xl rounded-full overflow-hidden w-[100%] h-[90%]`}
         ></div>
       </div>
       <div className="flex ml-8 flex-grow flex-col justify-start text-start md:text-end self-center">

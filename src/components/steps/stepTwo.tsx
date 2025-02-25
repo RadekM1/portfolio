@@ -20,7 +20,7 @@ const StepTwo = () => {
           alt="druhý krok - připomínkování varianty"
         />
         <div
-          className={`absolute top-2 z-0 ${inView && "dark:bg-blue-700 ease-in-out transition delay-300 duration-500"} blur-3xl rounded-full overflow-hidden w-[110%] h-[100%]`}
+          className={`absolute top-2 z-0 ${inView && "dark:bg-blue-700/70 ease-in-out transition delay-300 duration-500"} blur-3xl rounded-full overflow-hidden w-[110%] h-[100%]`}
         ></div>
       </div>
       <div className="flex text-start md:text-end ml-8 flex-grow flex-col justify-start self-center">

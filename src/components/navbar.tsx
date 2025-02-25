@@ -4,6 +4,9 @@ import Logo from "./logo";
 import MobileMenu from "./mobileMenu";
 import DayNightToggle from "./btns/dayNightToggle";
 import React from "react";
+import { AiFillGithub } from "react-icons/ai";
+import { FaLinkedin } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 
 const Navbar = () => {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
@@ -52,7 +55,7 @@ const Navbar = () => {
             <div className="flex-grow text-base items-center justify-end flex-row"></div>
 
             <div className="flex-grow text-base items-center justify-end flex-row">
-              <div className="flex items-center dark:text-white h-full justify-end flex-row">
+              <div className="flex items-center  dark:text-white h-full justify-end flex-row">
                 <div className="mx-3 hidden lg:block self-center">
                   Krok za krokem
                 </div>
@@ -61,10 +64,17 @@ const Navbar = () => {
                   Reference
                 </div>
                 <div className="mx-3 hidden lg:block self-center">O mně</div>
-                <button className="inline-flex mr-2 ml-2 h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-gradient-to-r from-pink-500 to-orange-500 hover:from-pink-500 hover:to-orange-700 px-4 text-sm font-medium tracking-wide hover: text-white shadow-md focus:bg-red-700 focus:shadow-sm focus:shadow-red-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-red-300 disabled:bg-red-300  disabled:shadow-none">
+                <button className="inline-flex mr-2 ml-2  h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-gradient-to-r from-pink-500 to-orange-500 hover:from-pink-500 hover:to-orange-700 px-4 text-sm font-medium tracking-wide hover: text-white shadow-md focus:bg-red-700 focus:shadow-sm focus:shadow-red-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-red-300 disabled:bg-red-300  disabled:shadow-none">
                   <span>Kontakt</span>
                 </button>
-                <DayNightToggle />
+                <div className="border-l-[1px] mx-2 pl-4 gap-4 flex flex-row border-gray-300 dark:border-gray-600">
+                  <DayNightToggle />
+                </div>
+                <div className="border-l-[1px] mx-2 gap-4 px-4 flex flex-row border-gray-300 dark:border-gray-600">
+                  <AiFillGithub className="h-6 w-6 dark:text-gray-200 hover:text-gray-600 dark:hover:text-white text-gray-600" />
+                  <FaLinkedin className="h-6 w-6 dark:text-gray-200 text-gray-600 dark:hover:text-white" />
+                  <FaFacebook className="h-6 w-6 dark:text-gray-200 text-gray-600 dark:hover:text-white" />
+                </div>
               </div>
             </div>
           </nav>
