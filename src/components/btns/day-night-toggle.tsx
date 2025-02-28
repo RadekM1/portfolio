@@ -27,10 +27,10 @@ export default function ThemeToggle() {
       }}
     >
       {themeIcon === "light" && (
-        <MdDarkMode className="h-6 w-6 text-gray-600" />
+        <MdDarkMode className="h-6 w-6 lg:h-8 lg:w-8 ease-in-out duration-300 transition-all text-gray-600 hover:text-gray-800" />
       )}
       {themeIcon === "dark" && (
-        <IoSunnySharp className="h-6 w-6 text-gray-200" />
+        <IoSunnySharp className="h-6 w-6 lg:h-8 lg:w-8 ease-in-out duration-300 transition-all text-gray-200 hover:text-white " />
       )}
     </button>
   );

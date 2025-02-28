@@ -23,7 +23,7 @@ export const frontEndText = [
     text: [
       "- Tailwind",
       "- Material UI",
-      "- shadcn/ui",
+      "- Shadcn/UI",
       "- Wind UI",
       "- Headless UI",
       "- Motion",

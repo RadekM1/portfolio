@@ -101,7 +101,7 @@
     top: 24%;
     left: 60%;
     height: 60%;
-    z-index: 30;    
+    z-index: 20;    
 }
 .tabJedna{
     top: 5%;
@@ -169,6 +169,7 @@
     display: flex;
     position: absolute;
     width: 200px;
+    left: -40px;
 }
 
 .animaceFrontend{
@@ -258,7 +259,7 @@
 .serverKontejner{
     display: flex;
     position: absolute;
-    width: 250px;
+    width: 1px;
 }
 .serverPrvni{
     position:absolute;
@@ -267,7 +268,7 @@
     top: 10px;
     border-radius: 5px;
     background-color: #303645;
-    right: 145px;
+    right: -65px;
 }
 .serverDruhy{
     position:absolute;
@@ -276,7 +277,7 @@
     border-radius: 5px;
     background-color: #303645;
     top: 29px;
-    right: 145px;
+    right: -65px;
 }
 .serverTreti{
     position:absolute;
@@ -285,7 +286,7 @@
     border-radius: 5px;
     background-color: #303645;
     top:48px;
-    right: 145px;
+    right: -65px;
 }
 .blikServerZlutaKostkaJedna{
     width: 5px;

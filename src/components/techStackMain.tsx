@@ -22,7 +22,7 @@ const TechStackMain = () => {
     <>
       <div className="flex my-14  flex-col justify-center">
         <SectionTitle title="Skills" />
-        <div className="flex h-[1px] w-[1px] mt-10 relative">
+        <div className="flex h-[1px] w-[1px] self-center mt-10 relative">
           {techStack.map((stack, i) => {
             return (
               <AnimatePresence key={i} mode="wait">
@@ -42,7 +42,7 @@ const TechStackMain = () => {
           })}
         </div>
       </div>
-      <div className="mb-32 mt-10 z-10 border max-w-6xl justify-center flex h-full w-full border-gray-200 bg-white  rounded ease-in-out duration-500 dark:border-gray-800 dark:bg-gray-900 dark:shadow-blue-900">
+      <div className="mb-32 mt-10 z-10 min-h-80 border max-w-6xl justify-center flex h-full w-full border-gray-200 bg-white  rounded ease-in-out duration-500 dark:border-gray-800 dark:bg-gray-900 dark:shadow-blue-900">
         <div className="flex w-full m-1 flex-col justify-start text-center">
           <div className="flex justify-center my-2 w-full text-center">
             {btns.map((btn, index) => (
@@ -66,7 +66,7 @@ const TechStackMain = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.9 }}
                     transition={{ duration: 0.1 }}
-                    className="mt-2 min-h-[500px] flex justify-center h-full flex-row w-full"
+                    className="mt-2  sm:min-h-[500px] flex justify-center h-full flex-row w-full"
                   >
                     <Skills text={stack.text} />
                   </motion.div>

@@ -1,6 +1,6 @@
 import { SectionTitle } from "../sectionTitle";
 import { H3title } from "../ui/h3title";
-import ContactForm from "../ui/form";
+import ContactForm from "../form/form";
 
 const Form = () => {
   return (

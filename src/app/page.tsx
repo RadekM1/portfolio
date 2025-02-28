@@ -1,11 +1,11 @@
-import Navbar from "../components/navbar";
+import Navbar from "../components/ui/menu/navbar";
 import React from "react";
-import LandingPage from "../components/sections/landingPage";
-import SecondPage from "../components/sections/secondPage";
+import LandingPage from "../components/sections/landing-page";
+import SecondPage from "../components/sections/second-page";
 import Reference from "../components/sections/reference";
-import StepByStep from "../components/sections/stepByStep";
-import TechStack from "../components/sections/techStack";
-import AboutMe from "../components/sections/aboutMe";
+import StepByStep from "../components/sections/step-by-step";
+import TechStack from "../components/sections/tech-stack";
+import AboutMe from "../components/sections/about-me";
 import Form from "../components/sections/form";
 import Footer from "../components/sections/footer";
 

@@ -1,7 +1,6 @@
 "use client";
 
 import * as React from "react";
-import { TrendingUp } from "lucide-react";
 import { Label, Pie, PieChart } from "recharts";
 
 import {
@@ -86,12 +85,12 @@ export const PieChartComponent = ({ input, days }: PiChartProps) => {
   }, [input]);
 
   return (
-    <Card className="flex flex-col">
+    <Card className="flex h-full flex-col">
       <CardHeader className="items-center pb-0"></CardHeader>
       <CardContent className="flex-1 pb-0">
         <ChartContainer
           config={chartConfig}
-          className="mx-auto aspect-square max-h-[300px]"
+          className="mx-auto h-full w-full aspect-square max-h-[300px]"
         >
           <PieChart>
             <ChartTooltip
@@ -138,11 +137,7 @@ export const PieChartComponent = ({ input, days }: PiChartProps) => {
           </PieChart>
         </ChartContainer>
       </CardContent>
-      <CardFooter className="flex-col gap-2 text-sm">
-        <div className="flex items-center gap-2 font-medium leading-none">
-          Jedná se o reprezentativní data <TrendingUp className="h-4 w-4" />
-        </div>
-      </CardFooter>
+      <CardFooter className="flex-col gap-2 text-sm"></CardFooter>
     </Card>
   );
 };
