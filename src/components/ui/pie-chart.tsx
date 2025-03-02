@@ -55,12 +55,12 @@ export const PieChartComponent = ({ input, days }: PiChartProps) => {
       {
         browser: "chrome",
         visitors: days === "90d" ? (input / 100) * 37 : (input / 100) * 38,
-        fill: "var(--color-chrome)",
+        fill: "#F43F5E",
       },
       {
         browser: "safari",
         visitors: days === "90d" ? (input / 100) * 25 : (input / 100) * 5,
-        fill: "var(--color-safari)",
+        fill: "#4ade80",
       },
       {
         browser: "firefox",
@@ -75,7 +75,7 @@ export const PieChartComponent = ({ input, days }: PiChartProps) => {
       {
         browser: "edge",
         visitors: days === "90d" ? (input / 100) * 13 : (input / 100) * 7,
-        fill: "var(--color-other)",
+        fill: "#3B82F6",
       },
     ];
   }, [input]);

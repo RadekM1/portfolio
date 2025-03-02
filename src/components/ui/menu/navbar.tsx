@@ -26,7 +26,7 @@ const Navbar = () => {
               isSideNavOpen={isSideNavOpen}
               setIsSideNavOpen={setIsSideNavOpen}
             />
-            <div className="flex-grow lg:text-xl items-center justify-end flex-row">
+            <div className="flex-grow lg:text-base items-center justify-end flex-row">
               <ul className="flex items-center  dark:text-white h-full justify-end flex-row">
                 {menuItems.map((item, i) => {
                   return (
@@ -46,7 +46,7 @@ const Navbar = () => {
                         rel="noopener noreferrer"
                         target="_blank"
                       >
-                        <AiFillGithub className="h-6 w-6 lg:h-8 lg:w-8 duration-300 ease-in-out transition-all dark:text-gray-200 hover:text-black dark:hover:text-white text-gray-600" />
+                        <AiFillGithub className="h-6 w-6  duration-300 ease-in-out transition-all dark:text-gray-200 hover:text-black dark:hover:text-white text-gray-600" />
                       </a>
                     </li>
                     <li>
@@ -55,7 +55,7 @@ const Navbar = () => {
                         rel="noopener noreferrer"
                         target="_blank"
                       >
-                        <FaLinkedin className="h-6 w-6 lg:h-8 lg:w-8 dark:text-gray-200 duration-300 ease-in-out transition-all text-gray-600 hover:text-black dark:hover:text-white" />
+                        <FaLinkedin className="h-6 w-6  dark:text-gray-200 duration-300 ease-in-out transition-all text-gray-600 hover:text-black dark:hover:text-white" />
                       </a>
                     </li>
                   </ul>

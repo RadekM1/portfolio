@@ -8,7 +8,6 @@ interface AvatarProps {
 export const FacebookAvatar = ({ setIsSideNavOpen }: AvatarProps) => {
   const date = new Date().getHours();
 
-  console.log(date);
 
   return (
     <a
