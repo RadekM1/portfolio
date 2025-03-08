@@ -8,7 +8,6 @@ interface AvatarProps {
 export const FacebookAvatar = ({ setIsSideNavOpen }: AvatarProps) => {
   const date = new Date().getHours();
 
-
   return (
     <a
       href="https://www.facebook.com/radek.morong"
@@ -28,7 +27,7 @@ export const FacebookAvatar = ({ setIsSideNavOpen }: AvatarProps) => {
               className="max-w-full rounded-full"
             />
             <span
-              className={` ${date > 7 && date < 20 && "bg-green-500"} ${date > 20 && date < 23 && "bg-orange-500"} ${(date > 23 || date < 7) && "bg-red-600"} absolute bottom-0 right-0 inline-flex items-start justify-start gap-1 rounded-full border-2 border-white  p-1 text-sm text-white`}
+              className={` ${date >= 7 && date < 20 && "bg-green-500"} ${date >= 20 && date < 23 && "bg-orange-500"} ${(date >= 23 || date < 7) && "bg-red-600"} absolute bottom-0 right-0 inline-flex items-start justify-start gap-1 rounded-full border-2 border-white  p-1 text-sm text-white`}
             >
               <span className="sr-only"> online </span>
             </span>

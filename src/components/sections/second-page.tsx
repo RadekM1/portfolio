@@ -1,24 +1,18 @@
-
-
-
 import { ToggleDiv } from "../ui/second-page-ui/tooggle-div";
 import { OfferDiv } from "../ui/second-page-ui/offer-div";
+import { IconDiv } from "../ui/second-page-ui/icons-div";
+import { ThemesDiv } from "../ui/second-page-ui/themes-div";
 
 const SecondPage = () => {
   return (
-    <section className="flex-col p-2 flex gap-10 py-20 h-screen w-full justify-center items-center border-t-[1px]  dark:border-t-gray-800 bg-gray-200 dark:bg-slate-950 z-10">
-      
+    <section className="flex-col relative p-4 gap-10 py-24 flex w-full justify-center items-center border-t-[1px]  dark:border-t-gray-800 bg-gray-100 dark:bg-slate-950 z-10">
       <div className="flex flex-col   md:flex-row gap-10 w-full flex-grow max-w-7xl">
-        
-
         <OfferDiv />
         <ToggleDiv />
       </div>
-      
-      <div className="flex h-72  text-base border-t-gray-300 drop-shadow-md shadow-gray-200 shadow-lg bg-white border-[1px] dark:shadow-none dark:border-slate-700 p-4 rounded-xl border-gray-300 dark:bg-slate-900 text-center justify-center w-full max-w-7xl">
-        Nový standard pro 21. století <br />
-        weby na technologiích které využívá Netflix, Instagram, Facebook,
-        ChatGPT, Airbnb atd.
+      <div className="flex flex-col self-center justify-center items-center md:flex-row lg:gap-20  w-full flex-grow max-w-7xl">
+        <ThemesDiv />
+        <IconDiv />
       </div>
     </section>
   );

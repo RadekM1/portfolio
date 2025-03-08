@@ -44,7 +44,7 @@ const ContactForm = () => {
           onSubmit={handleSubmit(onSubmit, (errors) =>
             console.log("Form errors:", errors),
           )}
-          className="w-full text-base bg-white/40 border-[1px] border-white/20 dark:bg-slate-700/40 backdrop-blur-md rounded-xl shadow-lg z-10 p-5 flex flex-col"
+          className="w-full text-base bg-white/40 border-[1px] border-white/20 dark:bg-slate-700/40 backdrop-blur-[100px] rounded-xl shadow-lg z-10 p-5 flex flex-col"
         >
           <div className="w-full  flex-col justfy-center items-center">
             <div className="flex gap-5 w-full flex-col">

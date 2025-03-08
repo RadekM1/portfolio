@@ -24,7 +24,7 @@ const AboutMe = () => {
         Spousta grafů a tabulek? To je něco pro mě &#129321;
       </p>
       <img
-        className="max-h-32 md:max-h-48 m-10  self-center"
+        className="max-h-32 md:max-h-48 mx-10 mt-5  self-center"
         src="vector/me.svg"
         alt="vektor já ikonka"
       />

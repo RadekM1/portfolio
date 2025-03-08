@@ -30,13 +30,13 @@ const chartData: {
   desktop: number;
   mobile: number;
 }[] = [];
-const iterations = 43;
+
 const stepDays = 2;
 
 const startDate = new Date();
 startDate.setDate(startDate.getDate() - 90);
 
-for (let i = 0; i < iterations; i++) {
+for (let i = 0; i <= 45; i++) {
   const currentDate = new Date(startDate);
   currentDate.setDate(startDate.getDate() + i * stepDays);
   const formattedDate = currentDate.toISOString().split("T")[0];
