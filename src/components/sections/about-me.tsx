@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { SectionTitle } from "../sectionTitle";
+import { H2title } from "../typography/h2-title";
 import { PieChartComponent } from "../ui/pie-chart";
 import { AreaChartComponent } from "../ui/area-chart";
 import { useInView } from "react-intersection-observer";
@@ -17,7 +17,7 @@ const AboutMe = () => {
 
   return (
     <section className="flex-col flex w-full justify-center text-center items-center border-t-[1px] border-t-gray-300 dark:border-t-gray-700 dark:bg-slate-900 bg-white z-10">
-      <SectionTitle title="O mně" />
+      <H2title title="O mně" />
 
       <p className="text-base md:text-xl px-4 mb-5 max-w-[650px]">
         Hodně mně baví komplexní systémy, propojit vše dohromady a vizualizace.

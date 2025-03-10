@@ -48,7 +48,7 @@ export const ToggleDiv = () => {
   return (
     <div
       ref={ref}
-      className={`text-base group overflow-hidden relative border-t-gray-300/50 ${inView ? "translate-x-0" : "translate-x-4"} transition-all duration-700 ease-in-out  drop-shadow-md shadow-gray-200 shadow-lg bg-white border-[1px] dark:shadow-none dark:border-slate-700/50 p-4 rounded-xl border-gray-300 dark:bg-slate-900  md:w-4/12`}
+      className={`text-base flex self-center py-10 group overflow-hidden relative border-t-gray-300/50 ${inView ? "translate-x-0" : "translate-x-6"} transition-all duration-700 ease-in-out  drop-shadow-md shadow-gray-200 shadow-lg bg-white border-[1px] dark:shadow-none dark:border-slate-700/50 p-4 rounded-xl border-gray-300 dark:bg-slate-900 w-full max-w-[400px]`}
     >
       <div className="flex flex-col">
         {iconToggles.map((item, i) => (

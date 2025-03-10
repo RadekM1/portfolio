@@ -8,7 +8,7 @@ import { CiPhone } from "react-icons/ci";
 export const menuItems: MenuSchema = [
   { label: "Průběh spolupráce", link: "#", icon: PiSteps },
   { label: "Skills", link: "#", icon: LuBrainCircuit },
-  { label: "Reference", link: "#", icon: AiOutlineFundProjectionScreen },
+  { label: "Reference", link: "#reference", icon: AiOutlineFundProjectionScreen },
   { label: "O mně", link: "#", icon: IoPersonOutline },
   { label: "Kontakt", link: "#", icon: CiPhone },
 ];

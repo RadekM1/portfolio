@@ -1,6 +1,7 @@
 "use client";
 import { StepSchema } from "@/src/schema/steps-schema";
 import { useInView } from "react-intersection-observer";
+import { H3title } from "./typography/h3-title";
 
 interface StepProps {
   step: StepSchema;
@@ -21,14 +22,7 @@ export const Step = ({ step, index }: StepProps) => {
       <div
         className={` ${index % 2 === 0 ? "order-1 mr-8 flex-grow" : "order-2 ml-8 flex-grow text-end items-end"} pt-3 flex justify-start  flex-col   text-end md:text-start self-start`}
       >
-        <h3
-          className=" text-base  sm:text-xl md:text-3xl 
-            bg-gradient-to-tl from-slate-800 via-violet-500 to-zinc-600
-            dark:from-slate-300 dark:via-violet-300  dark:to-zinc-100 dark:bg-gradient-to-bl
-            bg-clip-text text-transparent"
-        >
-          {step.title}
-        </h3>
+        <H3title isPadding={false} title={step.title} />
         <p className="text-rose-600 my-1 dark:text-rose-100 text-sm md:text-base  ">
           {step.summaryText}
         </p>
@@ -42,7 +36,7 @@ export const Step = ({ step, index }: StepProps) => {
           alt={step.title}
         />
         <div
-          className={`absolute z-0 top-2  -right-2  ${inView && "dark:bg-blue-800/70 ease-in-out transition delay-300 duration-500"} blur-xl rounded-full overflow-hidden  ${index === 0 ? "w-[50%] h-[100%]" : "w-[110%] h-[100%]"}`}
+          className={`absolute z-0 top-2  -right-2  ${inView && "dark:bg-slate-600/50 ease-in-out transition delay-300 duration-500"} blur-2xl rounded-full overflow-hidden  ${index === 0 ? "w-[50%] h-[100%]" : "w-[110%] h-[100%]"}`}
         ></div>
       </div>
     </div>

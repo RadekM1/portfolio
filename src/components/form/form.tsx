@@ -12,28 +12,34 @@ const ContactForm = () => {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
-    // eslint-disable-next-line
+
     reset,
   } = useForm<FormSchema>({
     resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      tel: "",
+      note: "",
+    },
   });
-  // eslint-disable-next-line
+
   const [isSubmitted, setIsSubmtited] = useState<boolean>(false);
+  const [formKey, setFormKey] = useState(Date.now());
 
   const onSubmit = async (data: FormSchema) => {
-    // eslint-disable-next-line
+    setIsSubmtited(false);
     const success = await emailClient(data);
-    console.log("proběhla funkce ? ");
-
-    {
-      /* 
-      if (success === true) {
+    if (success) {
       reset();
       setIsSubmtited(true);
-      console.log("proběhla funkce ? ");
+      reset(undefined, {
+        keepErrors: false,
+        keepDirty: false,
+        keepTouched: false,
+      });
+      setFormKey(Date.now());
       return;
-    }
-      */
     }
   };
 
@@ -41,10 +47,11 @@ const ContactForm = () => {
     <div className="items-center relative z-0 flex mb-20 p-2 my-20  self-center text-center w-full max-w-3xl">
       <div className="h-full z-10 w-full">
         <form
+          key={formKey}
           onSubmit={handleSubmit(onSubmit, (errors) =>
             console.log("Form errors:", errors),
           )}
-          className="w-full text-base bg-white/40 border-[1px] border-white/20 dark:bg-slate-700/40 backdrop-blur-[100px] rounded-xl shadow-lg z-10 p-5 flex flex-col"
+          className="w-full pb-5 text-base bg-white/40 border-[1px] border-white/20 dark:bg-slate-700/40 backdrop-blur-[100px] rounded-xl shadow-lg z-10 p-5 flex flex-col"
         >
           <div className="w-full  flex-col justfy-center items-center">
             <div className="flex gap-5 w-full flex-col">
@@ -89,15 +96,14 @@ const ContactForm = () => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="h-10 max-w-32 self-center px-5 my-3 hover:bg-green-700 whitespace-nowrap rounded bg-green-500  text-white shadow-lg shadow-green-200 dark:shadow-none text-base  transition-all duration-300  hover:shadow-md hover:shadow-green-200 focus:bg-green-700 focus:shadow-md focus:shadow-green-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-green-300 disabled:bg-green-300 disabled:shadow-none"
+            className="h-10 max-w-32 self-center px-5 my-5 hover:bg-green-700 whitespace-nowrap rounded bg-green-500  text-white shadow-lg shadow-green-200 dark:shadow-none text-base  transition-all duration-300  hover:shadow-md hover:shadow-green-200 focus:bg-green-700 focus:shadow-md focus:shadow-green-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-green-300 disabled:dark:text-gray-800 disabled:bg-green-100 disabled:dark:bg-green-800 disabled:shadow-none"
           >
             {isSubmitting ? "Odesílám..." : "Odeslat"}
           </button>
-          {isSubmitted && (
-            <p className="text-green-600 text-sm">
-              zpráva byla úspěšně odeslána
-            </p>
-          )}
+          <p className="text-green-600 text-sm">
+            {isSubmitted && "zpráva byla úspěšně odeslána"}
+            &nbsp;
+          </p>
         </form>
         <FormVectors />
       </div>

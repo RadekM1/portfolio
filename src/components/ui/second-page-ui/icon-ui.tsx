@@ -12,13 +12,12 @@ interface IconUiProps {
 export const IconUi = ({ icon, i, inView, isMouseOver }: IconUiProps) => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
-  const time: number = i * 100;
-
   useEffect(() => {
     if (inView) {
-      setTimeout(() => {
+      const timeout = setTimeout(() => {
         setIsVisible(true);
-      }, time);
+      }, i * 100);
+      return () => clearTimeout(timeout);
     }
   }, [inView]);
 
@@ -33,7 +32,7 @@ export const IconUi = ({ icon, i, inView, isMouseOver }: IconUiProps) => {
             ${icon.title === "PostgreSQL" && `${isMouseOver ? " dark:drop-shadow-[0_15px_15px_rgba(53,142,241,0.5)]  drop-shadow-[0_15px_15px_rgba(53,142,241,0.5)]" : ""}`}
             ${icon.title === "Tailwind" && `${isMouseOver ? "   drop-shadow-[0_15px_15px_rgba(6,182,212,0.5)]" : ""}`}
             ${icon.title === "Firebase" && `${isMouseOver ? "  drop-shadow-[0_15px_15px_rgba(255,202,40,0.5)]" : ""}`} 
-            ${icon.title === "c#" && `${isMouseOver ? " drop-shadow-[0_15px_15px_rgba(104,33,120,0.2)] dark:drop-shadow-[0_15px_15px_rgba(104,33,120,1)]" : ""}`}  
+            ${icon.title === ".NET Core" && `${isMouseOver ? " drop-shadow-[0_15px_15px_rgba(104,33,120,0.2)] dark:drop-shadow-[0_15px_15px_rgba(104,33,120,1)]" : ""}`}  
         `}
     >
       {icon.icon && (
@@ -47,7 +46,7 @@ export const IconUi = ({ icon, i, inView, isMouseOver }: IconUiProps) => {
                 ${icon.title === "PostgreSQL" && "dark:text-[#e8f5ff] text-[rgb(72,133,180)]"}
                 ${icon.title === "Tailwind" && "text-[#06B6D4]"}
                 ${icon.title === "Firebase" && "dark:text-[#FFCA28]"}
-                ${icon.title === "c#" && ""}
+                ${icon.title === ".NET Core" && ""}
             `}
         />
       )}
@@ -61,14 +60,14 @@ export const IconUi = ({ icon, i, inView, isMouseOver }: IconUiProps) => {
                 ${icon.title === "PostgreSQL" && "dark:bg-[#336791]/20"} 
                 ${icon.title === "Tailwind" && "dark:bg-[#06B6D4]/20"} 
                 ${icon.title === "Firebase" && "dark:bg-[#FFCA28]/20"} 
-                ${icon.title === "c#" && "dark:bg-[#68217A]/50"} 
+                ${icon.title === ".NET Core" && "dark:bg-[#68217A]/50"} 
                 `}
       >
         &nbsp;
       </div>
       {icon.icon && (
         <span
-          className={`${isMouseOver ? "opacity-100" : "opacity-30"} text-xs pt-3 md:pt-7 duration-500 ease-in-out transition-all flex w-full justify-center py-1 dark:text-white text-black text-center self-center`}
+          className={`${isMouseOver ? "opacity-100" : "opacity-30"} whitespace-nowrap text-xs pt-3 md:pt-7 duration-500 ease-in-out transition-all flex w-full justify-center py-1 dark:text-white text-black text-center self-center`}
         >
           {icon.title !== "c#" ? icon.title : ""}
         </span>

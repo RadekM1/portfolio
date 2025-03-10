@@ -15,7 +15,7 @@ export const IconToggle = ({ icons }: ToggleSchemaProps) => {
   });
 
   return (
-    <div className="flex w-full  mb-6 pb-2 flex-col">
+    <div className="flex w-full  mt-6 pb-2 flex-col">
       <label
         ref={ref}
         className="relative flex cursor-pointer flex-nowrap flex-row items-center gap-2 text-slate-500"
@@ -33,7 +33,7 @@ export const IconToggle = ({ icons }: ToggleSchemaProps) => {
           <icons.icon className="w-5  self-center justify-center text-center h-5" />
         </div>
         <span
-          className={`${inView ? "text-rose-600 dark:text-rose-500 duration-300 " : "text-slate-400"} lg:ml-2 text-nowrap text-base font-semibold `}
+          className={`${inView ? "text-rose-600 dark:text-rose-00 duration-300 " : "text-slate-400"} lg:ml-2 text-nowrap text-base font-semibold `}
         >
           {icons.title}
         </span>

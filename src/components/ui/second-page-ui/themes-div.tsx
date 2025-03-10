@@ -6,7 +6,7 @@ export const ThemesDiv = () => {
         NEXT.js, Docker, Typescript a další
       </p>
       <div
-        className={`text-base  self-center h-[36rem] flex-col flex  w-[22rem] min-w-[22rem]  relative transition-all duration-700   px-4 rounded-xl  `}
+        className={`text-base  self-center h-[25.5rem] lg:h-[30rem] flex-col flex  w-[16.5rem] min-w-[16.5rem] lg:min-w-[19rem]  relative transition-all duration-700   px-4 rounded-xl  `}
       >
         <figure
           className="diff h-full rounded-[30px] border-black border-8 over aspect-16/9"
@@ -28,7 +28,7 @@ export const ThemesDiv = () => {
           </div>
           <div className="diff-resizer bg-rose-500 border-rose-500"></div>
         </figure>
-        <div className="w-[22%] rounded-full bg-black z-20 absolute h-3 md:h-5 top-[7%] md:top-[5%] left-1/2 -translate-x-1/2">
+        <div className="w-[22%] rounded-full bg-black z-20 absolute h-3  top-[7%] md:top-[5%] left-1/2 -translate-x-1/2">
           &nbsp;
         </div>
       </div>

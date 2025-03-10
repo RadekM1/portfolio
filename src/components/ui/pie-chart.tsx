@@ -48,8 +48,6 @@ interface PiChartProps {
 }
 
 export const PieChartComponent = ({ input, days }: PiChartProps) => {
-  console.log(days);
-
   const chartData = React.useMemo(() => {
     return [
       {

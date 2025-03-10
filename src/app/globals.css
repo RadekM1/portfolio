@@ -11,6 +11,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#reference { 
+  scroll-margin-top: 60px;
+}
+
 
 .hexagon {
   height: 90px; 

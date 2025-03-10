@@ -1,8 +1,9 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { IconUi } from "./icon-ui";
 import { iconsOnSecondPage } from "./icons-object";
+import { useMediaQuery } from "react-responsive";
 
 export const IconDiv = () => {
   const [isMouseOver, setIsMouseOver] = useState<boolean>(false);
@@ -11,6 +12,14 @@ export const IconDiv = () => {
     triggerOnce: true,
     rootMargin: "-10% 0px -10% 0px",
   });
+
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 900px)" });
+
+  useEffect(() => {
+    if (isTabletOrMobile) {
+      setIsMouseOver(true);
+    }
+  }, [isTabletOrMobile]);
 
   return (
     <div
@@ -21,7 +30,7 @@ export const IconDiv = () => {
       <p className="text-base  pt-2">NEXT.js, Docker, Typescript a další</p>
       <div
         ref={ref}
-        className="py-10 px:2 lg:px-10 justify-center self-center cursor-default  grid gap-4 grid-cols-4 "
+        className="py-10 px:2 lg:px-10 z-30 justify-center self-center cursor-default  grid gap-4 lg:gap-6 grid-cols-4 "
       >
         {iconsOnSecondPage.map((icon, i) => (
           <IconUi
