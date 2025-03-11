@@ -32,7 +32,7 @@ const LightBox = ({ input, active, toggler, setToggler }: lightBoxProps) => {
         controller={{ closeOnBackdropClick: true }}
         styles={{
           container: {
-            backgroundColor: "rgba(0, 0, 0, 1)",
+            backgroundColor: "rgb(30, 41, 59, 1)",
             padding: "20px",
           },
           captionsTitleContainer: {

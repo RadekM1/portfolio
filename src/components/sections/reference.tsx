@@ -55,7 +55,7 @@ const Reference = () => {
   const { ref, inView } = useInView({
     threshold: 0,
     triggerOnce: true,
-    rootMargin: "-30% 0px -30% 0px",
+    rootMargin: "-20% 0px -20% 0px",
   });
 
   const handleImgClick = (i: number) => {
@@ -67,9 +67,9 @@ const Reference = () => {
     <>
       <section
         id="reference"
-        className="w-full short:min-h-[40rem] text-gray-700 dark:text-white flex min-h-[30rem] flex-col items-center border-b-[1px] border-t-[1px] border-gray-300 dark:border-gray-700 bg-white  dark:bg-slate-950 z-10"
+        className="w-full relative short:min-h-[40rem] text-gray-700 dark:text-white flex min-h-[30rem] flex-col items-center border-b-[1px] border-t-[1px] border-gray-300 dark:border-gray-700 bg-white  dark:bg-slate-950 z-10"
       >
-        <Carousel className="w-full m-2 px-7 pt-10 pb-24 max-w-[95%] xl:max-w-7xl">
+        <Carousel className="w-full relative m-2 px-7 pt-10 pb-24 max-w-[95%] xl:max-w-7xl">
           <H2title title="Reference" />
           <CarouselContent>
             {refObject.map((item, i) => {
@@ -77,7 +77,7 @@ const Reference = () => {
                 <CarouselItem key={i}>
                   <div
                     ref={ref}
-                    className={`flex items-center mt-10 gap-4 flex-col select-none ${inView ? "translate-x-0" : "-translate-x-1/4"} transition-all duration-700 text-center`}
+                    className={`flex items-center mt-10 gap-4 flex-col select-none ${inView ? "translate-x-0 opacity-100" : "-translate-x-1/4 opacity-0"} transition-all duration-700 text-center`}
                   >
                     <H4Title title={item.description} />
                     <img
@@ -88,14 +88,14 @@ const Reference = () => {
                     />
                     <div className="w-full  h-full items-center gap-2 lg:gap-4 justify-center flex flex-col sm:flex-row">
                       <a href={item.url} target="_blank">
-                        <span className="flex  px-4 w-[170px] hover:bg-gray-300/30 dark:hover:bg-white/20 duration-700 ease-in-out transition-all py-2 rounded-md border-[1px] items-center justify-center whitespace-nowrap">
+                        <span className="flex  px-4 w-[170px] hover:bg-gray-300/30 bg-gray-200 dark:bg-slate-900 dark:hover:bg-white/20 duration-700 ease-in-out transition-all py-2 rounded-md border-[1px] items-center justify-center whitespace-nowrap">
                           Otevřít stránku
                         </span>
                       </a>
                       <Dialog>
                         <DialogTrigger>
-                          <span className="flex px-4 w-[170px]  hover:bg-gray-300/30 dark:hover:bg-white/20 duration-700 ease-in-out transition-all py-2 rounded-md border-[1px] items-center justify-center whitespace-nowrap">
-                            Technické provedení
+                          <span className="flex px-4 w-[170px] dark:bg-slate-900 bg-gray-200 hover:bg-gray-300/30 dark:hover:bg-white/20 duration-700 ease-in-out transition-all py-2 rounded-md border-[1px] items-center justify-center whitespace-nowrap">
+                            Tech stack
                           </span>
                         </DialogTrigger>
                         <DialogContent>
@@ -127,6 +127,11 @@ const Reference = () => {
             className={`${inView ? "scale-100 md:scale-150" : "scale-50"} transition-all duration-700`}
           />
         </Carousel>
+        <div
+        className={`-z-40 dark:bg-[linear-gradient(to_right,#161038_1px,transparent_1px),linear-gradient(to_bottom,#161038_1px,transparent_1px)] bg-[linear-gradient(to_right,#f5f6f7_1px,transparent_1px),linear-gradient(to_bottom,#f5f6f7_1px,transparent_1px)] dark:bg-[length:24px_24px] bg-[length:24px_24px] absset-0 w-full overflow-hidden absolute h-full`}
+        style={{ maskImage: "linear-gradient(transparent, #0C4A6E)" }}
+      ></div>
+          <div className="absolute top-[40%] right-[10%] -z-10 blur-[50px] sm:blur-[80px] md:blur-[150px] lg:blur-[200px] dark:bg-sky-900/80 ease-in-out transition delay-300 duration-500 overflow-hidden  w-[60%] h-[50%]"></div>
       </section>
       <LightBox
         input={refObject}

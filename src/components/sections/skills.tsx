@@ -17,7 +17,7 @@ const Skills = ({ text }: skillsProps) => {
         {text.map((item, i) => {
           return (
             <AccordionItem key={i} className="gap-1" value={`item-${i + 1}`}>
-              <AccordionTrigger className="text-base md:text-xl" key={i}>
+              <AccordionTrigger className="text-base" key={i}>
                 {item.title}
               </AccordionTrigger>
               <AccordionContent className="text-start flex-col flex text-sm sm:text-base">

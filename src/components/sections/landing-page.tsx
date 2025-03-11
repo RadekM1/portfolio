@@ -2,7 +2,10 @@ import LandingPageANim from "../landingPageAnim";
 
 const LandingPage = () => {
   return (
-    <section className="flex flex-col  dark:bg-slate-900 items-center font-roboto  text-gray-600 font-semibold ">
+    <section
+      id="home"
+      className="flex flex-col  dark:bg-slate-900 items-center font-roboto  text-gray-600 font-semibold "
+    >
       <div
         className={`flex h-screen text-[2rem] flex-grow text-center  w-full flex-col items-center sm:items-start`}
       >
@@ -23,14 +26,20 @@ const LandingPage = () => {
             </div>
             <div className="flex flex-row z-20 mt-2 lg:mt-10 justify-between">
               <div className="flex hover:-translate-y-1 ease-in-out duration-500">
-                <button className="animate-slidein1000 opacity-0 inline-flex mx-2 ml-2 h-8 lg:h-12  items-center justify-center gap-2 whitespace-nowrap rounded-md bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-500 hover:to-orange-700 px-4 text-sm md:text-xl font-medium tracking-wide hover: text-white shadow-md focus:shadow-sm   disabled:cursor-not-allowed disabled:border-red-300 disabled:bg-red-300  disabled:shadow-none">
-                  Reference
-                </button>
+                <a
+                  href="#offer"
+                  className="animate-slidein1000 opacity-0 inline-flex mx-2 ml-2 h-8 lg:h-12  items-center justify-center gap-2 whitespace-nowrap rounded-md bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-500 hover:to-rose-600 px-4 text-sm md:text-xl font-medium tracking-wide hover: text-white shadow-md focus:shadow-sm   disabled:cursor-not-allowed disabled:border-red-300 disabled:bg-red-300  disabled:shadow-none"
+                >
+                  Nabídka
+                </a>
               </div>
               <div className="flex hover:-translate-y-1 ease-in-out duration-500">
-                <button className="animate-slidein1200  opacity-0 inline-flex mx-2 lg:mb-32 xl:mb-10 h-8 lg:h-12 items-center justify-center gap-2 whitespace-nowrap rounded bg-green-500 px-6  font-medium tracking-wide text-white shadow-lg shadow-green-200 dark:shadow-none text-sm md:text-xl transition duration-300 hover:bg-green-600 hover:shadow-md hover:shadow-green-200 focus:bg-green-700 focus:shadow-md focus:shadow-green-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-green-300 disabled:bg-green-300 disabled:shadow-none">
+                <a
+                  href="#contact"
+                  className="animate-slidein1000  opacity-0 inline-flex mx-2 lg:mb-32 xl:mb-10 h-8 lg:h-12 items-center justify-center gap-2 whitespace-nowrap rounded bg-green-500 px-6  font-medium tracking-wide text-white shadow-lg shadow-green-200 dark:shadow-none text-sm md:text-xl transition duration-300 hover:from-green-500 hover:to-green-600 bg-gradient-to-r hover:shadow-md hover:shadow-green-200 focus:bg-green-700 focus:shadow-md focus:shadow-green-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-green-300 disabled:bg-green-300 disabled:shadow-none"
+                >
                   Konzultace zdarma
-                </button>
+                </a>
               </div>
             </div>
           </div>

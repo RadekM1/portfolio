@@ -4,7 +4,10 @@ import ContactForm from "../form/form";
 
 const Form = () => {
   return (
-    <section className="flex-col flex   w-full justify-center text-center items-center border-t-[1px] border-t-gray-300 dark:border-t-gray-700 bg-gray-100 dark:bg-slate-950 z-10">
+    <section
+      id="contact"
+      className="flex-col flex relative overflow-hidden  w-full justify-center text-center items-center border-t-[1px] border-t-gray-300 dark:border-t-gray-700 bg-gray-100 dark:bg-slate-950 z-10"
+    >
       <H2title title="Kontakt" />
 
       <div className="flex flex-col w-full max-w-[1000px] md:flex-row">

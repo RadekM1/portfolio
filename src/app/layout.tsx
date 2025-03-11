@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import React from "react";
-import { ThemeProvider } from "../components/themeProvider";
+import { AppProviders } from "../lib/context/app-provider";
 
 const roboto = Roboto({
   weight: "400",
@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   title: "Radek Morong - Webové aplikace",
   description:
     "Vývoj webových aplikací (firemní aplikace, osobní weby, e-shopy)",
+    icons:{
+      icon:"/favicon.ico"
+    },
+    keywords:["webové aplikace", "vývoj webu", "firemní aplikace", "e-shopy", "webové stránky", "digitalizace"],
+    authors: [{ name: "Radek Morong", url: "https://www.radekmorong.cz" }]
 };
 
 export default async function RootLayout({
@@ -26,15 +31,10 @@ export default async function RootLayout({
       <body
         className={`flex flex-col w-full bg-white dark:bg-slate-900 text-center justify-center ${roboto.variable} antialiased`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <header className=""></header>
+        <AppProviders>
+          <header></header>
           <main>{children}</main>
-        </ThemeProvider>
+        </AppProviders>
       </body>
     </html>
   );

@@ -1,14 +1,20 @@
 import { MenuSchema } from "../schema/menu-schema";
 import { LuBrainCircuit } from "react-icons/lu";
-import { PiSteps } from "react-icons/pi";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { IoPersonOutline } from "react-icons/io5";
-import { CiPhone } from "react-icons/ci";
+import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
+import { BiSolidOffer } from "react-icons/bi";
+import { PiHandshake } from "react-icons/pi";
 
 export const menuItems: MenuSchema = [
-  { label: "Průběh spolupráce", link: "#", icon: PiSteps },
-  { label: "Skills", link: "#", icon: LuBrainCircuit },
-  { label: "Reference", link: "#reference", icon: AiOutlineFundProjectionScreen },
-  { label: "O mně", link: "#", icon: IoPersonOutline },
-  { label: "Kontakt", link: "#", icon: CiPhone },
+  { label: "Nabídka", link: "#offer", icon: BiSolidOffer },
+  {
+    label: "Reference",
+    link: "#reference",
+    icon: AiOutlineFundProjectionScreen,
+  },
+  { label: "Průběh spolupráce", link: "#steps", icon: PiHandshake },
+  { label: "Skills", link: "#stack", icon: LuBrainCircuit },
+  { label: "O mně", link: "#about-me", icon: IoPersonOutline },
+  { label: "Kontakt", link: "#contact", icon: IoChatbubbleEllipsesOutline },
 ];

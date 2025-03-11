@@ -11,13 +11,13 @@ interface BtnProps {
 
 const BtnSlate = ({ Icon, label, index, setIsActive, isActive }: BtnProps) => {
   return (
-    <div className="flex hover:-translate-y-1 transition-transform ease-in-out duration-300  will-change-transform">
+    <div className="flex ">
       <button
         disabled={isActive === index}
         onClick={() => setIsActive(index)}
-        className={`flex flex-row animate-slidein1000 p-4 opacity-0 mx-1 ${index === 0 ? "bg-rose-300 dark:disabled:bg-slate-700 disabled:bg-rose-600 dark:bg-slate-700  hover:bg-rose-400" : "bg-green-300 disabled:bg-green-700 dark:bg-slate-800 hover:dark:bg-slate-700  hover:bg-green-400"} sm:mx-2 h-10  items-center justify-center gap-2 whitespace-nowrap rounded-md bg-gradient-to-r disabled:cursor-default dark:hover:bg-slate-800 text-xs sm:text-sm font-medium tracking-wide hover:cursor-pointer text-white shadow-md focus:shadow-sm   disabled:shadow-none`}
+        className={`flex flex-row hover:-translate-y-1 text-base  disabled:bg-gray-300 text-gray-800 dark:text-white dark:disabled:bg-slate-600 transition-transform ease-in-out duration-300  will-change-transform p-4  mx-1 sm:mx-2 h-9 md:h-10   items-center justify-center gap-2 whitespace-nowrap rounded-md hover:bg-gray-300/30 bg-gray-200 dark:bg-slate-800 dark:hover:bg-white/20`}
       >
-        {Icon && <Icon className="text-white" />}
+        {Icon && <Icon className="dark:text-white text-gray-800" />}
         {label}
       </button>
     </div>

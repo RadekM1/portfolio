@@ -20,6 +20,7 @@ export default function ThemeToggle() {
 
   return (
     <button
+      aria-label="light or dark theme button"
       onClick={() => {
         const newTheme = resolvedTheme === "light" ? "dark" : "light";
         setTheme(newTheme);

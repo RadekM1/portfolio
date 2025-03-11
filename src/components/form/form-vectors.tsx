@@ -25,7 +25,7 @@ export const FormVectors = () => {
         />
       </svg>
       <svg
-        className="absolute -z-10 -bottom-[50rem] -left-[50rem] h-[80rem]"
+        className="absolute -z-50 -bottom-[50rem] -left-[50rem] h-[80rem]"
         viewBox="-120 -120 240 240"
         xmlns="http://www.w3.org/2000/svg"
       >

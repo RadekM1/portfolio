@@ -3,17 +3,17 @@ import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { IconUi } from "./icon-ui";
 import { iconsOnSecondPage } from "./icons-object";
-import { useMediaQuery } from "react-responsive";
+import { useScreen } from "@/src/lib/context/screen-size-context";
 
 export const IconDiv = () => {
   const [isMouseOver, setIsMouseOver] = useState<boolean>(false);
   const { ref, inView } = useInView({
     threshold: 0,
     triggerOnce: true,
-    rootMargin: "-10% 0px -10% 0px",
+    rootMargin: "-20% 0px -20% 0px",
   });
 
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 900px)" });
+  const isTabletOrMobile = useScreen()
 
   useEffect(() => {
     if (isTabletOrMobile) {
