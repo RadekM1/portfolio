@@ -4,16 +4,15 @@ import { RiNextjsFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { FaDocker } from "react-icons/fa";
-import { TsIcon } from "./ts-icon";
-import { FirebaseIcon } from "./firebase-icon";
-import { Csharp } from "./csharp-icon";
+import { TsIcon } from "../../icon-components/ts-icon";
+import { FirebaseIcon } from "../../icon-components/firebase-icon";
+import { Csharp } from "../../icon-components/csharp-icon";
 
 export const iconsOnSecondPage: IconSchema[] = [
   {
     icon: BiLogoPostgresql,
     title: "PostgreSQL",
   },
-
   {
     icon: RiNextjsFill,
     title: "Next.js",

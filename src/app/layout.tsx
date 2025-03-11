@@ -13,12 +13,26 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Radek Morong - Webové aplikace",
   description:
-    "Vývoj webových aplikací (firemní aplikace, osobní weby, e-shopy)",
-    icons:{
-      icon:"/favicon.ico"
-    },
-    keywords:["webové aplikace", "vývoj webu", "firemní aplikace", "e-shopy", "webové stránky", "digitalizace"],
-    authors: [{ name: "Radek Morong", url: "https://www.radekmorong.cz" }]
+    "Profesionální vývoj moderních webových aplikací, responzivních firemních webů a e-shopů. Specializuji se na digitalizaci firemních procesů a tvorbu aplikací na míru.",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  keywords: [
+    "webové aplikace",
+    "vývoj webu",
+    "firemní aplikace",
+    "e-shopy",
+    "webové stránky",
+    "digitalizace",
+    "programování na míru",
+    "React",
+    "Next.js",
+    "responzivní design",
+  ],
+  authors: [{ name: "Radek Morong", url: "https://www.radekmorong.cz" }],
+  alternates: {
+    canonical: "https://www.radekmorong.cz",
+  },
 };
 
 export default async function RootLayout({
@@ -27,12 +41,11 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="cs" suppressHydrationWarning>
       <body
         className={`flex flex-col w-full bg-white dark:bg-slate-900 text-center justify-center ${roboto.variable} antialiased`}
       >
         <AppProviders>
-          <header></header>
           <main>{children}</main>
         </AppProviders>
       </body>

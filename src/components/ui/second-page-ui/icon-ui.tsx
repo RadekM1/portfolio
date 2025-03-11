@@ -24,7 +24,7 @@ export const IconUi = ({ icon, i, inView, isMouseOver }: IconUiProps) => {
   return (
     <div
       className={`
-            h-[80px] w-[80px] mb-5 md:h-[90px] transition-all ${isMouseOver ? "dark:from-black/70 from-white/70" : ""} ${isVisible ? "opacity-100" : "opacity-0"} duration-500 ease-in-out group md:w-[90px] relative items-center text-center backdrop-blur-md ${!icon.icon && "dark:bg-slate-500/10 border-none"} border-[1px] p-2 md:p-5 to-transparent rounded-xl border-gray-300/70 dark:border-white/10  bg-gradient-to-b  
+            h-[80px] w-[80px] mb-5 md:h-[90px] transition-all ${isMouseOver ? "dark:from-black/70 from-white/70" : ""} ${isVisible ? "opacity-100" : "opacity-0"} duration-500 ease-in-out group md:w-[90px] relative items-center text-center backdrop-blur-md border-[1px] p-2 md:p-5 to-transparent rounded-xl border-gray-300/70 dark:border-white/10  bg-gradient-to-b  
             ${icon.title === "TypeScript" && `${isMouseOver ? "dark:drop-shadow-[0_15px_15px_rgba(53,142,241,0.5)] drop-shadow-[0_15px_15px_rgba(53,142,241,0.5)]" : ""}`} 
             ${icon.title === "Next.js" && `${isMouseOver ? "  drop-shadow-[0_15px_15px_rgba(0,0,0,0.1)] dark:drop-shadow-[0_15px_15px_rgba(255,255,255,0.5)]" : ""}`} 
             ${icon.title === "Docker" && `${isMouseOver ? "  drop-shadow-[0_15px_15px_rgba(36,150,237,0.5)]" : ""}`} 
@@ -35,9 +35,8 @@ export const IconUi = ({ icon, i, inView, isMouseOver }: IconUiProps) => {
             ${icon.title === ".NET Core" && `${isMouseOver ? " drop-shadow-[0_15px_15px_rgba(104,33,120,0.2)] dark:drop-shadow-[0_15px_15px_rgba(104,33,120,1)]" : ""}`}  
         `}
     >
-      {icon.icon && (
-        <icon.icon
-          className={`
+      <icon.icon
+        className={`
                 h-full z-10 rounded w-full 
                 ${icon.title === "TypeScript" && "text-[#358EF1] p-[1px]"}
                 ${icon.title === "Next.js" && "dark:text-white text-black  rounded-full"}
@@ -48,8 +47,8 @@ export const IconUi = ({ icon, i, inView, isMouseOver }: IconUiProps) => {
                 ${icon.title === "Firebase" && "dark:text-[#FFCA28]"}
                 ${icon.title === ".NET Core" && ""}
             `}
-        />
-      )}
+      />
+
       <div
         className={`
                 dark:h-[40px] opacity-100 -z-10 translate-x-1/2 right-1/2 -translate-y-[70%] top-[80%] rounded-xl duration-500 ease-in-out transition-all w-[70px] absolute blur-[9px] 
@@ -65,13 +64,11 @@ export const IconUi = ({ icon, i, inView, isMouseOver }: IconUiProps) => {
       >
         &nbsp;
       </div>
-      {icon.icon && (
-        <span
-          className={`${isMouseOver ? "opacity-100" : "opacity-30"} whitespace-nowrap text-xs pt-3 md:pt-7 duration-500 ease-in-out transition-all flex w-full justify-center py-1 dark:text-white text-black text-center self-center`}
-        >
-          {icon.title !== "c#" ? icon.title : ""}
-        </span>
-      )}
+      <span
+        className={`${isMouseOver ? "opacity-100" : "opacity-30"} whitespace-nowrap text-xs pt-3 md:pt-7 duration-500 ease-in-out transition-all flex w-full justify-center py-1 dark:text-white text-black text-center self-center`}
+      >
+        {icon.title !== "c#" ? icon.title : ""}
+      </span>
     </div>
   );
 };

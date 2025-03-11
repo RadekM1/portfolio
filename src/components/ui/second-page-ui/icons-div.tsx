@@ -13,7 +13,7 @@ export const IconDiv = () => {
     rootMargin: "-20% 0px -20% 0px",
   });
 
-  const isTabletOrMobile = useScreen()
+  const isTabletOrMobile = useScreen();
 
   useEffect(() => {
     if (isTabletOrMobile) {

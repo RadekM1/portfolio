@@ -9,20 +9,19 @@ interface ToggleSchemaProps {
   icons: ToggleSchema;
 }
 
-
 export const IconToggle = ({ icons }: ToggleSchemaProps) => {
   const { ref, inView } = useInView({
     threshold: 0,
     triggerOnce: true,
     rootMargin: "-20% 0px -20% 0px",
   });
-  const [isMobile, setMobile] = useState<boolean>(false)
+  const [isMobile, setMobile] = useState<boolean>(false);
 
-  const screen = useScreen()
+  const screen = useScreen();
 
-  useEffect(()=>{
-    setMobile(screen)
-  },[])
+  useEffect(() => {
+    setMobile(screen);
+  }, []);
 
   return (
     <div className="flex w-full  mt-6 pb-2 flex-col">

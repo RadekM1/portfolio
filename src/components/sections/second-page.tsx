@@ -17,11 +17,19 @@ const SecondPage = () => {
         <PilanaIcon className="h-10 text-[#14133B] max-w-[200px] dark:text-white w-30" />
         <TonIcon className="dark:text-white h-10 max-w-[200px] text-black" />
         <KhsIcon className="dark:text-white h-10 max-w-[200px] text-black" />
-        <KhsIcon className="dark:text-white h-10 max-w-[200px] text-black" />
+        <div className="dark:text-white text-[25px] h-[35px] text-nowrap flex-row font-semibold font-roboto max-w-[200px] text-black">
+          <span className="p-1 mr-2 rounded-md bg-gray-800 dark:bg-white text-white dark:text-black font-bold ">
+            HH
+          </span>
+          <span>Haly Holešov</span>
+        </div>
       </div>
-      <a href="#reference" className="flex lg:my-6 mb-10 lg:mb-24 flex-row group whitespace-nowrap">
-          <span className="flex self-center">další reference</span>
-          <FaArrowRight className="h-full flex self-center ml-2 ease-in-out transition-transform duration-500 group-hover:rotate-90 w-full" />
+      <a
+        href="#reference"
+        className="flex lg:my-6 mb-10 lg:mb-24 flex-row group whitespace-nowrap"
+      >
+        <span className="flex self-center">další reference</span>
+        <FaArrowRight className="h-full flex self-center ml-2 ease-in-out transition-transform duration-500 group-hover:rotate-90 w-full" />
       </a>
       <div className="flex flex-col  lg:justify-between lg:flex-row gap-10 w-full flex-grow max-w-5xl">
         <OfferDiv />

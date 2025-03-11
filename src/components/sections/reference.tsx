@@ -128,10 +128,10 @@ const Reference = () => {
           />
         </Carousel>
         <div
-        className={`-z-40 dark:bg-[linear-gradient(to_right,#161038_1px,transparent_1px),linear-gradient(to_bottom,#161038_1px,transparent_1px)] bg-[linear-gradient(to_right,#f5f6f7_1px,transparent_1px),linear-gradient(to_bottom,#f5f6f7_1px,transparent_1px)] dark:bg-[length:24px_24px] bg-[length:24px_24px] absset-0 w-full overflow-hidden absolute h-full`}
-        style={{ maskImage: "linear-gradient(transparent, #0C4A6E)" }}
-      ></div>
-          <div className="absolute top-[40%] right-[10%] -z-10 blur-[50px] sm:blur-[80px] md:blur-[150px] lg:blur-[200px] dark:bg-sky-900/80 ease-in-out transition delay-300 duration-500 overflow-hidden  w-[60%] h-[50%]"></div>
+          className={`-z-40 dark:bg-[linear-gradient(to_right,#161038_1px,transparent_1px),linear-gradient(to_bottom,#161038_1px,transparent_1px)] bg-[linear-gradient(to_right,#f5f6f7_1px,transparent_1px),linear-gradient(to_bottom,#f5f6f7_1px,transparent_1px)] dark:bg-[length:24px_24px] bg-[length:24px_24px] absset-0 w-full overflow-hidden absolute h-full`}
+          style={{ maskImage: "linear-gradient(transparent, #0C4A6E)" }}
+        ></div>
+        <div className="absolute top-[40%] right-[10%] -z-10 blur-[50px] sm:blur-[80px] md:blur-[150px] lg:blur-[200px] dark:bg-[#0C4A6E]/70 ease-in-out transition delay-300 duration-500 overflow-hidden  w-[60%] h-[50%]"></div>
       </section>
       <LightBox
         input={refObject}

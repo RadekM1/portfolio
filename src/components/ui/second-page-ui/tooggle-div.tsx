@@ -1,7 +1,7 @@
 "use client";
 
 import { useInView } from "react-intersection-observer";
-import { IconToggle } from "./icon-toggle";
+import { IconToggle } from "../../icon-components/icon-toggle";
 import { ToggleSchema } from "@/src/schema/second-page-ui";
 import { RiComputerLine } from "react-icons/ri";
 import { FaWordpress } from "react-icons/fa";

@@ -15,9 +15,21 @@ const LandingPageANim = () => {
           alt="obrázek postavy v animaci na úvodní stránce"
           className={`${styles.postavaLogoVelke} hidden`}
         />
-        <img src="vector/logo_tab2.svg" alt="první obrázek v animaci na úvodní stránce" className={`${styles.tabDva}`} />
-        <img src="vector/logo_tab3.svg" alt="druhý obrázek v animaci na úvodní stránce" className={styles.tabTri} />
-        <img src="vector/logo_tab4.svg" alt="třetí obrázek v animaci na úvodní stránce" className={styles.tabCtyri} />
+        <img
+          src="vector/logo_tab2.svg"
+          alt="první obrázek v animaci na úvodní stránce"
+          className={`${styles.tabDva}`}
+        />
+        <img
+          src="vector/logo_tab3.svg"
+          alt="druhý obrázek v animaci na úvodní stránce"
+          className={styles.tabTri}
+        />
+        <img
+          src="vector/logo_tab4.svg"
+          alt="třetí obrázek v animaci na úvodní stránce"
+          className={styles.tabCtyri}
+        />
       </div>
     </div>
   );

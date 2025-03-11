@@ -1,5 +1,5 @@
 import { CiCalculator2 } from "react-icons/ci";
-import { WwwIcon } from "../components/ui/second-page-ui/www-icon";
+import { WwwIcon } from "../components/icon-components/www-icon";
 
 export const offerText = [
   {

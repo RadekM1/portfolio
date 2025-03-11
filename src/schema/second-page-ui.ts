@@ -8,7 +8,7 @@ export const toggleSchema = z.object({
 });
 
 export const iconSchema = z.object({
-  icon: z.custom<IconType>().nullable(),
+  icon: z.custom<IconType>(),
   title: z.string(),
 });
 

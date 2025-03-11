@@ -16,13 +16,13 @@ const LandingPage = () => {
           ></div>
           <div className="w-full flex-grow flex-col  flex justify-center  text-center items-center short:my-0 mt-5 sm:my-0 h-2/5 short:h-full lg:h-full ">
             <div className="flex flex-col  md:text-start md:w-[500px] w-full">
-              <span className="flex mt-2 animate-slidein500 opacity-0 whitespace-nowrap justify-center items-center mb-2 md:mb-5 text-3xl sm:text-4xl md:text-5xl w-full flex-grow lg:text-5xl dark:text-white z-20 bg-gradient-to-l text-gray-600">
+              <h1 className="flex mt-2 animate-slidein500 opacity-0 whitespace-nowrap justify-center items-center mb-2 md:mb-5 text-3xl sm:text-4xl md:text-5xl w-full flex-grow lg:text-5xl dark:text-white z-20 bg-gradient-to-l text-gray-600">
                 Vývoj
                 <span className="text-rose-500">&nbsp;webových aplikací</span>
-              </span>
-              <span className="z-10 mb-2 opacity-0 text-xs sm:text-base animate-slidein1000 dark:text-gray-300 font-thin mx-2  md:text-base text-center">
+              </h1>
+              <p className="z-10 mb-2 opacity-0 text-xs sm:text-base animate-slidein1000 dark:text-gray-300 font-thin mx-2  md:text-base text-center">
                 Od jednoduchých webů po automatizaci enterprise procesů
-              </span>
+              </p>
             </div>
             <div className="flex flex-row z-20 mt-2 lg:mt-10 justify-between">
               <div className="flex hover:-translate-y-1 ease-in-out duration-500">
