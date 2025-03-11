@@ -13,11 +13,11 @@ const SecondPage = () => {
       id="offer"
       className="flex-col  relative p-4 dark:bg-gradient-to-b dark:from-slate-950 dark:to-slate-900 gap-10 py-12 md:py-24 flex w-full justify-center items-center border-t-[1px]  dark:border-t-gray-800 bg-gray-100  z-10"
     >
-      <div className="lg:flex gap-10 lg:gap-20   justify-items-center p-4 lg:0  items-center justify-center grid grid-cols-2 text-center lg:flex-row">
-        <PilanaIcon className="h-10 text-[#14133B] max-w-[200px] dark:text-white w-30" />
-        <TonIcon className="dark:text-white h-10 max-w-[200px] text-black" />
-        <KhsIcon className="dark:text-white h-10 max-w-[200px] text-black" />
-        <div className="dark:text-white text-[25px] h-[35px] text-nowrap flex-row font-semibold font-roboto max-w-[200px] text-black">
+      <div className="lg:flex gap-10 sm:gap-20   justify-items-center p-4 lg:0  items-center justify-center grid grid-cols-2 text-center lg:flex-row">
+        <PilanaIcon className="lg:h-10 h-9 text-[#14133B] max-w-[150px] dark:text-white w-30" />
+        <TonIcon className="dark:text-white h-9 lg:h-10 max-w-[150px] text-black" />
+        <KhsIcon className="dark:text-white h-9 lg:h-10 max-w-[150px] text-black" />
+        <div className="dark:text-white text-[19px] lg:text-[25px] lg:max-h-[35px] text-nowrap flex-row font-semibold font-roboto max-w-[150px] text-black">
           <span className="p-1 mr-2 rounded-md bg-gray-800 dark:bg-white text-white dark:text-black font-bold ">
             HH
           </span>

@@ -34,9 +34,9 @@ export const FacebookAvatar = ({ setIsSideNavOpen }: AvatarProps) => {
           </div>
         </div>
         <div className="flex min-h-[2rem] w-full min-w-0 flex-col gap-0 text-start">
-          <h4 className="w-full truncate  text-base text-slate-700 dark:text-white">
+          <h3 className="w-full truncate  text-base text-slate-700 dark:text-white">
             Radek Morong
-          </h4>
+          </h3>
           <p className="text-gray-500 mt-1">nová zpráva...</p>
         </div>
       </div>

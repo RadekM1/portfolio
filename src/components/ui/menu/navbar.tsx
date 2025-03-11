@@ -42,6 +42,7 @@ const Navbar = () => {
                   <ul className="w-full flex flex-row gap-4 h-full">
                     <li>
                       <a
+                        aria-label="Github account link"
                         href="https://github.com/RadekM1"
                         rel="noopener noreferrer"
                         target="_blank"
@@ -51,6 +52,7 @@ const Navbar = () => {
                     </li>
                     <li>
                       <a
+                        aria-label="LinkedIn account link"
                         href="https://www.linkedin.com/in/radek-morong/"
                         rel="noopener noreferrer"
                         target="_blank"

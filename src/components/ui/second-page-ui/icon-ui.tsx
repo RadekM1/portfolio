@@ -1,6 +1,7 @@
 "use client";
 import { IconSchema } from "@/src/schema/second-page-ui";
 import { useState, useEffect } from "react";
+import { useScreen } from "@/src/lib/context/screen-size-context";
 
 interface IconUiProps {
   icon: IconSchema;
@@ -12,12 +13,17 @@ interface IconUiProps {
 export const IconUi = ({ icon, i, inView, isMouseOver }: IconUiProps) => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
+  const isTabletOrMobile = useScreen();
+
   useEffect(() => {
-    if (inView) {
+    if (inView && !isTabletOrMobile) {
       const timeout = setTimeout(() => {
         setIsVisible(true);
       }, i * 100);
       return () => clearTimeout(timeout);
+    }
+    if (isTabletOrMobile) {
+      setIsVisible(true);
     }
   }, [inView]);
 

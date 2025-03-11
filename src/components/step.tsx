@@ -1,7 +1,7 @@
 "use client";
 import { StepSchema } from "@/src/schema/steps-schema";
 import { useInView } from "react-intersection-observer";
-import { H3title } from "./typography/h3-title";
+import { H3Title } from "./typography/h3-title";
 
 interface StepProps {
   step: StepSchema;
@@ -22,7 +22,7 @@ export const Step = ({ step, index }: StepProps) => {
       <div
         className={` ${index % 2 === 0 ? "order-1 mr-8 flex-grow" : "order-2 ml-8 flex-grow text-end items-end"} pt-3 flex justify-start  flex-col   text-end md:text-start self-start`}
       >
-        <H3title isPadding={false} title={step.title} />
+        <H3Title title={step.title} />
         <p className="text-rose-600 my-1 dark:text-rose-100 text-sm md:text-base  ">
           {step.summaryText}
         </p>

@@ -1,5 +1,5 @@
 import { H2title } from "../typography/h2-title";
-import { H3title } from "../typography/h3-title";
+import { H3Title } from "../typography/h3-title";
 import ContactForm from "../form/form";
 
 const Form = () => {
@@ -19,7 +19,7 @@ const Form = () => {
           />
         </div>
         <div className="flex-col w-full flex">
-          <H3title isPadding={true} title="Nezávazná poptávka" />
+          <H3Title title="Nezávazná poptávka" />
           <p className="text-start px-10">
             Pokud máte zájem o konzultaci zdarma neváhejte vyplnit formulář
             níže. Pokud zrovna nelítám někde na kopcích mimo signál, tak se ozvu

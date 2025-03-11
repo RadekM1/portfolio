@@ -6,7 +6,7 @@ import LightBox from "../ui/reference-page-ui/lightbox";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
 import { BsFullscreen } from "react-icons/bs";
-import { H4Title } from "../typography/h4-title";
+import { H3Title } from "../typography/h3-title";
 
 import {
   Carousel,
@@ -41,7 +41,7 @@ const refObject = [
     alt: "Od srdéčka",
     media_type: "image",
     url: "https://www.odsrdecka.cz/",
-    description: "Dorty a sladké bary z Kašavy od srdéčka",
+    description: "Dorty a sladké bary z Kašavy",
     website: "odsrdecka.cz",
     dialogTitle: "Next.js + Wordpress + Tailwind",
     dialogContext: "Zde budou uvedeny podrobnosti technického řešení případu.",
@@ -79,7 +79,7 @@ const Reference = () => {
                     ref={ref}
                     className={`flex items-center mt-10 gap-4 flex-col select-none ${inView ? "translate-x-0 opacity-100" : "-translate-x-1/4 opacity-0"} transition-all duration-700 text-center`}
                   >
-                    <H4Title title={item.description} />
+                    <H3Title title={item.description} />
                     <img
                       onClick={() => handleImgClick(i)}
                       className="object-contain py-6 cursor-pointer flex max-h-[300px] self-center  "
@@ -131,7 +131,7 @@ const Reference = () => {
           className={`-z-40 dark:bg-[linear-gradient(to_right,#161038_1px,transparent_1px),linear-gradient(to_bottom,#161038_1px,transparent_1px)] bg-[linear-gradient(to_right,#f5f6f7_1px,transparent_1px),linear-gradient(to_bottom,#f5f6f7_1px,transparent_1px)] dark:bg-[length:24px_24px] bg-[length:24px_24px] absset-0 w-full overflow-hidden absolute h-full`}
           style={{ maskImage: "linear-gradient(transparent, #0C4A6E)" }}
         ></div>
-        <div className="absolute top-[40%] right-[10%] -z-10 blur-[50px] sm:blur-[80px] md:blur-[150px] lg:blur-[200px] dark:bg-[#0C4A6E]/70 ease-in-out transition delay-300 duration-500 overflow-hidden  w-[60%] h-[50%]"></div>
+        <div className="absolute top-[40%] hidden md:block  right-[10%] -z-10 blur-[50px] sm:blur-[80px] md:blur-[150px] lg:blur-[200px] dark:bg-[#0C4A6E]/70 ease-in-out transition delay-300 duration-500 overflow-hidden  w-[60%] h-[50%]"></div>
       </section>
       <LightBox
         input={refObject}

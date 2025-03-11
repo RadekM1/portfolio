@@ -42,8 +42,8 @@ for (let i = 0; i <= 45; i++) {
   const formattedDate = currentDate.toISOString().split("T")[0];
   chartData.push({
     date: formattedDate,
-    desktop: Math.floor(Math.random() * (50 - 100) + 100),
-    mobile: Math.floor(Math.random() * (50 - 100) + 100),
+    desktop: Math.floor(Math.random() * (10 - 20) + 20),
+    mobile: Math.floor(Math.random() * (15 - 35) + 35),
   });
 }
 

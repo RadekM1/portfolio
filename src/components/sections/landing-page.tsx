@@ -28,7 +28,7 @@ const LandingPage = () => {
               <div className="flex hover:-translate-y-1 ease-in-out duration-500">
                 <a
                   href="#offer"
-                  className="animate-slidein1000 opacity-0 inline-flex mx-2 ml-2 h-8 lg:h-12  items-center justify-center gap-2 whitespace-nowrap rounded-md bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-500 hover:to-rose-600 px-4 text-sm md:text-xl font-medium tracking-wide hover: text-white shadow-md focus:shadow-sm   disabled:cursor-not-allowed disabled:border-red-300 disabled:bg-red-300  disabled:shadow-none"
+                  className="animate-slidein1000 opacity-0 inline-flex mx-2 ml-2 h-9 lg:h-12  items-center justify-center gap-2 whitespace-nowrap rounded-md   bg-rose-600  hover:bg-rose-700 px-4 text-sm md:text-xl font-medium tracking-wide hover: text-white shadow-md focus:shadow-sm   disabled:cursor-not-allowed disabled:border-red-300 disabled:bg-red-300  disabled:shadow-none"
                 >
                   Nabídka
                 </a>
@@ -36,7 +36,7 @@ const LandingPage = () => {
               <div className="flex hover:-translate-y-1 ease-in-out duration-500">
                 <a
                   href="#contact"
-                  className="animate-slidein1000  opacity-0 inline-flex mx-2 lg:mb-32 xl:mb-10 h-8 lg:h-12 items-center justify-center gap-2 whitespace-nowrap rounded bg-green-500 px-6  font-medium tracking-wide text-white shadow-lg shadow-green-200 dark:shadow-none text-sm md:text-xl transition duration-300 hover:from-green-500 hover:to-green-600 bg-gradient-to-r hover:shadow-md hover:shadow-green-200 focus:bg-green-700 focus:shadow-md focus:shadow-green-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-green-300 disabled:bg-green-300 disabled:shadow-none"
+                  className="animate-slidein1000  opacity-0 inline-flex mx-2 lg:mb-32 xl:mb-10 h-9 lg:h-12 items-center justify-center gap-2 whitespace-nowrap rounded bg-green-700 hover:bg-green-800 px-6  font-medium tracking-wide text-white shadow-lg shadow-green-200 dark:shadow-none text-sm md:text-xl transition duration-300  hover:green-800 hover:shadow-md hover:shadow-green-200 focus:bg-green-700 focus:shadow-md focus:shadow-green-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-green-300 disabled:bg-green-300 disabled:shadow-none"
                 >
                   Konzultace zdarma
                 </a>
