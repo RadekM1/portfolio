@@ -28,6 +28,7 @@ import {
 const refObject = [
   {
     src: "/img/reference/khs-reference.png",
+    thumbnail: '/img/reference/khs-reference.webp',
     alt: "Horský oddíl Zlín",
     media_type: "image",
     url: "https://www.khszlin.com/",
@@ -38,6 +39,7 @@ const refObject = [
   },
   {
     src: "/img/reference/odsrdecka-reference.png",
+    thumbnail: '/img/reference/odsrdecka-reference.webp',
     alt: "Od srdéčka",
     media_type: "image",
     url: "https://www.odsrdecka.cz/",
@@ -83,7 +85,7 @@ const Reference = () => {
                     <img
                       onClick={() => handleImgClick(i)}
                       className="object-contain py-6 cursor-pointer flex max-h-[300px] self-center  "
-                      src={item.src}
+                      src={item.thumbnail}
                       alt={item.alt}
                     />
                     <div className="w-full  h-full items-center gap-2 lg:gap-4 justify-center flex flex-col sm:flex-row">
