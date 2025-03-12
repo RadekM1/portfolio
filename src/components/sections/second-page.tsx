@@ -12,7 +12,7 @@ const SecondPage = () => {
   return (
     <section
       id="offer"
-      className="flex-col  relative p-4 dark:bg-gradient-to-b dark:from-slate-950 dark:to-slate-900 gap-10 py-12 md:py-24 flex w-full justify-center items-center border-t-[1px]  dark:border-t-gray-800 bg-gray-100  z-10"
+      className="flex-col  relative p-4 dark:bg-gradient-to-b dark:from-slate-950 dark:to-slate-900 gap-20 py-12 md:py-24 flex w-full justify-center items-center border-t-[1px]  dark:border-t-gray-800 bg-gray-100  z-10"
     >
       <div className="lg:flex gap-10 sm:gap-20   justify-items-center p-4 lg:0  items-center justify-center grid grid-cols-2 text-center lg:flex-row">
         <PilanaIcon className="lg:h-10 h-9 text-[#14133B] max-w-[150px] dark:text-white w-30" />
@@ -40,7 +40,7 @@ const SecondPage = () => {
         <ThemesDiv />
         <IconDiv />
       </div>
-      <div className="flex flex-col self-center justify-center items-center lg:flex-row lg:gap-20  w-full flex-grow max-w-5xl">
+      <div className="flex flex-col mt-10 self-center justify-center items-center lg:flex-row lg:gap-20  w-full flex-grow max-w-5xl">
         <SeoDiv />
       </div>
     </section>

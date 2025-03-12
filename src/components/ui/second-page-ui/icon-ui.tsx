@@ -30,15 +30,8 @@ export const IconUi = ({ icon, i, inView, isMouseOver }: IconUiProps) => {
   return (
     <div
       className={`
-            h-[80px] w-[80px] mb-5 md:h-[90px] transition-all ${isMouseOver ? "dark:from-black/70 from-white/70" : ""} ${isVisible ? "opacity-100" : "opacity-0"} duration-500 ease-in-out group md:w-[90px] relative items-center text-center backdrop-blur-md border-[1px] p-2 md:p-5 to-transparent rounded-xl border-gray-300/70 dark:border-white/10  bg-gradient-to-b  
-            ${icon.title === "TypeScript" && `${isMouseOver ? "md:dark:drop-shadow-[0_15px_15px_rgba(53,142,241,0.5)] md:drop-shadow-[0_15px_15px_rgba(53,142,241,0.5)]" : ""}`} 
-            ${icon.title === "Next.js" && `${isMouseOver ? "  md:drop-shadow-[0_15px_15px_rgba(0,0,0,0.1)] md:dark:drop-shadow-[0_15px_15px_rgba(255,255,255,0.5)]" : ""}`} 
-            ${icon.title === "Docker" && `${isMouseOver ? "  md:drop-shadow-[0_15px_15px_rgba(36,150,237,0.5)]" : ""}`} 
-            ${icon.title === "React" && `${isMouseOver ? "  md:drop-shadow-[0_15px_15px_rgba(97,218,251,0.5)]" : ""}`} 
-            ${icon.title === "PostgreSQL" && `${isMouseOver ? " md:dark:drop-shadow-[0_15px_15px_rgba(53,142,241,0.5)]  md:drop-shadow-[0_15px_15px_rgba(53,142,241,0.5)]" : ""}`}
-            ${icon.title === "Tailwind" && `${isMouseOver ? "   md:drop-shadow-[0_15px_15px_rgba(6,182,212,0.5)]" : ""}`}
-            ${icon.title === "Firebase" && `${isMouseOver ? "  md:drop-shadow-[0_15px_15px_rgba(255,202,40,0.5)]" : ""}`} 
-            ${icon.title === ".NET Core" && `${isMouseOver ? " md:drop-shadow-[0_15px_15px_rgba(104,33,120,0.2)] md:dark:drop-shadow-[0_15px_15px_rgba(104,33,120,1)]" : ""}`}  
+            h-[80px] w-[80px] mb-5 md:h-[90px] transition-all ${isMouseOver ? "dark:from-black/70 brightness-125  from-white/70" : ""} ${isVisible ? "opacity-100" : "opacity-0"} duration-500 ease-in-out group md:w-[90px] relative items-center text-center backdrop-blur-md border-[1px] p-2 md:p-5 to-transparent rounded-xl border-gray-300/70 dark:border-white/10  bg-gradient-to-b  
+
         `}
     >
       <icon.icon

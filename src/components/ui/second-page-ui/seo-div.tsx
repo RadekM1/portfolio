@@ -1,10 +1,8 @@
-import { H3Title } from "../../typography/h3-title";
-
 export const SeoDiv = () => {
   return (
-    <div className="flex flex-col lg:flex-row w-full gap-5 lg:gap-10 drop-shadow-md shadow-gray-200 shadow-lg bg-white border-[1px] dark:shadow-none dark:border-slate-700/50 p-4 rounded-xl border-gray-300 dark:bg-slate-900 self-center">
+    <div className="flex flex-col lg:flex-row w-full gap-5 lg:gap-10 self-center">
       <div className="flex flex-col">
-        <H3Title title="Absolutní optimalizace" />
+        <h3 className="text-xl">Absolutní optimalizace</h3>
         <p className="text-sm lg:text-base pt-2 max-w-[600px] flex text-start lg:self-start self-center">
           SEO a celkově optimalizace webu není jen o tom vybrat klíčová slova na
           wordpressu. Google a další vyhledávače vyhodnocují i technické
