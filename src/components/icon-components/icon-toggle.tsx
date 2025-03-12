@@ -1,21 +1,15 @@
-"use client";
-
 import { ToggleSchema } from "@/src/schema/second-page-ui";
-import { useInView } from "react-intersection-observer";
+
 
 interface ToggleSchemaProps {
   icons: ToggleSchema;
+  inView: boolean;
 }
 
-export const IconToggle = ({ icons }: ToggleSchemaProps) => {
-  const { ref, inView } = useInView({
-    threshold: 0,
-    triggerOnce: true,
-    rootMargin: "-10% 0px -10% 0px",
-  });
+export const IconToggle = ({ icons, inView }: ToggleSchemaProps) => {
 
   return (
-    <div ref={ref} className="flex w-full  mt-6 pb-2 flex-col">
+    <div className="flex w-full  mt-6 pb-2 flex-col">
       <div className=" flex cursor-pointer  gap-2">
         <div className="relative h-6 w-12 border-gray-400 border-[1px]  transform-gpu  rounded-xl bg-gray-100 transition-colors duration-700">
           <icons.icon

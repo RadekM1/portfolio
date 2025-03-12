@@ -13,7 +13,7 @@ export const SeoDiv = () => {
           a optimalizaci 🙂
         </p>
       </div>
-      <div className={`text-base self-center flex   `}>
+      <div className={`text-base flex-col self-center flex   `}>
         <img
           src="/img/SEO-light.webp"
           loading="lazy"
@@ -26,6 +26,7 @@ export const SeoDiv = () => {
           className="border-[1px] border-gray-600 hidden dark:block rounded-xl"
           alt="SEO optimalizace webu"
         />
+        <p className="mt-5 text-sm">zdroj: Google chrome prohlížeč</p>
       </div>
     </div>
   );

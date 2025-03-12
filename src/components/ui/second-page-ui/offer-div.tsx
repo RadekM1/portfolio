@@ -29,7 +29,7 @@ export const OfferDiv = () => {
               <p className="text-sm text-start mt-1 flex self-start w-full">
                 {offer.text}
               </p>
-              <div className="absolute group-odd:opacity-20 group-odd:hover:opacity-40 duration-700 ease-in-out z-0 transition-all dark:bg-indigo-500/30  w-[650px] h-[160px] rounded-full blur-3xl  -top-6 -left-16 "></div>
+              <div className="absolute group-odd:opacity-20 group-odd:hover:opacity-40 duration-700 ease-in-out z-0 transition-all hidden md:block dark:bg-indigo-500/30  w-[650px] h-[160px] rounded-full blur-3xl  -top-6 -left-16 "></div>
             </div>
           );
         })}
