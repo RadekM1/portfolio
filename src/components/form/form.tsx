@@ -6,6 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import FormInput from "./form-input";
 import { emailClient } from "@/src/lib/email-client";
 import { FormVectors } from "./form-vectors";
+import { toast } from "sonner";
 
 const ContactForm = () => {
   const {
@@ -24,27 +25,27 @@ const ContactForm = () => {
     },
   });
 
-  const [isSubmitted, setIsSubmtited] = useState<boolean>(false);
   const [formKey, setFormKey] = useState(Date.now());
 
   const onSubmit = async (data: FormSchema) => {
-    setIsSubmtited(false);
     const success = await emailClient(data);
-    if (success) {
-      reset();
-      setIsSubmtited(true);
-      reset(undefined, {
-        keepErrors: false,
-        keepDirty: false,
-        keepTouched: false,
-      });
-      setFormKey(Date.now());
+    if (!success) {
+      toast.error("zprávu se nepodařilo odeslat");
       return;
     }
+    reset();
+    reset(undefined, {
+      keepErrors: false,
+      keepDirty: false,
+      keepTouched: false,
+    });
+    setFormKey(Date.now());
+    toast.success("zpráva byla v pořádku odeslána.");
+    return;
   };
 
   return (
-    <div className="items-center relative z-0 flex mb-20 p-2 my-20  self-center text-center w-full max-w-3xl">
+    <div className="items-center  relative z-0 flex mb-20 p-2 my-20  self-center text-center w-full max-w-3xl">
       <div className="h-full w-full">
         <form
           key={formKey}
@@ -100,10 +101,6 @@ const ContactForm = () => {
           >
             {isSubmitting ? "Odesílám..." : "Odeslat"}
           </button>
-          <p className="text-green-600 text-sm">
-            {isSubmitted && "zpráva byla úspěšně odeslána"}
-            &nbsp;
-          </p>
         </form>
       </div>
       <FormVectors />

@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import { AppProviders } from "../lib/context/app-provider";
+import { Toaster } from "../components/ui/sonner";
 
 const roboto = Roboto({
   weight: "400",
@@ -47,6 +48,7 @@ export default async function RootLayout({
       >
         <AppProviders>
           <main>{children}</main>
+          <Toaster richColors expand={true} />
         </AppProviders>
       </body>
     </html>

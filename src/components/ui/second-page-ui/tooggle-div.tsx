@@ -42,7 +42,7 @@ export const ToggleDiv = () => {
   const { ref, inView } = useInView({
     threshold: 0,
     triggerOnce: true,
-    rootMargin: "-20% 0px -20% 0px",
+    rootMargin: "-10% 0px -10% 0px",
   });
 
   return (

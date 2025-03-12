@@ -1,9 +1,11 @@
+import { H3Title } from "../../typography/h3-title";
+
 export const ThemesDiv = () => {
   return (
     <div className="flex flex-col w-full self-center">
-      <h3 className="text-xl pt-10">Barevná témata</h3>
+      <H3Title title="Barevná témata" />
       <p className="text-base pb-10 pt-2">
-        NEXT.js, Docker, Typescript a další
+        Bílé pozadí stránky dokážet večer potrápit.
       </p>
       <div
         className={`text-base  self-center h-[27rem] lg:h-[30rem] flex-col flex  w-[16.5rem] min-w-[16.5rem] lg:min-w-[19rem]  relative transition-all duration-700   px-4 rounded-xl  `}

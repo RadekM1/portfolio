@@ -18,9 +18,9 @@ const Form = () => {
             alt="obrázek spolupráce"
           />
         </div>
-        <div className="flex-col w-full flex">
+        <div className="flex-col px-10 items-start w-full flex">
           <H3Title title="Nezávazná poptávka" />
-          <p className="text-start px-10">
+          <p className="text-start ">
             Pokud máte zájem o konzultaci zdarma neváhejte vyplnit formulář
             níže. Pokud zrovna nelítám někde na kopcích mimo signál, tak se ozvu
             nejpozději následující pracovní den. Chcete-li se se mnou spojit

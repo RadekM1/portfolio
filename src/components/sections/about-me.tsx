@@ -22,9 +22,12 @@ const AboutMe = () => {
     >
       <H2title title="O mně" />
 
-      <p className="text-base md:text-xl px-4 mb-5 max-w-[650px]">
-        Baví mě komplexní systémy. Je potřeba automatizovat nějaký proces a
-        ideálně i vizualizovat? To je něco pro mě &#129321;
+      <p className="text-base flex flex-col md:text-xl px-4 mb-5 max-w-[650px]">
+        <span>Baví mě zjednodušovat komplexní systémy. </span>
+        <span>
+          Je potřeba automatizovat nějaký proces a ideálně jej i vizualizovat?
+        </span>
+        <span>To je něco pro mě &#129321;</span>
       </p>
       <img
         className="max-h-32 md:max-h-48 mx-10 mt-5  self-center"

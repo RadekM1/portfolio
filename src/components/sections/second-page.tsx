@@ -10,10 +10,7 @@ import { SeoDiv } from "../ui/second-page-ui/seo-div";
 
 const SecondPage = () => {
   return (
-    <section
-      id="offer"
-      className="flex-col  relative p-4 dark:bg-gradient-to-b dark:from-slate-950 dark:to-slate-900 gap-20 py-12 md:py-24 flex w-full justify-center items-center border-t-[1px]  dark:border-t-gray-800 bg-gray-100  z-10"
-    >
+    <section className="flex-col  relative p-4 dark:bg-gradient-to-b dark:from-slate-950 dark:to-slate-900 gap-20 py-12 md:py-24 flex w-full justify-center items-center border-t-[1px]  dark:border-t-gray-800 bg-gray-100  z-10">
       <div className="lg:flex gap-10 sm:gap-20   justify-items-center p-4 lg:0  items-center justify-center grid grid-cols-2 text-center lg:flex-row">
         <PilanaIcon className="lg:h-10 h-9 text-[#14133B] max-w-[150px] dark:text-white w-30" />
         <TonIcon className="dark:text-white h-9 lg:h-10 max-w-[150px] text-black" />
@@ -29,14 +26,16 @@ const SecondPage = () => {
         href="#reference"
         className="flex lg:my-6 mb-10 lg:mb-24 flex-row group whitespace-nowrap"
       >
-        <span className="flex self-center">další reference</span>
+        <span id="offer" className="flex self-center">
+          další reference
+        </span>
         <FaArrowRight className="h-full flex self-center ml-2 ease-in-out transition-transform duration-500 group-hover:rotate-90 w-full" />
       </a>
-      <div className="flex flex-col  lg:justify-between lg:flex-row gap-10 w-full flex-grow max-w-5xl">
+      <div className="flex flex-col lg:justify-between lg:flex-row gap-10 w-full flex-grow max-w-5xl">
         <OfferDiv />
         <ToggleDiv />
       </div>
-      <div className="flex flex-col self-center justify-center items-center lg:flex-row lg:gap-20  w-full flex-grow max-w-5xl">
+      <div className="flex flex-col self-center pt-10 justify-center items-center lg:flex-row lg:gap-20  w-full flex-grow max-w-5xl">
         <ThemesDiv />
         <IconDiv />
       </div>
