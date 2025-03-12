@@ -1,5 +1,6 @@
 "use client";
 
+import { useInView } from "react-intersection-observer";
 import { IconToggle } from "../../icon-components/icon-toggle";
 import { ToggleSchema } from "@/src/schema/second-page-ui";
 import { RiComputerLine } from "react-icons/ri";
@@ -37,27 +38,21 @@ const iconToggles: ToggleSchema[] = [
   },
 ];
 
-{
-  /* 
-
+export const ToggleDiv = () => {
   const { ref, inView } = useInView({
     threshold: 0,
     triggerOnce: true,
     rootMargin: "-20% 0px -20% 0px",
   });
-  */
-}
-
-export const ToggleDiv = () => {
-  const inView = true;
 
   return (
     <div
+      ref={ref}
       className={`text-base flex self-center py-10 group overflow-hidden relative border-t-gray-300/50 ${inView ? "translate-x-0" : "md:translate-x-6"} transition-all duration-500 ease-in-out  drop-shadow-md shadow-gray-200 shadow-lg bg-white border-[1px] dark:shadow-none dark:border-slate-700/50 p-4 rounded-xl border-gray-300 dark:bg-slate-900 w-full max-w-[400px]`}
     >
       <div className="flex flex-col">
         {iconToggles.map((item, i) => (
-          <IconToggle inView={inView} key={i} icons={item} />
+          <IconToggle key={i} icons={item} />
         ))}
       </div>
       <div>
