@@ -52,7 +52,7 @@ export const ToggleDiv = () => {
     >
       <div className="flex flex-col">
         {iconToggles.map((item, i) => (
-          <IconToggle inView={inView} key={i} icons={item} />
+          <IconToggle key={i} icons={item} />
         ))}
       </div>
       <div>

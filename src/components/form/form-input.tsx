@@ -17,7 +17,7 @@ const FormInput = ({ label, name, register, type, error }: FormInputProps) => {
       </label>
       <input
         {...register(`${name}`)}
-        className={`dark:bg-slate-700/40 dark:border-gray-600 border-gray-300 bg-white/50  border-[1px] rounded-lg p-2`}
+        className={`dark:bg-slate-700/40 dark:border-gray-600 border-gray-300 bg-white/50  border-[1px] ${error ? "border-red-500 text-red-600" : ""} rounded-lg p-2`}
         id={name}
         type={type}
       />

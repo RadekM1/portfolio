@@ -28,7 +28,7 @@ const LandingPage = () => {
               <div className="flex hover:-translate-y-1 ease-in-out duration-500">
                 <a
                   href="#offer"
-                  className="animate-slidein1000 opacity-0 inline-flex mx-2 ml-2 h-9 lg:h-12  items-center justify-center gap-2 whitespace-nowrap rounded-md   bg-rose-600  hover:bg-rose-700 px-4 text-sm md:text-xl font-medium tracking-wide hover: text-white shadow-md focus:shadow-sm   disabled:cursor-not-allowed disabled:border-red-300 disabled:bg-red-300  disabled:shadow-none"
+                  className="animate-slidein1000 opacity-0 inline-flex mx-2 ml-2 h-9 lg:h-12  items-center justify-center gap-2 whitespace-nowrap rounded-md   bg-rose-500  hover:bg-rose-600 px-4 text-sm md:text-xl font-medium tracking-wide hover: text-white shadow-md focus:shadow-sm   disabled:cursor-not-allowed disabled:border-red-300 disabled:bg-red-300  disabled:shadow-none"
                 >
                   Nabídka
                 </a>

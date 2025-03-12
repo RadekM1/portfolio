@@ -45,13 +45,13 @@ const ContactForm = () => {
 
   return (
     <div className="items-center relative z-0 flex mb-20 p-2 my-20  self-center text-center w-full max-w-3xl">
-      <div className="h-full z-10 w-full">
+      <div className="h-full w-full">
         <form
           key={formKey}
           onSubmit={handleSubmit(onSubmit, (errors) =>
             console.log("Form errors:", errors),
           )}
-          className="w-full pb-5 text-base bg-white/40 border-[1px] border-white/20 dark:bg-slate-700/40 backdrop-blur-[100px] rounded-xl shadow-lg z-10 p-5 flex flex-col"
+          className="w-full pb-5 text-base bg-white/40 border-gray-300 border-[1px] dark:border-gray-500 dark:bg-slate-700/70 backdrop-blur-3xl rounded-xl shadow-lg z-20 p-5 flex flex-col"
         >
           <div className="w-full  flex-col justfy-center items-center">
             <div className="flex gap-5 w-full flex-col">
@@ -105,8 +105,8 @@ const ContactForm = () => {
             &nbsp;
           </p>
         </form>
-        <FormVectors />
       </div>
+      <FormVectors />
     </div>
   );
 };
