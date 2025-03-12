@@ -1,13 +1,11 @@
 import { ToggleSchema } from "@/src/schema/second-page-ui";
 
-
 interface ToggleSchemaProps {
   icons: ToggleSchema;
   inView: boolean;
 }
 
 export const IconToggle = ({ icons, inView }: ToggleSchemaProps) => {
-
   return (
     <div className="flex w-full  mt-6 pb-2 flex-col">
       <div className=" flex cursor-pointer  gap-2">
