@@ -28,7 +28,7 @@ import {
 const refObject = [
   {
     src: "/img/reference/khs-reference.png",
-    thumbnail: '/img/reference/khs-reference.webp',
+    thumbnail: "/img/reference/khs-reference.webp",
     alt: "Horský oddíl Zlín",
     media_type: "image",
     url: "https://www.khszlin.com/",
@@ -39,7 +39,7 @@ const refObject = [
   },
   {
     src: "/img/reference/odsrdecka-reference.png",
-    thumbnail: '/img/reference/odsrdecka-reference.webp',
+    thumbnail: "/img/reference/odsrdecka-reference.webp",
     alt: "Od srdéčka",
     media_type: "image",
     url: "https://www.odsrdecka.cz/",
@@ -84,6 +84,7 @@ const Reference = () => {
                     <H3Title title={item.description} />
                     <img
                       onClick={() => handleImgClick(i)}
+                      loading="lazy"
                       className="object-contain py-6 cursor-pointer flex max-h-[300px] self-center  "
                       src={item.thumbnail}
                       alt={item.alt}
@@ -133,7 +134,7 @@ const Reference = () => {
           className={`-z-40 dark:bg-[linear-gradient(to_right,#161038_1px,transparent_1px),linear-gradient(to_bottom,#161038_1px,transparent_1px)] bg-[linear-gradient(to_right,#f5f6f7_1px,transparent_1px),linear-gradient(to_bottom,#f5f6f7_1px,transparent_1px)] dark:bg-[length:24px_24px] bg-[length:24px_24px] absset-0 w-full overflow-hidden absolute h-full`}
           style={{ maskImage: "linear-gradient(transparent, #0C4A6E)" }}
         ></div>
-        <div className="absolute top-[40%] hidden md:block  right-[10%] -z-10 blur-[50px] sm:blur-[80px] md:blur-[150px] lg:blur-[200px] dark:bg-[#0C4A6E]/70 ease-in-out transition delay-300 duration-500 overflow-hidden  w-[60%] h-[50%]"></div>
+        <div className="absolute top-[40%] hidden md:block  right-[10%] -z-10  blur-3xl dark:bg-[#0C4A6E]/30 ease-in-out transition delay-300 duration-500 overflow-hidden  w-[80%] h-[50%]"></div>
       </section>
       <LightBox
         input={refObject}

@@ -6,6 +6,7 @@ import { PilanaIcon } from "../icon-components/pilana-icon";
 import { TonIcon } from "../icon-components/ton-icon";
 import { KhsIcon } from "../icon-components/khs-icon";
 import { FaArrowRight } from "react-icons/fa";
+import { SeoDiv } from "../ui/second-page-ui/seo-div";
 
 const SecondPage = () => {
   return (
@@ -38,6 +39,9 @@ const SecondPage = () => {
       <div className="flex flex-col self-center justify-center items-center lg:flex-row lg:gap-20  w-full flex-grow max-w-5xl">
         <ThemesDiv />
         <IconDiv />
+      </div>
+      <div className="flex flex-col self-center justify-center items-center lg:flex-row lg:gap-20  w-full flex-grow max-w-5xl">
+        <SeoDiv />
       </div>
     </section>
   );

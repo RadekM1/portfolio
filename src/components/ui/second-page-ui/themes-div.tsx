@@ -13,7 +13,7 @@ export const ThemesDiv = () => {
           tabIndex={0}
         >
           <div className="diff-item-1  border-rose-500 " role="img">
-            <img alt="daisy" className="object-cover" src="img/diff-dark.webp" />
+            <img alt="daisy" className="object-cover" src="img/diff-dark.png" />
           </div>
           <div
             className="diff-item-2 after:bg-rose-500  "
@@ -23,7 +23,7 @@ export const ThemesDiv = () => {
             <img
               alt="daisy"
               className="object-cover"
-              src="img/diff-light.webp"
+              src="img/diff-light.png"
             />
           </div>
           <div className="diff-resizer  bg-rose-500 border-rose-500 "></div>
