@@ -20,7 +20,7 @@ const SecondPage = () => {
             <span className="p-1 mr-2 rounded-md bg-gray-800 dark:bg-white text-white dark:text-black font-bold ">
               HH
             </span>
-            <span>Haly Holešov</span>;
+            <span>Haly Holešov</span>
           </div>
         </div>
         <a

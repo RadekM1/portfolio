@@ -15,7 +15,7 @@ export const SeoDiv = () => {
           stránce co nabízí SEO marketing a optimalizaci 🙂
         </p>
       </div>
-      <div className={`text-base flex-col self-center flex   `}>
+      <div className={`text-base flex-col self-center flex  w-full `}>
         <img
           src="/img/SEO-light.webp"
           loading="lazy"

@@ -1,19 +1,11 @@
 "use client";
 import { H3Title } from "../../typography/h3-title";
-import { useInView } from "react-intersection-observer";
 import { offerText } from "@/src/lib/second-page-objects";
-
-export const OfferDiv = () => {
-  const { ref, inView } = useInView({
-    threshold: 0,
-    triggerOnce: true,
-    rootMargin: "-10% 0px -10% 0px",
-  });
 
   return (
     <div
       ref={ref}
-      className={`text-base w-full group self-center lg:self-start max-w-[700px]   flex flex-col items-center  ${inView ? "translate-x-0" : "xl:-translate-x-10 md:-translate-x-4"} transition-all duration-700 `}
+      className={`text-base w-full group self-center lg:self-start max-w-[700px]   flex flex-col items-center transition-all duration-700 `}
     >
       <div className="flex flex-col gap-10 w-full justify-between">
         {offerText.map((offer) => {
@@ -31,15 +23,15 @@ export const OfferDiv = () => {
               </p>
               {offer.index === "web" && (
                 <div className="h-[1px] absolute top-0 right-36 w-[10px]">
-                  <div className="h-[1px] w-[130px] relative">
+                  <div className="h-[1px] h-f w-[130px] relative">
                     <img
-                      src="/vector/sit-border-light.svg"
-                      className="absolute block dark:hidden top-1/2 -translate-y-1/2"
+                      src="/vector/sit-border-light.png"
+                      className="absolute dark:hidden top-1/2 transition-transform -translate-y-1/2"
                       alt="ikona programátora"
                     />
                     <img
-                      src="/vector/sit-border-dark.svg"
-                      className="absolute hidden dark:block top-1/2 -translate-y-1/2"
+                      src="/vector/sit-border-dark.png"
+                      className="absolute hidden transition-transform dark:block top-1/2 -translate-y-1/2"
                       alt="ikona programátora"
                     />
                   </div>
