@@ -97,7 +97,7 @@ const ContactForm = () => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="h-10 max-w-32 self-center px-5 my-5 hover:bg-green-700 whitespace-nowrap rounded bg-green-500  text-white shadow-lg shadow-green-200 dark:shadow-none text-base  transition-all duration-300  hover:shadow-md hover:shadow-green-200 focus:bg-green-700 focus:shadow-md focus:shadow-green-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-green-300 disabled:dark:text-gray-800 disabled:bg-green-100 disabled:dark:bg-green-800 disabled:shadow-none"
+            className="h-10 max-w-32 self-center px-5 my-5 hover:bg-green-700 whitespace-nowrap rounded bg-green-500  text-white  text-base  transition-all duration-300   focus:bg-green-700 focus:shadow-md focus:shadow-green-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-green-300 disabled:dark:text-gray-800 disabled:bg-green-100 disabled:dark:bg-green-800 disabled:shadow-none"
           >
             {isSubmitting ? "Odesílám..." : "Odeslat"}
           </button>

@@ -34,7 +34,7 @@ const refObject = [
     url: "https://www.khszlin.com/",
     description: "Webový portál horolezeckého oddílu Zlín",
     website: "khszlin.com",
-    dialogTitle: "Next.js + PostgreSQL + Tailwind",
+    dialogTitle: "Next.js + PostgreSQL + Tailwind + Google Cloud",
     dialogContext: "Zde budou uvedeny podrobnosti technického řešení případu.",
   },
   {
@@ -69,7 +69,7 @@ const Reference = () => {
     <>
       <section
         id="reference"
-        className="w-full relative short:min-h-[40rem] text-gray-700 dark:text-white flex min-h-[30rem] flex-col items-center border-b-[1px] border-t-[1px] border-gray-300 dark:border-gray-700 bg-white  dark:bg-slate-950 z-10"
+        className="w-full relative  text-gray-700 dark:text-white flex min-h-[30rem] flex-col items-center border-b-[1px] border-t-[1px] border-gray-300 dark:border-gray-700 bg-white  dark:bg-slate-950 z-10"
       >
         <Carousel className="w-full relative m-2 px-7 pt-10 pb-24 max-w-[95%] xl:max-w-7xl">
           <H2title title="Reference" />

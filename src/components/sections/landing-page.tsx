@@ -36,7 +36,7 @@ const LandingPage = () => {
               <div className="flex hover:-translate-y-1 ease-in-out duration-500">
                 <a
                   href="#contact"
-                  className="animate-slidein1000  opacity-0 inline-flex mx-2 lg:mb-32 xl:mb-10 h-9 lg:h-12 items-center justify-center gap-2 whitespace-nowrap rounded bg-green-700 hover:bg-green-800 px-6  font-medium tracking-wide text-white shadow-lg shadow-green-200 dark:shadow-none text-sm md:text-xl transition duration-300  hover:green-800 hover:shadow-md hover:shadow-green-200 focus:bg-green-700 focus:shadow-md focus:shadow-green-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-green-300 disabled:bg-green-300 disabled:shadow-none"
+                  className="animate-slidein1000  opacity-0 inline-flex mx-2 lg:mb-32 xl:mb-10 h-9 lg:h-12 items-center justify-center gap-2 whitespace-nowrap rounded bg-green-700 hover:bg-green-800 px-6  font-medium tracking-wide text-white shadow-lg  text-sm md:text-xl transition duration-300  hover:green-800 hover:shadow-md hover:shadow-green-200 focus:bg-green-700 focus:shadow-md focus:shadow-green-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-green-300 disabled:bg-green-300 disabled:shadow-none"
                 >
                   Konzultace zdarma
                 </a>

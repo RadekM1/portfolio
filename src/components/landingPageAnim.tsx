@@ -14,11 +14,7 @@ const LandingPageANim = () => {
           alt="tabulka poletující v logu č. 1"
           className={styles.tabJedna}
         />
-        <img
-          src="vector/postava_hodne_velke.svg"
-          alt="obrázek postavy v animaci na úvodní stránce"
-          className={`${styles.postavaLogoVelke} hidden`}
-        />
+
         <img
           src="vector/logo_tab2.svg"
           alt="první obrázek v animaci na úvodní stránce"

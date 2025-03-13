@@ -1,11 +1,11 @@
 import { CiCalculator2 } from "react-icons/ci";
-import { WwwIcon } from "../components/icon-components/www-icon";
+import { FaChrome } from "react-icons/fa";
 
 export const offerText = [
   {
     title: "Webové stránky",
     text: "Tvořím moderní, rychlé a funkční webové stránky, které zaujmou návštěvníky a podpoří váš byznys. Ať už potřebujete firemní prezentaci, osobní portfolio nebo prodejní stránku, postarám se o design i vývoj na míru.",
-    icon: WwwIcon,
+    icon: FaChrome,
     index: "web",
   },
   {
