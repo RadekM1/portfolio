@@ -13,16 +13,15 @@ export const OfferDiv = () => {
           <p className="text-sm text-start mt-1 flex self-start w-full">
             {offerText[0].text}
           </p>
-          <img
-            src="/vector/sit-border-light.png"
-            className="absolute dark:hidden h-[400px] top-1/2 -translate-y-1/2"
-            alt="ikona programátora"
-          />
-          <img
-            src="/vector/sit-border-dark.png"
-            className="absolute hidden dark:block h-[300px]"
-            alt="ikona programátora"
-          />
+          <div className="absolute right-20 h-1 top-0">
+            <div className="relative w-[130px]">
+              <img
+                src="/vector/sit-border-light.png"
+                className="absolute block dark:hidden  -top-1/2 -translate-y-1/2"
+                alt="ikona programátora"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
