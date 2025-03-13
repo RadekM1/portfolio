@@ -23,18 +23,7 @@ export const OfferDiv = () => {
               </p>
               {offer.index === "web" && (
                 <div className="h-[1px] absolute top-0 right-36 w-[10px]">
-                  <div className="h-[1px] h-f w-[130px] relative">
-                    <img
-                      src="/vector/sit-border-light.png"
-                      className="absolute dark:hidden top-1/2 transition-transform -translate-y-1/2"
-                      alt="ikona programátora"
-                    />
-                    <img
-                      src="/vector/sit-border-dark.png"
-                      className="absolute hidden transition-transform dark:block top-1/2 -translate-y-1/2"
-                      alt="ikona programátora"
-                    />
-                  </div>
+                  <div className="h-[1px] w-[130px] relative">a</div>
                 </div>
               )}
             </div>
