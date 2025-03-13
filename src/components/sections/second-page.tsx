@@ -25,7 +25,7 @@ const SecondPage = () => {
         </div>
         <a
           href="#reference"
-          className="flex lg:my-6 mb-10 h-9  flex-row group whitespace-nowrap"
+          className=" lg:my-6 hidden lg:flex mb-10 h-9  flex-row group whitespace-nowrap"
         >
           <span id="offer" className="flex self-center">
             další reference
