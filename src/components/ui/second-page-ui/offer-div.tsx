@@ -2,9 +2,9 @@
 import { H3Title } from "../../typography/h3-title";
 import { offerText } from "@/src/lib/second-page-objects";
 
+export const OfferDiv = () => {
   return (
     <div
-      ref={ref}
       className={`text-base w-full group self-center lg:self-start max-w-[700px]   flex flex-col items-center transition-all duration-700 `}
     >
       <div className="flex flex-col gap-10 w-full justify-between">
