@@ -25,7 +25,7 @@ export const FooterMain = () => {
           </li>
           <li className="flex mb-4 w-full lg:mt-3 flex-row flex-nowrap">
             <MdEmail className="w-8 flex mr-3 self-start h-8" />
-            <a className="flex self-start" href="email:radekmorong@email.cz">
+            <a className="flex self-start" href="mailto:radekmorong@email.cz">
               radekmorong@email.cz
             </a>
           </li>

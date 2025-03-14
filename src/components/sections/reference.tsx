@@ -91,13 +91,13 @@ const Reference = () => {
                     />
                     <div className="w-full  h-full items-center gap-2 lg:gap-4 justify-center flex flex-col sm:flex-row">
                       <a href={item.url} target="_blank">
-                        <span className="flex  px-4 w-[170px] hover:bg-gray-300/30 bg-gray-200 dark:bg-slate-900 dark:hover:bg-white/20 duration-700 ease-in-out transition-all py-2 rounded-md border-[1px] items-center justify-center whitespace-nowrap">
+                        <span className="flex  px-4 w-[170px] hover:bg-gray-400 bg-gray-300 dark:bg-slate-900 dark:hover:bg-slate-600 duration-700 ease-in-out transition-all py-2 rounded-md border-[1px] items-center justify-center whitespace-nowrap">
                           Otevřít stránku
                         </span>
                       </a>
                       <Dialog>
                         <DialogTrigger>
-                          <span className="flex px-4 w-[170px] dark:bg-slate-900 bg-gray-200 hover:bg-gray-300/30 dark:hover:bg-white/20 duration-700 ease-in-out transition-all py-2 rounded-md border-[1px] items-center justify-center whitespace-nowrap">
+                          <span className="flex px-4 w-[170px] dark:bg-slate-900 bg-gray-300 hover:bg-gray-400 dark:hover:bg-slate-600 duration-700 ease-in-out transition-all py-2 rounded-md border-[1px] items-center justify-center whitespace-nowrap">
                             Tech stack
                           </span>
                         </DialogTrigger>
@@ -114,7 +114,7 @@ const Reference = () => {
                     <button
                       onClick={() => handleImgClick(i)}
                       aria-label="reference fullscreen"
-                      className="absolute top-0 right-0 hidden sm:flex hover:bg-gray-300/30 dark:hover:bg-white/20 h-12 w-12  items-center justify-center rounded-full duration-700 ease-in-out transition-all border-[1px]"
+                      className="absolute top-0 right-0 hidden sm:flex hover:bg-gray-300/50 dark:hover:bg-white/20 h-12 w-12  items-center justify-center rounded-full duration-700 ease-in-out transition-all border-[1px]"
                     >
                       <BsFullscreen className=" text-black self-center dark:text-gray-400" />
                     </button>

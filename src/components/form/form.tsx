@@ -52,7 +52,7 @@ const ContactForm = () => {
           onSubmit={handleSubmit(onSubmit, (errors) =>
             console.log("Form errors:", errors),
           )}
-          className="w-full pb-5 text-base bg-white/40 border-gray-300 border-[1px] dark:border-gray-500 dark:bg-slate-700/70 backdrop-blur-3xl rounded-xl shadow-lg z-20 p-5 flex flex-col"
+          className="w-full pb-5 text-base bg-white/60 border-gray-300 border-[1px] dark:border-gray-500 dark:bg-slate-700/80 backdrop-blur-3xl rounded-xl shadow-lg z-20 p-5 flex flex-col"
         >
           <div className="w-full  flex-col justfy-center items-center">
             <div className="flex gap-5 w-full flex-col">

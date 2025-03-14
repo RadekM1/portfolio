@@ -66,7 +66,7 @@ const TechStackMain = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.9 }}
                     transition={{ duration: 0.1 }}
-                    className="mt-2  sm:min-h-[500px] flex justify-center h-full flex-row w-full"
+                    className="mt-2  flex justify-center h-full flex-row w-full"
                   >
                     <Skills text={stack.text} />
                   </motion.div>

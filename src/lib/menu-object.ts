@@ -3,11 +3,11 @@ import { LuBrainCircuit } from "react-icons/lu";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { IoPersonOutline } from "react-icons/io5";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
-import { BiSolidOffer } from "react-icons/bi";
+import { MdOutlineShoppingCart } from "react-icons/md";
 import { PiHandshake } from "react-icons/pi";
 
 export const menuItems: MenuSchema = [
-  { label: "Nabídka", link: "#offer", icon: BiSolidOffer },
+  { label: "Nabídka", link: "#offer", icon: MdOutlineShoppingCart },
   {
     label: "Reference",
     link: "#reference",
