@@ -15,11 +15,11 @@ export const SeoDiv = () => {
           stránce co nabízí SEO marketing a optimalizaci 🙂
         </p>
       </div>
-      <div className={`text-base flex-col self-center flex`}>
+      <div className={`text-base flex-col w-full self-center flex`}>
         <img
           src="/img/SEO-light.webp"
           loading="lazy"
-          className=" drop-shadow-xl py-5 flex self-center bg-white border-[1px] border-gray-300 max-w-[95%] lg:max-w-[500px] dark:drop-shadow-none rounded-xl dark:hidden block"
+          className=" drop-shadow-xl py-5  self-center bg-white border-[1px] border-gray-300 max-w-[95%] lg:max-w-[500px] dark:drop-shadow-none rounded-xl dark:hidden block"
           alt="SEO optimalizace webu"
         />
         <img
