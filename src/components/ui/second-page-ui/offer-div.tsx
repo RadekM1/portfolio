@@ -3,7 +3,6 @@ import { H3Title } from "../../typography/h3-title";
 import { offerText } from "@/src/lib/second-page-objects";
 import { useInView } from "react-intersection-observer";
 
-
 export const OfferDiv = () => {
   const { ref, inView } = useInView({
     threshold: 0,
@@ -16,15 +15,16 @@ export const OfferDiv = () => {
       className={`text-base w-full transition-transform duration-500 ease-in-out self-center ${inView ? "translate-x-0" : "translate-x-4 lg:-translate-x-4"} lg:self-start max-w-[700px] flex flex-col items-center`}
     >
       <div className="flex flex-col h-full w-full justify-between">
-        <div 
-        ref={ref}
-        className="h-px mx-1 px-1 z-20 flex self-end w-32 mr-10 relative">
-            <img
-              src="/vector/sit-border.svg"
-              alt="ikona programátora"
-              className={` h-[300px]  top-[49.5%] left-0 -translate-y-[49.5%]`}
-              />
-          </div>
+        <div
+          ref={ref}
+          className="h-px mx-1 px-1 z-20 flex self-end w-32 mr-10 relative"
+        >
+          <img
+            src="/vector/sit-border.svg"
+            alt="ikona programátora"
+            className={` h-[300px]  top-[49.5%] left-0 -translate-y-[49.5%]`}
+          />
+        </div>
         {offerText.map((offer, j) => (
           <div
             key={j}

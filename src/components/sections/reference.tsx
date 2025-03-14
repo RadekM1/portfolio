@@ -31,22 +31,22 @@ const refObject = [
     thumbnail: "/img/reference/khs-reference.webp",
     alt: "Horský oddíl Zlín",
     media_type: "image",
-    url: "https://www.khszlin.com/",
+    url: "https://khs-zlin.vercel.app/",
     description: "Webový portál horolezeckého oddílu Zlín",
     website: "khszlin.com",
     dialogTitle: "Next.js + PostgreSQL + Tailwind + Google Cloud",
-    dialogContext: "Zde budou uvedeny podrobnosti technického řešení případu.",
+    dialogContext: "Web je zatím ve výstavbě",
   },
   {
     src: "/img/reference/odsrdecka-reference.png",
     thumbnail: "/img/reference/odsrdecka-reference.webp",
     alt: "Od srdéčka",
     media_type: "image",
-    url: "https://www.odsrdecka.cz/",
+    url: "https://srdecko.netlify.app/",
     description: "Dorty a sladké bary z Kašavy",
     website: "odsrdecka.cz",
     dialogTitle: "Next.js + Wordpress + Tailwind",
-    dialogContext: "Zde budou uvedeny podrobnosti technického řešení případu.",
+    dialogContext: "Web je zatím ve výstavbě ",
   },
 ];
 
@@ -98,7 +98,7 @@ const Reference = () => {
                       <Dialog>
                         <DialogTrigger>
                           <span className="flex px-4 w-[170px] dark:bg-slate-900 bg-gray-300 hover:bg-gray-400 dark:hover:bg-slate-600 duration-700 ease-in-out transition-all py-2 rounded-md border-[1px] items-center justify-center whitespace-nowrap">
-                            Tech stack
+                            Podrobnosti
                           </span>
                         </DialogTrigger>
                         <DialogContent>

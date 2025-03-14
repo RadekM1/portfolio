@@ -16,17 +16,17 @@ const SecondPage = () => {
           <TonIcon className="dark:text-white h-8 lg:h-11 max-w-[170px] text-black" />
           <KhsIcon className="dark:text-white h-8 lg:h-11 max-w-[170px] text-black" />
           <div className="dark:text-white text-[19px] lg:text-[25px] lg:max-h-[35px] text-nowrap flex-row font-semibold font-roboto max-w-[150px] text-black">
-            <span 
-            id="offer"
-            className="p-1 mr-2 rounded-md bg-gray-800 dark:bg-white text-white dark:text-black font-bold ">
+            <span
+              id="offer"
+              className="p-1 mr-2 rounded-md bg-gray-800 dark:bg-white text-white dark:text-black font-bold "
+            >
               HH
             </span>
             <span>Haly Holešov</span>
           </div>
         </div>
       </div>
-      <div 
-      className="flex flex-col mt-[150px] lg:justify-between lg:flex-row gap-10 w-full flex-grow max-w-5xl">
+      <div className="flex flex-col mt-[150px] lg:justify-between lg:flex-row gap-10 w-full flex-grow max-w-5xl">
         <OfferDiv />
         <ToggleDiv />
       </div>

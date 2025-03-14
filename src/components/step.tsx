@@ -24,7 +24,7 @@ export const Step = ({ step, index }: StepProps) => {
       >
         <span className="flex flex-nowrap justify-start gap-3 pb-1 items-center flex-row">
           <span
-            className={`${index % 2 === 0 ? "" : "md:order-2 "}  ml-2 md:ml-0 h-12 w-12 border-[2px] flex self-center text-center items-center rounded-full justify-center align-middle border-rose-600 dark:border-rose-400 text-rose-600 dark:text-rose-400`}
+            className={`${index % 2 === 0 ? "" : "md:order-2 "} text-xl ml-2 md:ml-0 h-12 w-12 border-[2px] flex self-center text-center items-center rounded-full justify-center align-middle border-rose-600 dark:border-rose-400 text-rose-600 dark:text-rose-400`}
           >
             {index + 1}
           </span>
