@@ -12,7 +12,7 @@ interface skillsProps {
 
 const Skills = ({ text }: skillsProps) => {
   return (
-    <div className="flex w-full tracking-wide text-sm sm:text-base px-4 lg:px-16">
+    <div className="flex w-full h-full tracking-wide text-sm sm:text-base px-4 lg:px-16">
       <Accordion type="single" collapsible className="w-full">
         {text.map((item, i) => {
           return (
