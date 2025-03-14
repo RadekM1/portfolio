@@ -3,9 +3,9 @@ import { H3Title } from "../../typography/h3-title";
 export const SeoDiv = () => {
   return (
     <div className="flex flex-col overflow-hidden md:flex-row w-full gap-5 lg:gap-10 self-center">
-      <div className="flex w-full items-start flex-col">
+      <div className="flex w-full items-center flex-col">
         <H3Title title="Optimalizace" />
-        <p className="text-sm md:text-base pt-2 max-w-[600px] flex text-start  self-center">
+        <p className="text-sm md:text-base pt-2 px-2 max-w-[600px] flex text-start  self-center">
           SEO a celkově optimalizace webu není jen o tom vybrat klíčová slova na
           Wordpressu a naklikat zpětné odkazy. Google a další vyhledávače
           vyhodnocují i technické provedení, responzivní design, přizpůsobení
