@@ -13,28 +13,31 @@ const iconToggles: ToggleSchema[] = [
   {
     icon: RiComputerLine,
     title: "Responzivní design",
-    summary: "Weby i aplikace jsou navrhovány metodou Mobile First",
+    summary:
+      "Weby i aplikace jsou navrhovány metodou Mobile first. Plně tedy podporují všechny typy zařízení. Lze je umístit i na Android Obchod Play, nebo Apple App store",
   },
   {
     icon: FaWordpress,
     title: "Redakční systémy",
-    summary: "Wordpress, Strapi nebo i na míru",
+    summary: "Wordpress jako headless CMS, Strapi nebo i na míru",
   },
   {
     icon: PiPaintBrushDuotone,
     title: "Webdesign na míru",
-    summary: "Design bez šablon, přesně dle přání",
+    summary:
+      "Design bez šablon, přesně dle přání, žádné omezení šablonovacím systémem",
   },
   {
     icon: BsSpeedometer,
     title: "Žádné načítání",
-    summary: "Přechod mezi stránkami je okamžitý díky Next.js optimalizaci",
+    summary:
+      "Přechod mezi stránkami je okamžitý a působí spíše jako offline aplikace než web. Zkuste si proklikat některou z referencí",
   },
   {
     icon: AiOutlineSafety,
     title: "Zabezpečení",
     summary:
-      "Vysoký standard díky OAuth 2.0 a OpenID, včetně integrací do firemních struktur",
+      "Vysoký standard díky OAuth 2.0 a OpenID, včetně integrací do firemních Microsoft struktur",
   },
 ];
 
@@ -48,7 +51,7 @@ export const ToggleDiv = () => {
   return (
     <div
       ref={ref}
-      className={`text-base flex self-center py-10 group overflow-hidden relative border-t-gray-300/50 ${inView ? "translate-x-0" : "xl:translate-x-10"} transition-all duration-500 ease-in-out  drop-shadow-md shadow-gray-200 shadow-lg bg-white border-[1px] dark:shadow-none dark:border-slate-700/50 p-4 rounded-xl border-gray-300 dark:bg-slate-900 w-full max-w-[400px]`}
+      className={`text-base flex self-center py-10 group overflow-hidden relative border-t-gray-300/50 ${inView ? "translate-x-0" : "lg:translate-x-4 xl:translate-x-10"} transition-transform duration-500 ease-in-out  drop-shadow-md shadow-gray-200 shadow-lg bg-white border-[1px] dark:shadow-none dark:border-slate-700/50 p-4 rounded-xl border-gray-300 dark:bg-slate-900 w-full max-w-[700px] lg:max-w-[400px]`}
     >
       <div className="flex flex-col">
         {iconToggles.map((item, i) => (
