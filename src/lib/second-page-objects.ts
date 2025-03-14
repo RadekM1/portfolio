@@ -12,7 +12,7 @@ export const offerText = [
   },
   {
     title: "Webové aplikace",
-    text: `Webové aplikace jsou budoucností softwaru. Fungují přímo v prohlížeči, nezávisle na operačním systému (Windows, Mac, Linux). Díky tomu snadno oslovíte více uživatelů. Vytvořím aplikaci přesně na míru vašemu podnikání, například rezervační systém, slevový portál, dashboard pro analýzu dat, nástroje pro řízení výroby nebo integraci s vašimi firemními systémy.`,
+    text: `Webové aplikace jsou budoucností softwaru. Fungují přímo v prohlížeči, nezávisle na operačním systému (Windows, Mac, Linux). Díky tomu snadno oslovíte více uživatelů. Vytvořím aplikaci přesně na míru vašemu podnikání, například rezervační systém, slevový portál, dashboard pro analýzu dat, nástroje pro řízení výroby nebo integraci s vašimi firemními systémy`,
     icon: CiCalculator2,
     index: "app",
   },

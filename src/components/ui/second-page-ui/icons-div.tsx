@@ -25,13 +25,13 @@ export const IconDiv = () => {
   return (
     <div
       onMouseOver={() => setIsMouseOver(true)}
-      className=" flex flex-col w-full h-full cursor-default self-start min-w-[350px]  relative justify-center group items-center  transition-all duration-700"
+      className=" flex flex-col w-full h-full cursor-default self-start min-w-[310px]  relative justify-center group items-center  transition-all duration-700"
     >
       <H3Title title="Moderní technologie" />
       <p className="text-base  pt-2">NEXT.js, Docker, Typescript a další</p>
       <div
         ref={ref}
-        className="py-10 px:2 lg:px-10 z-30 justify-center h-full items-center self-center cursor-default  grid gap-4 lg:gap-6 grid-cols-4 "
+        className="py-10 px:2 lg:px-10 z-30 justify-center h-full items-center self-center cursor-default  grid gap-3  lg:gap-6 grid-cols-4 "
       >
         {iconsOnSecondPage.map((icon, i) => (
           <IconUi
