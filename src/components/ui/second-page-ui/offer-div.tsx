@@ -17,8 +17,8 @@ export const OfferDiv = () => {
       <div className="flex flex-col h-full w-full justify-between">
         <div
           ref={ref}
-          className="h-px mx-1 px-1 z-20 flex self-end w-32 mr-10 relative"
-        >
+          className="h-px mx-1 px-1 z-20 flex self-end w-32  relative"
+        >	
           <img
             src="/vector/sit-border.svg"
             alt="ikona programátora"
