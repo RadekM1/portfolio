@@ -5,7 +5,6 @@ import { ThemesDiv } from "../ui/second-page-ui/themes-div";
 import { PilanaIcon } from "../icon-components/pilana-icon";
 import { TonIcon } from "../icon-components/ton-icon";
 import { KhsIcon } from "../icon-components/khs-icon";
-import { FaArrowRight } from "react-icons/fa";
 import { SeoDiv } from "../ui/second-page-ui/seo-div";
 
 const SecondPage = () => {
