@@ -1,12 +1,26 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 interface AvatarProps {
   // eslint-disable-next-line
-  setIsSideNavOpen: (isSideNavOpen: boolean) => void
+  setIsSideNavOpen: (isSideNavOpen: boolean) => void;
 }
 
 export const FacebookAvatar = ({ setIsSideNavOpen }: AvatarProps) => {
-  const date = new Date().getHours();
+  const [hour, setHour] = useState<number | null>(null);
+
+  useEffect(() => {
+    const now = new Date().getHours();
+    setHour(now);
+  }, []);
+
+  let bgColor = "bg-red-600"; // výchozí
+  if (hour !== null) {
+    if (hour >= 7 && hour < 20) bgColor = "bg-green-500";
+    else if (hour >= 20 && hour < 23) bgColor = "bg-orange-500";
+    else bgColor = "bg-red-600";
+  }
 
   return (
     <a
@@ -27,14 +41,14 @@ export const FacebookAvatar = ({ setIsSideNavOpen }: AvatarProps) => {
               className="max-w-full rounded-full"
             />
             <span
-              className={` ${date >= 7 && date < 20 && "bg-green-500"} ${date >= 20 && date < 23 && "bg-orange-500"} ${(date >= 23 || date < 7) && "bg-red-600"} absolute bottom-0 right-0 inline-flex items-start justify-start gap-1 rounded-full border-2 border-white  p-1 text-sm text-white`}
+              className={`${bgColor} absolute bottom-0 right-0 inline-flex items-start justify-start gap-1 rounded-full border-2 border-white p-1 text-sm text-white`}
             >
               <span className="sr-only"> online </span>
             </span>
           </div>
         </div>
         <div className="flex min-h-[2rem] w-full min-w-0 flex-col gap-0 text-start">
-          <h3 className="w-full truncate  text-base text-slate-700 dark:text-white">
+          <h3 className="w-full truncate text-base text-slate-700 dark:text-white">
             Radek Morong
           </h3>
           <p className="text-gray-500 mt-1">nová zpráva...</p>

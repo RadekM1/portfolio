@@ -31,11 +31,11 @@ const refObject = [
     thumbnail: "/img/reference/khs-reference.webp",
     alt: "Horský oddíl Zlín",
     media_type: "image",
-    url: "https://khs-zlin.vercel.app/",
+    url: "https://new.khszlin.com",
     description: "Webový portál horolezeckého oddílu Zlín",
     website: "khszlin.com",
     dialogTitle: "Next.js + PostgreSQL + Tailwind + Google Cloud",
-    dialogContext: "Web je zatím ve výstavbě",
+    dialogContext: "Aplikace je ve finální verzi testování před nasazením",
   },
   {
     src: "/img/reference/odsrdecka-reference.png",
@@ -45,8 +45,9 @@ const refObject = [
     url: "https://srdecko.netlify.app/",
     description: "Dorty a sladké bary z Kašavy",
     website: "odsrdecka.cz",
-    dialogTitle: "Next.js + Wordpress + Tailwind",
-    dialogContext: "Web je zatím ve výstavbě ",
+    dialogTitle: "Next.js + Wordpress jako headless CMS + Tailwind",
+    dialogContext:
+      "Web je před dokončením (obsahová část blogu a galerie se nyní finišuje)",
   },
 ];
 

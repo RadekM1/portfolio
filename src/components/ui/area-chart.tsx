@@ -69,23 +69,17 @@ interface ChartProps {
 }
 
 export const AreaChartComponent = ({ setVisitors, setDays }: ChartProps) => {
-  const [filteredData, setFilteredData] = React.useState(chartData);
   const [timeRange, setTimeRange] = React.useState("90d");
+  const filteredData = React.useMemo(() => {
+    const daysToSubtract = timeRange === "30d" ? 30 : 90;
+    const startDate = new Date();
+    startDate.setDate(startDate.getDate() - daysToSubtract);
 
-  React.useEffect(() => {
-    const newFilteredData = chartData.filter((item) => {
+    return chartData.filter((item) => {
       const date = new Date(item.date);
-      const referenceDate = new Date("2025-02-24");
-
-      let daysToSubtract = timeRange === "30d" ? 30 : 90;
-      const startDate = new Date(referenceDate);
-      startDate.setDate(startDate.getDate() - daysToSubtract);
-
       return date >= startDate;
     });
-
-    setFilteredData(newFilteredData);
-  }, [timeRange]);
+  }, [chartData, timeRange]);
 
   const visitorsSum = React.useMemo(() => {
     return filteredData.reduce(
