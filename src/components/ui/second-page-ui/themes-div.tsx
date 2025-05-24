@@ -5,7 +5,7 @@ export const ThemesDiv = () => {
     <div className="flex flex-col w-full self-center">
       <H3Title title="Barevná témata" />
       <p className="text-base pb-10 pt-2">
-        Bílé pozadí stránky dokážet večer potrápit.
+        Bílé pozadí stránky dokáže večer potrápit.
       </p>
       <div
         className={`text-base  self-center h-[27rem] lg:h-[30rem] flex-col flex  w-[16.5rem] min-w-[16.5rem] lg:min-w-[19rem]  relative transition-all duration-700   px-4 rounded-xl  `}
