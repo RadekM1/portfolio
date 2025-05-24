@@ -1,36 +1,68 @@
-"use client";
-
+"use server";
+import nodemailer from "nodemailer";
+import validator from "validator";
 import { FormSchema } from "../schema/contact-form";
 
 export const emailClient = async (data: FormSchema) => {
-  const url = process.env.NEXT_PUBLIC_url_path;
-
-  const token = process.env.NEXT_PUBLIC_email_token;
-
   try {
-    if (!url) {
-      throw new Error("URL path is not defined");
+    if (!data.name || validator.isEmpty(data.name.trim())) {
+      throw new Error("Jméno je povinné.");
+    }
+    if (!data.email || !validator.isEmail(data.email)) {
+      throw new Error("Neplatná e-mailová adresa.");
+    }
+    if (data.tel && !validator.isMobilePhone(data.tel, "cs-CZ")) {
+      throw new Error("Neplatné telefonní číslo.");
     }
 
-    const response = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
+    const name = validator.escape(data.name.trim());
+    const email = validator.normalizeEmail(data.email)!;
+    const tel = data.tel ? validator.escape(data.tel.trim()) : "";
+    const noteRaw = data.note || "";
+    const noteSafe = validator.escape(noteRaw).replace(/\n/g, "<br>");
+
+    const transporter = nodemailer.createTransport({
+      host: process.env.EMAIL_HOST,
+      port: 465,
+      secure: true,
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.SMTP_PASSWORD,
       },
-      body: JSON.stringify({
-        name: data.name,
-        email: data.email,
-        tel: data.tel,
-        password: token,
-        zprava: data.note,
-      }),
     });
-    if (!response.ok) {
-      throw new Error("Failed to fetch email response");
-    }
 
-    return response.ok;
+    const subject = `Nová zpráva od ${name}`;
+    const htmlBody = `
+      <h2>Nová zpráva z formuláře “radekmorong.cz”</h2>
+      <ul>
+        <li><strong>Jméno:</strong> ${name}</li>
+        <li><strong>E-mail:</strong> ${email}</li>
+        <li><strong>Telefon:</strong> ${tel}</li>
+      </ul>
+      <h3>Text zprávy:</h3>
+      <p>${noteSafe}</p>
+    `;
+
+    await transporter.sendMail({
+      from: '"radekmorong.cz" <info@radekmorong.cz>',
+      to: process.env.EMAIL_DESTINATION,
+      replyTo: process.env.EMAIL_DESTINATION,
+      subject,
+      text: `
+      Nová zpráva od ${name} 
+
+      E-mail: ${email}
+      Telefon: ${tel}
+
+      Poznámka:
+      ${noteRaw}
+      `,
+      html: htmlBody,
+    });
+
+    return true;
   } catch (error) {
     console.log("Error fetching email response:", error);
+    return false;
   }
 };
