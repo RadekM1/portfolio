@@ -4,6 +4,7 @@ import "./globals.css";
 import React from "react";
 import { AppProviders } from "../lib/context/app-provider";
 import { Toaster } from "../components/ui/sonner";
+import Script from "next/script";
 
 const roboto = Roboto({
   weight: "400",
@@ -46,6 +47,19 @@ export default async function RootLayout({
       <body
         className={`flex flex-col w-full bg-white dark:bg-slate-900 text-center justify-center ${roboto.variable} antialiased`}
       >
+        <Script
+          async
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-2XR1Z1E1D8"
+        />
+        <Script strategy="afterInteractive" id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2XR1Z1E1D8');
+        `}
+        </Script>
         <AppProviders>
           <main>{children}</main>
           <Toaster richColors expand={true} />
