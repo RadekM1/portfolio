@@ -39,6 +39,6 @@ export const iconsOnSecondPage: IconSchema[] = [
   },
   {
     icon: Csharp,
-    title: ".NET Core",
+    title: ".NET framework",
   },
 ];
