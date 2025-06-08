@@ -31,11 +31,12 @@ const refObject = [
     thumbnail: "/img/reference/khs-reference.webp",
     alt: "Horský oddíl Zlín",
     media_type: "image",
-    url: "https://new.khszlin.com",
+    url: "https://www.khszlin.com",
     description: "Webový portál horolezeckého oddílu Zlín",
     website: "khszlin.com",
     dialogTitle: "Next.js + PostgreSQL + Tailwind + Google Cloud",
-    dialogContext: "Aplikace je ve finální verzi testování před nasazením",
+    dialogContext:
+      "Komunitní platforma pro horolezecký oddíl s vlastním CMS systémem. Klíčové funkce zahrnují: integrovaný content management systém přímo ve webu, automatickou serverovou optimalizaci a komprimaci fotografií, real-time úpravy článků, komplexní uživatelské profily s vlastními avatary, systém lajkování a komentářů, responzivní design optimalizovaný pro všechny typy zařízení. Celá aplikace je postavena na moderním tech stacku s automatizovaným CI/CD deploymentem a škálovatelnou cloud infrastrukturou - vše co potřebuje aktivní horolezecká komunita pro sdílení zážitků, plánování a rozvoj.",
   },
   {
     src: "/img/reference/odsrdecka-reference.png",
