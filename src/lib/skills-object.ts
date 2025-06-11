@@ -46,6 +46,7 @@ export const backEndText = [
     text: [
       "- MySQL (když je potřeba rychlá a lehká databáze)",
       "- PostgreSQL (pro komplexnější aplikace)",
+      "- MS SQL (enterprise klasika)",
       "- Firebase (NoSQL databáze za pár korun)",
     ],
   },
