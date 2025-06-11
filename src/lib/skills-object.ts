@@ -36,7 +36,7 @@ export const backEndText = [
     title: "Jazyky / Runtime",
     text: [
       "- Node.js (NEXT.js server funkce pro fullstack Typescript, Fastify pro REST API )",
-      "- C# a .NET CORE (pro robustní enterprise aplikace, převážně Minimal API)",
+      "- C# a .NET (pro robustní enterprise aplikace)",
       "- PHP (pokud je potřeba jen pár skriptů, nebo tenká api vrstva nad databází)",
       "- Visual basic (občas se hodí šikovný algoritmus v excelu)",
     ],
