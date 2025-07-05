@@ -12,7 +12,7 @@ export const OfferDiv = () => {
 
   return (
     <div
-      className={`text-base w-full transition-transform duration-500 ease-in-out self-center ${inView ? "translate-x-0" : "translate-x-4 lg:-translate-x-4"} lg:self-start max-w-[700px] flex flex-col items-center`}
+      className={`text-base w-full transition-transform duration-500 ease-in-out self-center ${inView ? "md:translate-x-0" : "lg:-translate-x-4"} lg:self-start max-w-[700px] flex flex-col items-center`}
     >
       <div className="flex flex-col h-full w-full justify-between">
         <div

@@ -34,7 +34,7 @@ const SecondPage = () => {
         <ThemesDiv />
         <IconDiv />
       </div>
-      <div className="flex flex-col mt-10 self-center justify-center items-center lg:flex-row lg:gap-20  w-full flex-grow max-w-5xl">
+      <div className="lg:flex flex-col mt-10 hidden self-center justify-center items-center lg:flex-row lg:gap-20  w-full flex-grow max-w-5xl">
         <SeoDiv />
       </div>
     </section>

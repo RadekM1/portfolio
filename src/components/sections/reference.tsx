@@ -1,12 +1,12 @@
 "use client";
 
-import * as React from "react";
 import { H2title } from "../typography/h2-title";
 import LightBox from "../ui/reference-page-ui/lightbox";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
 import { BsFullscreen } from "react-icons/bs";
 import { H3Title } from "../typography/h3-title";
+import { refObject } from "@/src/lib/reference-object";
 
 import {
   Carousel,
@@ -24,33 +24,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "../ui/reference-page-ui/dialog";
-
-const refObject = [
-  {
-    src: "/img/reference/khs-reference.png",
-    thumbnail: "/img/reference/khs-reference.webp",
-    alt: "Horský oddíl Zlín",
-    media_type: "image",
-    url: "https://www.khszlin.com",
-    description: "Webový portál horolezeckého oddílu Zlín",
-    website: "khszlin.com",
-    dialogTitle: "Next.js + PostgreSQL + Tailwind + Google Cloud",
-    dialogContext:
-      "Komunitní platforma pro horolezecký oddíl s vlastním CMS systémem. Klíčové funkce zahrnují: integrovaný content management systém přímo ve webu, automatickou serverovou optimalizaci a komprimaci fotografií, real-time úpravy článků, komplexní uživatelské profily s vlastními avatary, systém lajkování a komentářů, responzivní design optimalizovaný pro všechny typy zařízení. Celá aplikace je postavena na moderním tech stacku s automatizovaným CI/CD deploymentem a škálovatelnou cloud infrastrukturou - vše co potřebuje aktivní horolezecká komunita pro sdílení zážitků, plánování a rozvoj.",
-  },
-  {
-    src: "/img/reference/odsrdecka-reference.png",
-    thumbnail: "/img/reference/odsrdecka-reference.webp",
-    alt: "Od srdéčka",
-    media_type: "image",
-    url: "https://srdecko.netlify.app/",
-    description: "Dorty a sladké bary z Kašavy",
-    website: "odsrdecka.cz",
-    dialogTitle: "Next.js + Wordpress jako headless CMS + Tailwind",
-    dialogContext:
-      "Web je před dokončením (obsahová část blogu a galerie se nyní finišuje)",
-  },
-];
 
 const Reference = () => {
   const [activeId, setActiveId] = useState<number>(0);
@@ -70,6 +43,7 @@ const Reference = () => {
   return (
     <>
       <section
+        ref={ref}
         id="reference"
         className="w-full relative  text-gray-700 dark:text-white flex min-h-[30rem] flex-col items-center border-b-[1px] border-t-[1px] border-gray-300 dark:border-gray-700 bg-white  dark:bg-slate-950 z-10"
       >
@@ -80,7 +54,6 @@ const Reference = () => {
               return (
                 <CarouselItem key={i}>
                   <div
-                    ref={ref}
                     className={`flex items-center mt-10 gap-4 flex-col select-none ${inView ? "translate-x-0 opacity-100" : "-translate-x-1/4 opacity-0"} transition-all duration-700 text-center`}
                   >
                     <H3Title title={item.description} />
