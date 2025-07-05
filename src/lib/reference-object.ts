@@ -1,7 +1,7 @@
 export const refObject = [
   {
-    src: "/img/reference/khs-reference.png",
-    thumbnail: "/img/reference/khs-reference.webp",
+    src: "/img/reference/khs.png",
+    thumbnail: "/img/reference/khs.png",
     alt: "Horský oddíl Zlín",
     media_type: "image",
     url: "https://www.khszlin.com",
@@ -21,11 +21,11 @@ export const refObject = [
     website: "odsrdecka.cz",
     dialogTitle: "Next.js + Wordpress jako headless CMS + Tailwind",
     dialogContext:
-      "Web je před dokončením (obsahová část blogu a galerie se nyní finišuje)",
+      "Web je před dokončením (obsahová část a galerie se nyní finišuje)",
   },
   {
-    src: "/img/reference/haly-holesov-min.png",
-    thumbnail: "/img/reference/haly-holesov-min.webp",
+    src: "/img/reference/holesov.png",
+    thumbnail: "/img/reference/holesov.webp",
     alt: "Haly Holešov",
     media_type: "image",
     url: "https://halyholesov.cz/",
