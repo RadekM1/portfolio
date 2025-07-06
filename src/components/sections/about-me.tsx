@@ -29,7 +29,7 @@ const AboutMe = () => {
       </p>
       <img
         className="max-h-32 md:max-h-48 lg:max-h-64 mx-10 mt-5  self-center"
-        src="vector/me.svg"
+        src="vector/me-about.svg"
         alt="vektor já ikonka"
       />
 
