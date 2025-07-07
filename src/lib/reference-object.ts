@@ -20,8 +20,7 @@ export const refObject = [
     description: "Dorty a sladké bary z Kašavy",
     website: "odsrdecka.cz",
     dialogTitle: "Next.js + Wordpress jako headless CMS + Tailwind",
-    dialogContext:
-      "",
+    dialogContext: "",
   },
   {
     src: "/img/reference/holesov.png",
