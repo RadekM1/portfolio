@@ -16,12 +16,12 @@ export const refObject = [
     thumbnail: "/img/reference/odsrdecka-reference.webp",
     alt: "Od srdéčka",
     media_type: "image",
-    url: "https://srdecko.netlify.app/",
+    url: "https://odsrdecka.cz/",
     description: "Dorty a sladké bary z Kašavy",
     website: "odsrdecka.cz",
     dialogTitle: "Next.js + Wordpress jako headless CMS + Tailwind",
     dialogContext:
-      "Web je před dokončením (obsahová část a galerie se nyní finišuje)",
+      "",
   },
   {
     src: "/img/reference/holesov.png",
