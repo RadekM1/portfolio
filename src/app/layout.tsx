@@ -48,18 +48,11 @@ export default async function RootLayout({
         className={`flex flex-col w-full bg-white dark:bg-slate-900 text-center justify-center ${roboto.variable} antialiased`}
       >
         <Script
-          async
           strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-2XR1Z1E1D8"
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="d2228008-e4b0-4780-a173-756530d8af2e"
         />
-        <Script strategy="afterInteractive" id="google-analytics">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-2XR1Z1E1D8');
-        `}
-        </Script>
         <AppProviders>
           <main>{children}</main>
           <Toaster richColors expand={true} />
