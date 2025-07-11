@@ -4,7 +4,6 @@ import "./globals.css";
 import React from "react";
 import { AppProviders } from "../lib/context/app-provider";
 import { Toaster } from "../components/ui/sonner";
-import Script from "next/script";
 
 const roboto = Roboto({
   weight: "400",
@@ -47,12 +46,6 @@ export default async function RootLayout({
       <body
         className={`flex flex-col w-full bg-white dark:bg-slate-900 text-center justify-center ${roboto.variable} antialiased`}
       >
-        <Script
-          strategy="afterInteractive"
-          defer
-          src="https://cloud.umami.is/script.js"
-          data-website-id="d2228008-e4b0-4780-a173-756530d8af2e"
-        />
         <AppProviders>
           <main>{children}</main>
           <Toaster richColors expand={true} />
