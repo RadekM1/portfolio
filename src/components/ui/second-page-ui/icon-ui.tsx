@@ -49,7 +49,7 @@ export const IconUi = ({ icon, i, inView, isMouseOver }: IconUiProps) => {
 
       <div
         className={`
-                dark:h-[40px] -z-10 translate-x-1/2 right-1/2 ${isMouseOver ? "opacity-30" : "opacity-10"} -translate-y-[70%] top-[80%] rounded-xl duration-500 ease-in-out transition-all w-[70px] absolute blur-[9px] 
+                dark:h-[40px] -z-10 hidden lg:block translate-x-1/2 right-1/2 ${isMouseOver ? "opacity-30" : "opacity-10"} -translate-y-[70%] top-[80%] rounded-xl duration-500 ease-in-out transition-all w-[70px] absolute blur-[9px] 
                 ${icon.title === "TypeScript" && "dark:bg-[#358EF1]  "} 
                 ${icon.title === "Next.js" && "bg-gray-400/20 dark:bg-white/50"} 
                 ${icon.title === "Docker" && "dark:bg-[#2496ED]"} 
