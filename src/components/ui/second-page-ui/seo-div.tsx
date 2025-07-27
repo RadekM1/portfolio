@@ -1,18 +1,25 @@
 import { H3Title } from "../../typography/h3-title";
+import Link from "next/link";
 
 export const SeoDiv = () => {
   return (
     <div className="flex flex-col overflow-hidden md:flex-row w-full gap-5 lg:gap-10 self-center">
       <div className="flex w-full items-center flex-col">
         <H3Title title="Optimalizace" />
-        <p className="text-sm md:text-base pt-2 px-2 max-w-[600px] flex text-start  self-center">
+        <p className="text-sm md:text-base pt-2 px-2 max-w-[600px]  flex-col text-start  self-center">
           SEO a celkově optimalizace webu není jen o tom vybrat klíčová slova na
           Wordpressu a naklikat zpětné odkazy. Google a další vyhledávače
           vyhodnocují i technické provedení, responzivní design, přizpůsobení
-          pro různé čtečky atd. Můžete si sami otestovat přes Váš prohlížeč na
-          počítači, například v Google Chrome. Zmáčkněte klávesu F12, vyberte v
-          menu Lighthouse a zkuste spustit výkonostní test, například na některé
-          stránce co nabízí SEO marketing a optimalizaci 🙂
+          pro různé čtečky atd. Můžete si sami otestovat na{" "}
+          <Link
+            className="underline"
+            target="_blank"
+            href="https://pagespeed.web.dev/"
+          >
+            pagespeed.web.dev/
+          </Link>
+          . Například na některé stránce co nabízí SEO marketing a optimalizaci
+          🙂
         </p>
       </div>
       <div className={`text-base items-center flex-col w-full self-start flex`}>

@@ -43,7 +43,7 @@ export const IconUi = ({ icon, i, inView, isMouseOver }: IconUiProps) => {
                 ${icon.title === "PostgreSQL" && "  dark:text-[#e8f5ff] text-[rgb(72,133,180)]"}
                 ${icon.title === "Tailwind" && "text-[#06B6D4]"}
                 ${icon.title === "Firebase" && "dark:text-[#FFCA28]"}
-                ${icon.title === ".NET" && ""}
+                ${icon.title === ".NET framework" && ""}
             `}
       />
 
@@ -57,7 +57,7 @@ export const IconUi = ({ icon, i, inView, isMouseOver }: IconUiProps) => {
                 ${icon.title === "PostgreSQL" && "dark:bg-[#336791]"} 
                 ${icon.title === "Tailwind" && "dark:bg-[#06B6D4]"} 
                 ${icon.title === "Firebase" && "dark:bg-[#FFCA28]"} 
-                ${icon.title === ".NET" && "dark:bg-[#68217A]"} 
+                ${icon.title === ".NET framework" && "dark:bg-[#68217A]"} 
                 `}
       >
         &nbsp;
