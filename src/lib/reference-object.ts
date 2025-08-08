@@ -5,7 +5,7 @@ export const refObject = [
     alt: "Horský oddíl Zlín",
     media_type: "image",
     url: "https://www.khszlin.com",
-    description: "Webový portál horolezeckého oddílu Zlín",
+    description: "Horolezecký oddíl Zlín",
     website: "khszlin.com",
     dialogTitle: "Next.js + PostgreSQL + Tailwind + Google Cloud",
     dialogContext:
