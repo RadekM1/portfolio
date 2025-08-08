@@ -109,7 +109,7 @@ const Reference = () => {
           className={`-z-40 dark:bg-[linear-gradient(to_right,#161038_1px,transparent_1px),linear-gradient(to_bottom,#161038_1px,transparent_1px)] bg-[linear-gradient(to_right,#f5f6f7_1px,transparent_1px),linear-gradient(to_bottom,#f5f6f7_1px,transparent_1px)] dark:bg-[length:24px_24px] bg-[length:24px_24px] absset-0 w-full overflow-hidden absolute h-full`}
           style={{ maskImage: "linear-gradient(transparent, #0C4A6E)" }}
         ></div>
-        <div className="absolute  top-1/2 -translate-y-1/2  right-1/2 translate-x-1/2 -z-10  blur-3xl dark:bg-[#0C4A6E]/30 ease-in-out transition delay-300 duration-500 overflow-hidden  w-[40%] h-[50%]"></div>
+        <div className="absolute hidden md:block  top-1/2 -translate-y-1/2  right-1/2 translate-x-1/2 -z-10  blur-3xl dark:bg-[#0C4A6E]/30 ease-in-out transition delay-300 duration-500 overflow-hidden  w-[40%] h-[50%]"></div>
       </section>
       <LightBox
         input={refObject}

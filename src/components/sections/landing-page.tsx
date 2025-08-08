@@ -44,7 +44,7 @@ const LandingPage = () => {
             </div>
           </div>
           <LandingPageANim />
-          <div className="absolute top-[40%] right-[10%] z-0 blur-[50px] sm:blur-[80px] md:blur-[150px] lg:blur-[200px] bg-green-200 dark:bg-blue-900 ease-in-out transition delay-300 duration-500 overflow-hidden  w-[30%] h-[50%]"></div>
+          <div className="absolute top-[40%] hidden md:block right-[10%] z-0 blur-[50px] sm:blur-[80px] md:blur-[150px] lg:blur-[200px] bg-green-200 dark:bg-blue-900 ease-in-out transition delay-300 duration-500 overflow-hidden  w-[30%] h-[50%]"></div>
         </div>
       </div>
     </section>
