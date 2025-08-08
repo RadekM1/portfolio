@@ -44,7 +44,7 @@ export const Step = ({ step, index }: StepProps) => {
           loading="lazy"
         />
         <div
-          className={`absolute -z-10 top-2  -right-2  ${inView && "dark:bg-sky-700/30 ease-in-out transition will-change-auto delay-300 duration-200 md:duration-500"} blur-lg md:blur-2xl rounded-full overflow-hidden  ${index === 0 ? "w-[100%] md:w-[50%] h-[100%]" : "w-[110%] h-[100%]"}`}
+          className={`absolute -z-10 top-2 hidden md:block  -right-2  ${inView && "dark:bg-sky-700/30 ease-in-out transition will-change-auto delay-300 duration-200 md:duration-500"} blur-lg md:blur-2xl rounded-full overflow-hidden  ${index === 0 ? "w-[100%] md:w-[50%] h-[100%]" : "w-[110%] h-[100%]"}`}
         ></div>
       </div>
     </div>
