@@ -2,21 +2,21 @@
 
 import { useTheme } from "next-themes";
 import { IoSunnySharp } from "react-icons/io5";
-import { useState, useEffect } from "react";
+import { useSyncExternalStore } from "react";
 import { MdDarkMode } from "react-icons/md";
 import React from "react";
 
+const subscribe = () => () => {};
+
 export default function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
-  const [themeIcon, setThemeIcon] = useState<"light" | "dark" | null>(null);
-
-  useEffect(() => {
-    if (resolvedTheme) {
-      if (resolvedTheme === "light" || resolvedTheme === "dark") {
-        setThemeIcon(resolvedTheme);
-      }
-    }
-  }, [resolvedTheme]);
+  // false na serveru a při hydrataci, true po mountu na klientu
+  const mounted = useSyncExternalStore(
+    subscribe,
+    () => true,
+    () => false,
+  );
+  const themeIcon = mounted ? resolvedTheme : null;
 
   return (
     <button
@@ -24,7 +24,6 @@ export default function ThemeToggle() {
       onClick={() => {
         const newTheme = resolvedTheme === "light" ? "dark" : "light";
         setTheme(newTheme);
-        setThemeIcon(newTheme);
       }}
     >
       {themeIcon === "light" && (

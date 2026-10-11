@@ -1,19 +1,19 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 
 interface AvatarProps {
   // eslint-disable-next-line
   setIsSideNavOpen: (isSideNavOpen: boolean) => void;
 }
 
-export const FacebookAvatar = ({ setIsSideNavOpen }: AvatarProps) => {
-  const [hour, setHour] = useState<number | null>(null);
+const subscribe = () => () => {};
+const getHour = () => new Date().getHours();
+// na serveru hodinu neznáme (jiná časová zóna), proto null
+const getServerHour = () => null;
 
-  useEffect(() => {
-    const now = new Date().getHours();
-    setHour(now);
-  }, []);
+export const FacebookAvatar = ({ setIsSideNavOpen }: AvatarProps) => {
+  const hour = useSyncExternalStore(subscribe, getHour, getServerHour);
 
   let bgColor = "bg-red-600"; // výchozí
   if (hour !== null) {

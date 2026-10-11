@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { IconUi } from "./icon-ui";
 import { iconsOnSecondPage } from "./icons-object";
@@ -7,7 +7,7 @@ import { useScreen } from "@/src/lib/context/screen-size-context";
 import { H3Title } from "../../typography/h3-title";
 
 export const IconDiv = () => {
-  const [isMouseOver, setIsMouseOver] = useState<boolean>(false);
+  const [isHovered, setIsHovered] = useState<boolean>(false);
   const { ref, inView } = useInView({
     threshold: 0,
     triggerOnce: true,
@@ -15,16 +15,11 @@ export const IconDiv = () => {
   });
 
   const isTabletOrMobile = useScreen();
-
-  useEffect(() => {
-    if (isTabletOrMobile) {
-      setIsMouseOver(true);
-    }
-  }, [isTabletOrMobile]);
+  const isMouseOver = isHovered || isTabletOrMobile;
 
   return (
     <div
-      onMouseOver={() => setIsMouseOver(true)}
+      onMouseOver={() => setIsHovered(true)}
       className=" flex flex-col w-full h-full cursor-default self-start min-w-[310px]  relative justify-center group items-center  transition-all duration-700"
     >
       <H3Title title="Moderní technologie" />

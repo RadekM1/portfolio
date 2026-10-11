@@ -25,7 +25,7 @@ const ContactForm = () => {
     },
   });
 
-  const [formKey, setFormKey] = useState(Date.now());
+  const [formKey, setFormKey] = useState(0);
 
   const onSubmit = async (data: FormSchema) => {
     const success = await emailClient(data);
@@ -39,7 +39,7 @@ const ContactForm = () => {
       keepDirty: false,
       keepTouched: false,
     });
-    setFormKey(Date.now());
+    setFormKey((key) => key + 1);
     toast.success("zpráva byla v pořádku odeslána.");
     return;
   };

@@ -168,7 +168,7 @@ export const AreaChartComponent = ({ setVisitors, setDays }: ChartProps) => {
               content={
                 <ChartTooltipContent
                   labelFormatter={(value) => {
-                    return new Date(value).toLocaleDateString("cs-Cz", {
+                    return new Date(String(value)).toLocaleDateString("cs-Cz", {
                       month: "short",
                       day: "numeric",
                     });

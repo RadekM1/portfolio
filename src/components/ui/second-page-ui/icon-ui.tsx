@@ -11,19 +11,17 @@ interface IconUiProps {
 }
 
 export const IconUi = ({ icon, i, inView, isMouseOver }: IconUiProps) => {
-  const [isVisible, setIsVisible] = useState<boolean>(false);
+  const [isShown, setIsShown] = useState<boolean>(false);
 
   const isTabletOrMobile = useScreen();
+  const isVisible = isShown || isTabletOrMobile;
 
   useEffect(() => {
     if (inView && !isTabletOrMobile) {
       const timeout = setTimeout(() => {
-        setIsVisible(true);
+        setIsShown(true);
       }, i * 100);
       return () => clearTimeout(timeout);
-    }
-    if (isTabletOrMobile) {
-      setIsVisible(true);
     }
   }, [inView]);
 
