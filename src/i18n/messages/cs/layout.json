@@ -1,0 +1,54 @@
+{
+  "Metadata": {
+    "title": "Radek Morong - Webové aplikace",
+    "description": "Profesionální vývoj moderních webových aplikací, responzivních firemních webů a e-shopů. Specializuji se na digitalizaci firemních procesů a tvorbu aplikací na míru.",
+    "keywords": [
+      "webové aplikace",
+      "vývoj webu",
+      "firemní aplikace",
+      "e-shopy",
+      "webové stránky",
+      "digitalizace",
+      "programování na míru",
+      "React",
+      "Next.js",
+      "responzivní design"
+    ]
+  },
+  "Common": {
+    "close": "Zavřít",
+    "previousSlide": "Předchozí",
+    "nextSlide": "Další"
+  },
+  "Nav": {
+    "Items": {
+      "offer": "Nabídka",
+      "reference": "Reference",
+      "steps": "Průběh spolupráce",
+      "about": "O mně",
+      "contact": "Kontakt"
+    },
+    "Aria": {
+      "mainNavigation": "hlavní navigace",
+      "sideNavigation": "boční navigace",
+      "toggleNavigation": "Otevřít nebo zavřít navigaci",
+      "github": "Github profil",
+      "linkedin": "LinkedIn profil",
+      "theme": "Přepnout světlý nebo tmavý režim",
+      "logo": "Radek Morong logo"
+    },
+    "LocaleSwitch": {
+      "label": "EN",
+      "aria": "Switch to English"
+    },
+    "Avatar": {
+      "alt": "Radek Morong",
+      "online": "online",
+      "newMessage": "nová zpráva..."
+    }
+  },
+  "Footer": {
+    "companyId": "IČO: {id}",
+    "vat": "Jsem neplátce DPH"
+  }
+}

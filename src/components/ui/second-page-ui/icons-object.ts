@@ -5,26 +5,36 @@ import { FaReact } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { FaDocker } from "react-icons/fa";
 import { TsIcon } from "../../icon-components/ts-icon";
-import { FirebaseIcon } from "../../icon-components/firebase-icon";
+import { AstroIcon } from "../../icon-components/astro-icon";
 import { Csharp } from "../../icon-components/csharp-icon";
 
 export const iconsOnSecondPage: IconSchema[] = [
   {
-    icon: BiLogoPostgresql,
-    title: "PostgreSQL",
+    icon: AstroIcon,
+    title: "Astro",
   },
   {
     icon: RiNextjsFill,
     title: "Next.js",
   },
   {
-    icon: TsIcon,
-    title: "TypeScript",
-  },
-  {
     icon: FaReact,
     title: "React",
   },
+  {
+    icon: Csharp,
+    title: ".NET framework",
+  },
+  {
+    icon: BiLogoPostgresql,
+    title: "PostgreSQL",
+  },
+
+  {
+    icon: TsIcon,
+    title: "TypeScript",
+  },
+
   {
     icon: FaDocker,
     title: "Docker",
@@ -32,13 +42,5 @@ export const iconsOnSecondPage: IconSchema[] = [
   {
     icon: RiTailwindCssFill,
     title: "Tailwind",
-  },
-  {
-    icon: FirebaseIcon,
-    title: "Firebase",
-  },
-  {
-    icon: Csharp,
-    title: ".NET framework",
   },
 ];

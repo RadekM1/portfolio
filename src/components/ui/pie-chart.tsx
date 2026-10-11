@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { useTranslations } from "next-intl";
 import { Label, Pie, PieChart } from "recharts";
 
 import {
@@ -16,38 +17,41 @@ import {
   ChartTooltipContent,
 } from "@/src/components/ui/chart";
 
-const chartConfig = {
-  visitors: {
-    label: "Visitors",
-  },
-  chrome: {
-    label: "Chrome",
-    color: "hsl(var(--chart-1))",
-  },
-  safari: {
-    label: "Safari",
-    color: "hsl(var(--chart-2))",
-  },
-  firefox: {
-    label: "Firefox",
-    color: "hsl(var(--chart-3))",
-  },
-  edge: {
-    label: "Edge",
-    color: "hsl(var(--chart-4))",
-  },
-  other: {
-    label: "Other",
-    color: "hsl(var(--chart-5))",
-  },
-} satisfies ChartConfig;
-
 interface PiChartProps {
   input: number;
   days: string;
+  animate: boolean;
 }
 
-export const PieChartComponent = ({ input, days }: PiChartProps) => {
+export const PieChartComponent = ({ input, days, animate }: PiChartProps) => {
+  const t = useTranslations("About.Chart");
+
+  const chartConfig = {
+    visitors: {
+      label: t("visitors"),
+    },
+    chrome: {
+      label: "Chrome",
+      color: "hsl(var(--chart-1))",
+    },
+    safari: {
+      label: "Safari",
+      color: "hsl(var(--chart-2))",
+    },
+    firefox: {
+      label: "Firefox",
+      color: "hsl(var(--chart-3))",
+    },
+    edge: {
+      label: "Edge",
+      color: "hsl(var(--chart-4))",
+    },
+    other: {
+      label: t("other"),
+      color: "hsl(var(--chart-5))",
+    },
+  } satisfies ChartConfig;
+
   const chartData = React.useMemo(() => {
     return [
       {
@@ -66,7 +70,7 @@ export const PieChartComponent = ({ input, days }: PiChartProps) => {
         fill: "var(--color-firefox)",
       },
       {
-        browser: "ostatní",
+        browser: "other",
         visitors: days === "90d" ? (input / 100) * 10 : (input / 100) * 10,
         fill: "var(--color-edge)",
       },
@@ -101,6 +105,7 @@ export const PieChartComponent = ({ input, days }: PiChartProps) => {
               nameKey="browser"
               innerRadius={60}
               strokeWidth={5}
+              isAnimationActive={animate}
             >
               <Label
                 content={({ viewBox }) => {
@@ -124,7 +129,7 @@ export const PieChartComponent = ({ input, days }: PiChartProps) => {
                           y={(viewBox.cy || 0) + 24}
                           className="fill-muted-foreground"
                         >
-                          Návštěvníků
+                          {t("visitorsTotal")}
                         </tspan>
                       </text>
                     );

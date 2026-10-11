@@ -1,0 +1,28 @@
+{
+  "Contact": {
+    "title": "Kontakt",
+    "subtitle": "Nezávazná poptávka",
+    "text": "Pokud máte zájem o konzultaci zdarma neváhejte vyplnit formulář níže. Pokud zrovna nelítám někde na kopcích mimo signál, tak se ozvu nejpozději následující pracovní den. Chcete-li se se mnou spojit dříve a prodiskutovat možnosti napřímo, tak se neváhejte obrátit na můj facebook (odkaz níže), případně zavolejte na mobil.",
+    "imageAlt": "obrázek spolupráce",
+    "Dialog": {
+      "trigger": "Konzultace zdarma",
+      "title": "Nezávazná poptávka",
+      "description": "Vyplňte formulář a ozvu se vám nejpozději následující pracovní den."
+    },
+    "Form": {
+      "name": "Jméno a příjmení",
+      "email": "E-mail",
+      "tel": "Telefon",
+      "note": "Zpráva",
+      "submit": "Odeslat",
+      "submitting": "Odesílám...",
+      "success": "zpráva byla v pořádku odeslána.",
+      "error": "zprávu se nepodařilo odeslat"
+    },
+    "Errors": {
+      "tooShort": "nedostatečný počet znaků",
+      "invalidEmail": "nevyhovující formát pro email",
+      "noteRequired": "co pro vás můžeme udělat?"
+    }
+  }
+}

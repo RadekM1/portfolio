@@ -1,0 +1,54 @@
+{
+  "Metadata": {
+    "title": "Radek Morong - Web Applications",
+    "description": "Professional development of modern web applications, responsive business websites and e-shops. I specialize in digitizing business processes and building custom applications.",
+    "keywords": [
+      "web applications",
+      "web development",
+      "business applications",
+      "e-shops",
+      "websites",
+      "digitalization",
+      "custom software development",
+      "React",
+      "Next.js",
+      "responsive design"
+    ]
+  },
+  "Common": {
+    "close": "Close",
+    "previousSlide": "Previous slide",
+    "nextSlide": "Next slide"
+  },
+  "Nav": {
+    "Items": {
+      "offer": "Services",
+      "reference": "References",
+      "steps": "How we work",
+      "about": "About me",
+      "contact": "Contact"
+    },
+    "Aria": {
+      "mainNavigation": "main navigation",
+      "sideNavigation": "side navigation",
+      "toggleNavigation": "Toggle navigation",
+      "github": "Github account link",
+      "linkedin": "LinkedIn account link",
+      "theme": "Toggle light or dark theme",
+      "logo": "Radek Morong logo"
+    },
+    "LocaleSwitch": {
+      "label": "CZ",
+      "aria": "Přepnout do češtiny"
+    },
+    "Avatar": {
+      "alt": "Radek Morong",
+      "online": "online",
+      "newMessage": "new message..."
+    }
+  },
+  "Footer": {
+    "companyId": "Company ID (IČO): {id}",
+    "vat": "Not a VAT payer"
+  }
+}

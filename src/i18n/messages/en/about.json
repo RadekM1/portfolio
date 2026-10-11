@@ -1,0 +1,18 @@
+{
+  "About": {
+    "title": "About me",
+    "text": "I enjoy turning complex and complicated systems into simple and intuitive ones. Need to automate a process and ideally visualize it too? That's right up my alley 🤩",
+    "imageAlt": "illustration of me",
+    "Chart": {
+      "visitors": "Visitors",
+      "desktop": "Desktop",
+      "mobile": "Mobile",
+      "other": "Other",
+      "selectAria": "Select a period",
+      "placeholder": "Last 3 months",
+      "range90": "Website visits in the last 3 months",
+      "range30": "Website visits in the last 30 days",
+      "visitorsTotal": "Visitors"
+    }
+  }
+}

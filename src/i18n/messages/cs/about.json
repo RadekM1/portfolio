@@ -1,0 +1,18 @@
+{
+  "About": {
+    "title": "O mně",
+    "text": "Baví mě přetvářet komplexní a složité systémy na jednoduché a intuitivní. Je potřeba automatizovat nějaký proces a ideálně jej i vizualizovat? To je něco pro mě 🤩",
+    "imageAlt": "vektor já ikonka",
+    "Chart": {
+      "visitors": "Návštěvníci",
+      "desktop": "Počítač",
+      "mobile": "Mobil",
+      "other": "Ostatní",
+      "selectAria": "Vyberte období",
+      "placeholder": "Poslední 3 měsíce",
+      "range90": "Návštěvy webu za 3 měsíce",
+      "range30": "Návštěvy webu za 30 dní",
+      "visitorsTotal": "Návštěvníků"
+    }
+  }
+}

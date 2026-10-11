@@ -7,18 +7,27 @@ interface FormInputProps {
   register: UseFormRegister<FormSchema>;
   type: string;
   error: string;
+  idPrefix: string;
 }
 
-const FormInput = ({ label, name, register, type, error }: FormInputProps) => {
+const FormInput = ({
+  label,
+  name,
+  register,
+  type,
+  error,
+  idPrefix,
+}: FormInputProps) => {
+  const id = `${idPrefix}-${name}`;
   return (
     <div className="w-full gap-1 flex flex-col">
-      <label className="text-start  font-semibold" htmlFor={name}>
+      <label className="text-start  font-semibold" htmlFor={id}>
         {label}
       </label>
       <input
         {...register(`${name}`)}
         className={`dark:bg-slate-700/40 dark:border-gray-600 border-gray-300 bg-white/50  border-[1px] ${error ? "border-red-500 text-red-600" : ""} rounded-lg p-2`}
-        id={name}
+        id={id}
         type={type}
       />
       {error && <p className="text-red-500 text-xs">{`${error}`}</p>}

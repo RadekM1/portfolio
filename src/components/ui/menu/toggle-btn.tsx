@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 interface ToggleProps {
   isSideNavOpen: boolean;
   // eslint-disable-next-line
@@ -7,6 +9,7 @@ interface ToggleProps {
 }
 
 export const ToggleBtn = ({ isSideNavOpen, setIsSideNavOpen }: ToggleProps) => {
+  const t = useTranslations("Nav.Aria");
   return (
     <button
       className={`relative order-10 block h-12 w-12 self-center lg:hidden
@@ -18,7 +21,7 @@ export const ToggleBtn = ({ isSideNavOpen, setIsSideNavOpen }: ToggleProps) => {
         `}
       onClick={() => setIsSideNavOpen(!isSideNavOpen)}
       aria-expanded={isSideNavOpen ? "true" : "false"}
-      aria-label="Toggle navigation"
+      aria-label={t("toggleNavigation")}
     >
       <div className="absolute left-1/2 top-1/2 w-6 -translate-x-1/2 -translate-y-1/2 transform">
         <span

@@ -1,6 +1,7 @@
 "use client";
 import { MenuSchema } from "@/src/schema/menu-schema";
 import { FacebookAvatar } from "./facebook-avatar";
+import { useTranslations } from "next-intl";
 
 interface MobileMenuProps {
   isSideNavOpen: boolean;
@@ -14,17 +15,19 @@ const MobileMenu = ({
   isSideNavOpen,
   setIsSideNavOpen,
 }: MobileMenuProps) => {
+  const t = useTranslations("Nav");
+
   return (
     <>
       <aside
         id="nav-menu-4"
-        aria-label="Side navigation"
+        aria-label={t("Aria.sideNavigation")}
         className={`top-[4rem] fixed h-full overflow-auto bg-white/95 dark:bg-slate-800/90 backdrop-blur-md left-0 z-40 flex lg:hidden w-72 flex-col border-r border-r-slate-200 dark:border-r-slate-600 tJudensition-transform lg:translate-x-0 ${
           isSideNavOpen ? "translate-x-0" : " -translate-x-full"
         }`}
       >
         <nav
-          aria-label="side navigation"
+          aria-label={t("Aria.sideNavigation")}
           className="flex-1 divide-y  overflow-auto"
         >
           <div>
@@ -39,7 +42,7 @@ const MobileMenu = ({
                     <a href={item.link} className="flex">
                       <item.icon className="mr-3" />
                       <div className="flex w-full text-base flex-1 flex-col items-start justify-center gap-0 overflow-hidden truncate">
-                        {item.label}
+                        {t(`Items.${item.key}`)}
                       </div>
                     </a>
                   </li>

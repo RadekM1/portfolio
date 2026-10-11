@@ -11,7 +11,8 @@ interface IconUiProps {
 }
 
 export const IconUi = ({ icon, i, inView, isMouseOver }: IconUiProps) => {
-  const [isShown, setIsShown] = useState<boolean>(false);
+  // po přepnutí jazyka už je inView true od začátku, ikony se tedy znovu neodkrývají
+  const [isShown, setIsShown] = useState<boolean>(inView);
 
   const isTabletOrMobile = useScreen();
   const isVisible = isShown || isTabletOrMobile;
@@ -40,7 +41,7 @@ export const IconUi = ({ icon, i, inView, isMouseOver }: IconUiProps) => {
                 ${icon.title === "React" && "text-[#39bee3] dark:text-[#61DAFB]"}
                 ${icon.title === "PostgreSQL" && "  dark:text-[#e8f5ff] text-[rgb(72,133,180)]"}
                 ${icon.title === "Tailwind" && "text-[#06B6D4]"}
-                ${icon.title === "Firebase" && "dark:text-[#FFCA28]"}
+                ${icon.title === "Astro" && "text-[#17191E] dark:text-white"}
                 ${icon.title === ".NET framework" && ""}
             `}
       />
@@ -54,7 +55,7 @@ export const IconUi = ({ icon, i, inView, isMouseOver }: IconUiProps) => {
                 ${icon.title === "React" && "dark:bg-[#61DAFB]"} 
                 ${icon.title === "PostgreSQL" && "dark:bg-[#336791]"} 
                 ${icon.title === "Tailwind" && "dark:bg-[#06B6D4]"} 
-                ${icon.title === "Firebase" && "dark:bg-[#FFCA28]"} 
+                ${icon.title === "Astro" && "dark:bg-gradient-to-r dark:from-[#3245FF] dark:to-[#BC52EE]"} 
                 ${icon.title === ".NET framework" && "dark:bg-[#68217A]"} 
                 `}
       >

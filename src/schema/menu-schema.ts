@@ -3,7 +3,7 @@ import { IconType } from "react-icons/lib";
 
 export const menuSchema = z.array(
   z.object({
-    label: z.string(),
+    key: z.enum(["offer", "reference", "steps", "about", "contact"]),
     link: z.string(),
     icon: z.custom<IconType>(),
   }),

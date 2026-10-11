@@ -1,0 +1,14 @@
+{
+  "Landing": {
+    "title": "<highlight>Web app</highlight> development",
+    "subtitle": "From simple websites to enterprise process automation",
+    "offerButton": "Services",
+    "Alt": {
+      "character": "illustration of a character in the landing page animation on a large screen",
+      "table1": "table floating in the logo no. 1",
+      "table2": "first image in the landing page animation",
+      "table3": "second image in the landing page animation",
+      "table4": "third image in the landing page animation"
+    }
+  }
+}

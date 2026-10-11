@@ -1,0 +1,34 @@
+{
+  "References": {
+    "title": "Reference",
+    "openSite": "Otevřít stránku",
+    "details": "Podrobnosti",
+    "fullscreenAria": "zobrazit referenci na celou obrazovku",
+    "Items": {
+      "muslenka": {
+        "alt": "Mušlenka",
+        "description": "Mušlenka",
+        "dialogTitle": "Mušlenka – koncept pro podporu emočního rozvoje dětí",
+        "dialogContext": "Web pro koncept Mušlenka od klinické psycholožky a psychoterapeutky PhDr. Romany Suché, který propojuje psychologické poznatky s příběhem, fantazií a hrou. Představuje knižní řadu Mušlenčiny léčivé pohádky vydávanou Albatros Media, vnitřní pomocníky dětí (víla Mušlenka, Vědomá kočka, Drak Bouřlivák, Strašpytlík a Šedivák), produkty, články a informace o autorce. Web je určen rodičům a dětem od 4 let, kterým pomáhá porozumět emocím a laskavě s nimi pracovat."
+      },
+      "khs": {
+        "alt": "Horský oddíl Zlín",
+        "description": "Horolezecký oddíl Zlín",
+        "dialogTitle": "Klub horských sportů Zlín",
+        "dialogContext": "Komunitní platforma pro horolezecký oddíl s vlastním CMS systémem. Klíčové funkce zahrnují: integrovaný content management systém přímo ve webu, automatickou serverovou optimalizaci a komprimaci fotografií, real-time úpravy článků, komplexní uživatelské profily s vlastními avatary, systém lajkování a komentářů, responzivní design optimalizovaný pro všechny typy zařízení. Celá aplikace je postavena na moderním tech stacku s automatizovaným CI/CD deploymentem a škálovatelnou cloud infrastrukturou - vše co potřebuje aktivní horolezecká komunita pro sdílení zážitků, plánování a rozvoj."
+      },
+      "odsrdecka": {
+        "alt": "Od srdéčka",
+        "description": "Dorty a sladké bary z Kašavy",
+        "dialogTitle": "Od Srdéčka | Dorty a sladké bary z Kašavy",
+        "dialogContext": ""
+      },
+      "holesov": {
+        "alt": "Haly Holešov",
+        "description": "Pronájem průmyslových hal v Holešově",
+        "dialogTitle": "Haly Holešov - průmyslový park",
+        "dialogContext": "Web je spuštěn zatím bez nabídek nemovitostí"
+      }
+    }
+  }
+}

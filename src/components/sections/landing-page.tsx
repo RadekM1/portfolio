@@ -1,6 +1,16 @@
+"use client";
+
 import LandingPageANim from "../landingPageAnim";
+import ContactDialog from "../form/contact-dialog";
+import { useTranslations } from "next-intl";
+import { useAnimationPlayed } from "@/src/lib/use-animation-played";
 
 const LandingPage = () => {
+  const t = useTranslations("Landing");
+  const introPlayed = useAnimationPlayed("landing-intro");
+  const slideIn500 = introPlayed ? "" : "animate-slidein500 opacity-0";
+  const slideIn1000 = introPlayed ? "" : "animate-slidein1000 opacity-0";
+
   return (
     <section
       id="home"
@@ -16,30 +26,32 @@ const LandingPage = () => {
           ></div>
           <div className="w-full flex-grow flex-col  flex justify-center  text-center items-center short:my-0 mt-5 sm:my-0 h-2/5 short:h-full lg:h-full ">
             <div className="flex flex-col  md:text-start md:w-[500px] w-full">
-              <h1 className="flex mt-2 animate-slidein500 opacity-0 whitespace-nowrap justify-center items-center mb-2 md:mb-5 text-3xl sm:text-4xl md:text-5xl w-full flex-grow lg:text-5xl dark:text-white z-20 bg-gradient-to-l text-gray-600">
-                Vývoj
-                <span className="text-rose-500">&nbsp;webových aplikací</span>
+              <h1
+                className={`flex mt-2 ${slideIn500} whitespace-nowrap justify-center items-center mb-2 md:mb-5 text-3xl sm:text-4xl md:text-5xl w-full flex-grow lg:text-5xl dark:text-white z-20 bg-gradient-to-l text-gray-600`}
+              >
+                {t.rich("title", {
+                  highlight: (chunks) => (
+                    <span className="text-rose-500">{chunks}</span>
+                  ),
+                })}
               </h1>
-              <p className="z-10 mb-2 opacity-0 text-xs sm:text-base animate-slidein1000 dark:text-gray-300 font-thin mx-2  md:text-base text-center">
-                Od jednoduchých webů po automatizaci enterprise procesů
+              <p
+                className={`z-10 mb-2 ${slideIn1000} text-xs sm:text-base dark:text-gray-300 font-thin mx-2  md:text-base text-center`}
+              >
+                {t("subtitle")}
               </p>
             </div>
             <div className="flex flex-row z-20 mt-2 lg:mt-10 justify-between">
               <div className="flex hover:-translate-y-1 ease-in-out duration-500">
                 <a
                   href="#offer"
-                  className="animate-slidein1000 opacity-0 inline-flex mx-2 ml-2 h-9 lg:h-12  items-center justify-center gap-2 whitespace-nowrap rounded-md   bg-rose-600 transition-colors duration-300 ease-in-out hover:bg-rose-700 px-4 text-sm md:text-xl font-medium tracking-wide hover: text-white  "
+                  className={`${slideIn1000} inline-flex mx-2 ml-2 h-9 lg:h-12  items-center justify-center gap-2 whitespace-nowrap rounded-md   bg-rose-600 transition-colors duration-300 ease-in-out hover:bg-rose-700 px-4 text-sm md:text-xl font-medium tracking-wide hover: text-white  `}
                 >
-                  Nabídka
+                  {t("offerButton")}
                 </a>
               </div>
               <div className="flex hover:-translate-y-1 ease-in-out duration-500">
-                <a
-                  href="#contact"
-                  className="animate-slidein1000  opacity-0 inline-flex mx-2 lg:mb-32 xl:mb-10 h-9 lg:h-12 items-center justify-center gap-2 whitespace-nowrap rounded bg-green-700 hover:bg-green-800 px-6  font-medium tracking-wide text-white shadow-lg  text-sm md:text-xl transition duration-300  hover:green-800    focus-visible:outline-none disabled:cursor-not-allowed disabled:border-green-300 disabled:bg-green-300 disabled:shadow-none"
-                >
-                  Konzultace zdarma
-                </a>
+                <ContactDialog introClassName={slideIn1000} />
               </div>
             </div>
           </div>

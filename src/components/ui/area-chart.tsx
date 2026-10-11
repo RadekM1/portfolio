@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { useLocale, useTranslations } from "next-intl";
 import { Area, AreaChart, CartesianGrid, XAxis } from "recharts";
 
 import {
@@ -47,29 +48,37 @@ for (let i = 0; i <= 45; i++) {
   });
 }
 
-const chartConfig = {
-  visitors: {
-    label: "Návštěvníci",
-  },
-  desktop: {
-    label: "Počítač",
-    color: "hsl(var(--chart-1))",
-  },
-  mobile: {
-    label: "Mobil",
-    color: "hsl(var(--chart-2))",
-  },
-} satisfies ChartConfig;
-
 interface ChartProps {
   // eslint-disable-next-line
   setVisitors: (visitors: number) => void;
   // eslint-disable-next-line
   setDays: (timeRange: string) => void;
+  animate: boolean;
 }
 
-export const AreaChartComponent = ({ setVisitors, setDays }: ChartProps) => {
+export const AreaChartComponent = ({
+  setVisitors,
+  setDays,
+  animate,
+}: ChartProps) => {
   const [timeRange, setTimeRange] = React.useState("90d");
+  const t = useTranslations("About.Chart");
+  const locale = useLocale();
+
+  const chartConfig = {
+    visitors: {
+      label: t("visitors"),
+    },
+    desktop: {
+      label: t("desktop"),
+      color: "hsl(var(--chart-1))",
+    },
+    mobile: {
+      label: t("mobile"),
+      color: "hsl(var(--chart-2))",
+    },
+  } satisfies ChartConfig;
+
   const filteredData = React.useMemo(() => {
     const daysToSubtract = timeRange === "30d" ? 30 : 90;
     const startDate = new Date();
@@ -102,16 +111,16 @@ export const AreaChartComponent = ({ setVisitors, setDays }: ChartProps) => {
         <Select value={timeRange} onValueChange={setTimeRange}>
           <SelectTrigger
             className="w-[150px] sm:w-[250px] rounded-lg ml-1 sm:ml-auto"
-            aria-label="Select a value"
+            aria-label={t("selectAria")}
           >
-            <SelectValue placeholder="Last 3 months" />
+            <SelectValue placeholder={t("placeholder")} />
           </SelectTrigger>
           <SelectContent className="rounded-xl">
             <SelectItem value="90d" className=" rounded-lg">
-              Návštěvy webu za 3 měsíce
+              {t("range90")}
             </SelectItem>
             <SelectItem value="30d" className="rounded-lg">
-              Návštěvy webu za 30 dní
+              {t("range30")}
             </SelectItem>
           </SelectContent>
         </Select>
@@ -157,7 +166,7 @@ export const AreaChartComponent = ({ setVisitors, setDays }: ChartProps) => {
               minTickGap={32}
               tickFormatter={(value) => {
                 const date = new Date(value);
-                return date.toLocaleDateString("cs-Cz", {
+                return date.toLocaleDateString(locale, {
                   month: "short",
                   day: "numeric",
                 });
@@ -168,7 +177,7 @@ export const AreaChartComponent = ({ setVisitors, setDays }: ChartProps) => {
               content={
                 <ChartTooltipContent
                   labelFormatter={(value) => {
-                    return new Date(String(value)).toLocaleDateString("cs-Cz", {
+                    return new Date(String(value)).toLocaleDateString(locale, {
                       month: "short",
                       day: "numeric",
                     });
@@ -183,6 +192,7 @@ export const AreaChartComponent = ({ setVisitors, setDays }: ChartProps) => {
               fill="url(#fillMobile)"
               stroke="var(--color-mobile)"
               stackId="a"
+              isAnimationActive={animate}
             />
             <Area
               dataKey="desktop"
@@ -190,6 +200,7 @@ export const AreaChartComponent = ({ setVisitors, setDays }: ChartProps) => {
               fill="url(#fillDesktop)"
               stroke="var(--color-desktop)"
               stackId="a"
+              isAnimationActive={animate}
             />
             <ChartLegend content={<ChartLegendContent />} />
           </AreaChart>

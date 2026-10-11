@@ -11,7 +11,7 @@ export const emailClient = async (data: FormSchema) => {
     if (!data.email || !validator.isEmail(data.email)) {
       throw new Error("Neplatná e-mailová adresa.");
     }
-    if (data.tel && !validator.isMobilePhone(data.tel, "cs-CZ")) {
+    if (data.tel && !validator.isMobilePhone(data.tel, "any")) {
       throw new Error("Neplatné telefonní číslo.");
     }
 

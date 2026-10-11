@@ -1,0 +1,23 @@
+{
+  "Steps": {
+    "title": "How we work together",
+    "Items": {
+      "materials": {
+        "title": "Gathering materials",
+        "text": "Before we start commenting on the structure and graphics of the website, it is good to have something to build on. For example a logo for the graphic layout, photos, a link to your current website, etc. In the meantime, I will analyze your field of business."
+      },
+      "review": {
+        "title": "Feedback",
+        "text": "Let's get creating! In this phase I work on the structure and design of your website. In the first version I create what I consider the ideal solution. Then I incorporate your feedback, or try to explain why some things are better solved a little differently."
+      },
+      "build": {
+        "title": "Building the approved version",
+        "text": "Once everything is approved, I get to work. Simpler projects are usually finished within a few days, while more complex projects can take several weeks."
+      },
+      "launch": {
+        "title": "Launch",
+        "text": "Before we launch the website, we go through everything thoroughly. For example the e-shop functionality, how article content is managed, etc. Once the last details are fine-tuned, nothing stands in the way of launching and handing over the website, including complete documentation."
+      }
+    }
+  }
+}

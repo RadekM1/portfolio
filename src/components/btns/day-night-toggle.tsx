@@ -5,11 +5,13 @@ import { IoSunnySharp } from "react-icons/io5";
 import { useSyncExternalStore } from "react";
 import { MdDarkMode } from "react-icons/md";
 import React from "react";
+import { useTranslations } from "next-intl";
 
 const subscribe = () => () => {};
 
 export default function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
+  const t = useTranslations("Nav.Aria");
   // false na serveru a při hydrataci, true po mountu na klientu
   const mounted = useSyncExternalStore(
     subscribe,
@@ -20,7 +22,7 @@ export default function ThemeToggle() {
 
   return (
     <button
-      aria-label="light or dark theme button"
+      aria-label={t("theme")}
       onClick={() => {
         const newTheme = resolvedTheme === "light" ? "dark" : "light";
         setTheme(newTheme);

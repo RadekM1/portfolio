@@ -1,0 +1,34 @@
+{
+  "References": {
+    "title": "References",
+    "openSite": "Visit website",
+    "details": "Details",
+    "fullscreenAria": "show reference in fullscreen",
+    "Items": {
+      "muslenka": {
+        "alt": "Mušlenka",
+        "description": "Mušlenka",
+        "dialogTitle": "Mušlenka – a concept supporting children's emotional development",
+        "dialogContext": "Website for the Mušlenka concept by clinical psychologist and psychotherapist PhDr. Romana Suchá, which combines psychological insights with storytelling, imagination and play. It presents the book series Mušlenčiny léčivé pohádky (Mušlenka's Healing Fairy Tales) published by Albatros Media, the inner helpers that accompany children (the fairy Mušlenka, a mindful cat, a stormy dragon and other characters), products, articles and information about the author. The website is aimed at parents and children aged 4 and up, helping them understand emotions and deal with them kindly."
+      },
+      "khs": {
+        "alt": "Mountain Sports Club Zlín",
+        "description": "Climbing club Zlín",
+        "dialogTitle": "Klub horských sportů Zlín",
+        "dialogContext": "A community platform for a climbing club with its own CMS. Key features include: a content management system integrated directly into the website, automatic server-side optimization and compression of photos, real-time article editing, comprehensive user profiles with custom avatars, a like and comment system, and a responsive design optimized for all types of devices. The whole application is built on a modern tech stack with automated CI/CD deployment and scalable cloud infrastructure - everything an active climbing community needs to share experiences, plan and grow."
+      },
+      "odsrdecka": {
+        "alt": "Od srdéčka",
+        "description": "Cakes and sweet bars from Kašava",
+        "dialogTitle": "Od Srdéčka | Cakes and sweet bars from Kašava",
+        "dialogContext": ""
+      },
+      "holesov": {
+        "alt": "Haly Holešov",
+        "description": "Industrial hall rentals in Holešov",
+        "dialogTitle": "Haly Holešov - industrial park",
+        "dialogContext": "The website is live, for now without property listings"
+      }
+    }
+  }
+}

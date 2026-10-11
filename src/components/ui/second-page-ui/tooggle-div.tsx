@@ -1,50 +1,26 @@
 "use client";
 
-import { useInView } from "react-intersection-observer";
+import { useInViewOnce } from "@/src/lib/use-animation-played";
+import { useTranslations } from "next-intl";
 import { IconToggle } from "../../icon-components/icon-toggle";
-import { ToggleSchema } from "@/src/schema/second-page-ui";
 import { RiComputerLine } from "react-icons/ri";
 import { FaWordpress } from "react-icons/fa";
 import { PiPaintBrushDuotone } from "react-icons/pi";
 import { BsSpeedometer } from "react-icons/bs";
 import { AiOutlineSafety } from "react-icons/ai";
 
-const iconToggles: ToggleSchema[] = [
-  {
-    icon: RiComputerLine,
-    title: "Responzivní design",
-    summary:
-      "Weby i aplikace jsou navrhovány metodou Mobile first. Plně tedy podporují všechny typy zařízení",
-  },
-  {
-    icon: FaWordpress,
-    title: "Redakční systémy",
-    summary: "Wordpress jako headless CMS, Strapi nebo i na míru",
-  },
-  {
-    icon: PiPaintBrushDuotone,
-    title: "Webdesign na míru",
-    summary:
-      "Design bez šablon, přesně dle přání, žádné omezení šablonovacím systémem",
-  },
-  {
-    icon: BsSpeedometer,
-    title: "Bezkonkurenční rychlost",
-    summary:
-      "Přechod mezi stránkami je okamžitý a působí spíše jako offline aplikace než web. Zkuste si proklikat některou z referencí",
-  },
-  {
-    icon: AiOutlineSafety,
-    title: "Bezpečnost",
-    summary:
-      "Průmyslový standard díky OAuth 2.0 a OpenID, včetně integrací do firemních Microsoft Azure struktur",
-  },
-];
+const iconToggles = [
+  { key: "responsive", icon: RiComputerLine },
+  { key: "cms", icon: FaWordpress },
+  { key: "design", icon: PiPaintBrushDuotone },
+  { key: "speed", icon: BsSpeedometer },
+  { key: "security", icon: AiOutlineSafety },
+] as const;
 
 export const ToggleDiv = () => {
-  const { ref, inView } = useInView({
+  const t = useTranslations("Offer.Features");
+  const { ref, inView } = useInViewOnce("offer-features", {
     threshold: 0,
-    triggerOnce: true,
     rootMargin: "-10% 0px -10% 0px",
   });
 
@@ -55,7 +31,14 @@ export const ToggleDiv = () => {
     >
       <div className="flex flex-col">
         {iconToggles.map((item, i) => (
-          <IconToggle key={i} icons={item} />
+          <IconToggle
+            key={i}
+            icons={{
+              icon: item.icon,
+              title: t(`${item.key}.title`),
+              summary: t(`${item.key}.summary`),
+            }}
+          />
         ))}
       </div>
       <div>

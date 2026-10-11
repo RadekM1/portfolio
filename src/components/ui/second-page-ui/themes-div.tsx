@@ -1,12 +1,12 @@
+import { useTranslations } from "next-intl";
 import { H3Title } from "../../typography/h3-title";
 
 export const ThemesDiv = () => {
+  const t = useTranslations("Offer.Themes");
   return (
     <div className="flex flex-col w-full self-center">
-      <H3Title title="Barevná témata" />
-      <p className="text-base pb-10 pt-2">
-        Bílé pozadí stránky dokáže večer potrápit.
-      </p>
+      <H3Title title={t("title")} />
+      <p className="text-base pb-10 pt-2">{t("text")}</p>
       <div
         className={`text-base  self-center h-[27rem] lg:h-[30rem] flex-col flex  w-[16.5rem] min-w-[16.5rem] lg:min-w-[19rem]  relative transition-all duration-700   px-4 rounded-xl  `}
       >
@@ -15,7 +15,11 @@ export const ThemesDiv = () => {
           tabIndex={0}
         >
           <div className="diff-item-1  border-rose-500 " role="img">
-            <img alt="daisy" className="object-cover" src="img/diff-dark.png" />
+            <img
+              alt={t("darkAlt")}
+              className="object-cover"
+              src="/img/diff-dark.png"
+            />
           </div>
           <div
             className="diff-item-2 after:bg-rose-500  "
@@ -23,9 +27,9 @@ export const ThemesDiv = () => {
             tabIndex={0}
           >
             <img
-              alt="daisy"
+              alt={t("lightAlt")}
               className="object-cover"
-              src="img/diff-light.png"
+              src="/img/diff-light.png"
             />
           </div>
           <div className="diff-resizer  bg-rose-500 border-rose-500 "></div>

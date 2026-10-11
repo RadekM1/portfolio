@@ -1,0 +1,14 @@
+{
+  "Landing": {
+    "title": "Vývoj <highlight>webových aplikací</highlight>",
+    "subtitle": "Od jednoduchých webů po automatizaci enterprise procesů",
+    "offerButton": "Nabídka",
+    "Alt": {
+      "character": "obrázek postavy v animaci na úvodní stránce na velké obrazovce",
+      "table1": "tabulka poletující v logu č. 1",
+      "table2": "první obrázek v animaci na úvodní stránce",
+      "table3": "druhý obrázek v animaci na úvodní stránce",
+      "table4": "třetí obrázek v animaci na úvodní stránce"
+    }
+  }
+}

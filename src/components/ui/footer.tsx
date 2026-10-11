@@ -2,8 +2,10 @@ import Logo from "./menu/logo";
 import { RiContractFill } from "react-icons/ri";
 import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { useTranslations } from "next-intl";
 
 export const FooterMain = () => {
+  const t = useTranslations("Footer");
   return (
     <>
       <footer className="w-full flex self-center px-2 items-center flex-col ">
@@ -19,8 +21,8 @@ export const FooterMain = () => {
           <li className="flex flex-row mt-3 w-full mb-4 flex-nowrap">
             <RiContractFill className="w-8 flex self-start h-8 mr-3" />
             <span className="flex-col flex">
-              <span>IČO: 76508986</span>
-              <span>Jsem neplátce DPH</span>
+              <span>{t("companyId", { id: "76508986" })}</span>
+              <span>{t("vat")}</span>
             </span>
           </li>
           <li className="flex mb-4 w-full lg:mt-3 flex-row flex-nowrap">

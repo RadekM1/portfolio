@@ -1,6 +1,6 @@
 "use client";
 import { StepSchema } from "@/src/schema/steps-schema";
-import { useInView } from "react-intersection-observer";
+import { useInViewOnce } from "@/src/lib/use-animation-played";
 import { H3Title } from "./typography/h3-title";
 
 interface StepProps {
@@ -9,9 +9,8 @@ interface StepProps {
 }
 
 export const Step = ({ step, index }: StepProps) => {
-  const { ref, inView } = useInView({
+  const { ref, inView } = useInViewOnce(`step-${index}`, {
     threshold: 1,
-    triggerOnce: true,
   });
 
   return (

@@ -1,0 +1,53 @@
+{
+  "Offer": {
+    "programmerAlt": "programmer icon",
+    "Cards": {
+      "web": {
+        "title": "Websites",
+        "text": "I build modern websites with an emphasis on speed, security and responsiveness. Whether you need a simple presentation website or a complex project with its own content management system, I will always find a solution tailored exactly to your needs"
+      },
+      "app": {
+        "title": "Web applications",
+        "text": "Web applications are the future of software. They run directly in the browser, independent of the operating system (Windows, Mac, Linux), which makes it easy to reach more users. I will build an application tailored exactly to your business, for example a booking system, a discount portal, a data analytics dashboard, production management tools or an integration with your company systems"
+      }
+    },
+    "Features": {
+      "responsive": {
+        "title": "Responsive design",
+        "summary": "Websites and applications are designed mobile first, so they fully support all types of devices"
+      },
+      "cms": {
+        "title": "Content management",
+        "summary": "WordPress as a headless CMS, Strapi or a custom-built one"
+      },
+      "design": {
+        "title": "Custom web design",
+        "summary": "Design without templates, exactly as you wish, with no limits imposed by a template system"
+      },
+      "speed": {
+        "title": "Unbeatable speed",
+        "summary": "Page transitions are instant and feel more like an offline app than a website. Try clicking through one of the references"
+      },
+      "security": {
+        "title": "Security",
+        "summary": "Industry standard thanks to OAuth 2.0 and OpenID, including integration into corporate Microsoft Azure structures"
+      }
+    },
+    "Themes": {
+      "title": "Color themes",
+      "text": "A white page background can be hard on the eyes in the evening.",
+      "darkAlt": "dark mode preview",
+      "lightAlt": "light mode preview"
+    },
+    "Tech": {
+      "title": "Modern technologies",
+      "text": "NEXT.js, Docker, TypeScript and more"
+    },
+    "Seo": {
+      "title": "Optimization",
+      "text": "SEO, and website optimization in general, isn't just about picking keywords in WordPress and collecting backlinks. Google and other search engines also evaluate the technical implementation, responsive design, support for screen readers, etc. You can test it yourself at <link>pagespeed.web.dev/</link>. For example on a website that offers SEO marketing and optimization 🙂",
+      "imageAlt": "SEO website optimization",
+      "source": "source: Google Lighthouse"
+    }
+  }
+}

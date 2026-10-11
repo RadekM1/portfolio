@@ -1,0 +1,23 @@
+{
+  "Steps": {
+    "title": "Jak probíhá spolupráce",
+    "Items": {
+      "materials": {
+        "title": "Zajištění podkladů",
+        "text": "Než začneme připomínkovat strukturu a grafiku webu, bylo by fajn se od něčeho odrazit. Například logo pro grafický layout, fotky, odkaz na původní webky atd. Já budu zatím analyzovat vaše pole působnosti."
+      },
+      "review": {
+        "title": "Připomínkování",
+        "text": "A jde se tvořit! V této fázi zpracovávám strukturu a design vašeho webu. V první variantě vytvořím ideální řešení z mého pohledu. Následně zapracuji vaše připomínky, případně zkusím vysvětlit proč je některé věci lepší řešit trošku jinak."
+      },
+      "build": {
+        "title": "Zpracování schválené varianty",
+        "text": "Jakmile je vše schváleno, pustím se do realizace. U jednodušších projektů bývá práce hotova během několika dní, zatímco složitější projekty mohou zabrat několik týdnů."
+      },
+      "launch": {
+        "title": "Uvedení do provozu",
+        "text": "Než web spustíme, pořádně si vše projdeme. Například funkcionality e-shopu, způsob správy obsahu článků atd. Po doladění posledních detailů již nic nebrání spuštění a předání webu včetně kompletní dokumentace."
+      }
+    }
+  }
+}

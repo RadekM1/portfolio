@@ -1,6 +1,7 @@
 "use client";
 
 import { useSyncExternalStore } from "react";
+import { useTranslations } from "next-intl";
 
 interface AvatarProps {
   // eslint-disable-next-line
@@ -14,6 +15,7 @@ const getServerHour = () => null;
 
 export const FacebookAvatar = ({ setIsSideNavOpen }: AvatarProps) => {
   const hour = useSyncExternalStore(subscribe, getHour, getServerHour);
+  const t = useTranslations("Nav.Avatar");
 
   let bgColor = "bg-red-600"; // výchozí
   if (hour !== null) {
@@ -34,8 +36,8 @@ export const FacebookAvatar = ({ setIsSideNavOpen }: AvatarProps) => {
           <div className="relative flex h-12 w-12 items-start justify-center rounded-full text-white">
             <img
               src="/avatar_rm.jpg"
-              alt="user name"
-              title="user name"
+              alt={t("alt")}
+              title={t("alt")}
               width="48"
               height="48"
               className="max-w-full rounded-full"
@@ -43,7 +45,7 @@ export const FacebookAvatar = ({ setIsSideNavOpen }: AvatarProps) => {
             <span
               className={`${bgColor} absolute bottom-0 right-0 inline-flex items-start justify-start gap-1 rounded-full border-2 border-white p-1 text-sm text-white`}
             >
-              <span className="sr-only"> online </span>
+              <span className="sr-only"> {t("online")} </span>
             </span>
           </div>
         </div>
@@ -51,7 +53,7 @@ export const FacebookAvatar = ({ setIsSideNavOpen }: AvatarProps) => {
           <h3 className="w-full truncate text-base text-slate-700 dark:text-white">
             Radek Morong
           </h3>
-          <p className="text-gray-500 mt-1">nová zpráva...</p>
+          <p className="text-gray-500 mt-1">{t("newMessage")}</p>
         </div>
       </div>
     </a>

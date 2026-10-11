@@ -1,10 +1,12 @@
 import { RInLogo } from "../../icon-components/r-in-logo";
 import { MInLogo } from "../../icon-components/m-in-logo";
+import { useTranslations } from "next-intl";
 
 const Logo = () => {
+  const t = useTranslations("Nav.Aria");
   return (
     <a
-      aria-label="Radek Morong logo"
+      aria-label={t("logo")}
       aria-current="page"
       className="flex items-center h-16 flex-row object-contain  whitespace-nowrap py-3 text-lg focus:outline-none"
       href="#home"
