@@ -8,6 +8,9 @@ export const routing = defineRouting({
 
   // čeština zůstává na "/", angličtina na "/en"
   localePrefix: "as-needed",
+
+  // "/" vždy česky – nepřesměrovávat podle Accept-Language ani cookie NEXT_LOCALE
+  localeDetection: false,
 });
 
 export const { Link, usePathname, useRouter, getPathname } =
