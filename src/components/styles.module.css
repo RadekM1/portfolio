@@ -1,31 +1,4 @@
-@keyframes LogoPosunJedna {
-    0% {
-        transform: translateX(30%) translateY(20%);
-        opacity: 0%;
-    }
-    100% {transform: trans(0%);}
-}
-@keyframes LogoPosunDva {
-    0% {
-        transform: translateX(-20%) translateY(-20%);    
-        opacity: 0%;
-    }
-    100% {transform: trans(0%);}
-}
-@keyframes LogoPosunTri {
-    0% {
-        transform: translateX(5%);
-        opacity: 0%;
-    }
-    100% {transform: trans(0%);}
-}
-@keyframes LogoPosunCtyri {
-    0% {
-        transform: translateX(20%);
-        opacity: 0%;
-    }
-    100% {transform: trans(0%);}
-}
+
 @keyframes MikrogravitaceJedna {
     0%, 100% {
         transform: translateX(0%) translateY(0%);
@@ -112,8 +85,7 @@
     z-index: 3;
     position: absolute;
     overflow: hidden;
-    animation: LogoPosunJedna 2s ease-out 1 forwards, 
-    MikrogravitaceJedna 10s ease-in-out infinite 2s;
+    animation: MikrogravitaceJedna 10s ease-in-out infinite;
     will-change: transform;
 }
 .tabDva{
@@ -122,14 +94,9 @@
     left: 2%;
     height: 25%;
     z-index: 2;
-    animation: LogoPosunDva;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
     overflow: hidden;
     animation-fill-mode: forwards;
-    animation: LogoPosunDva 2s ease-out 1 forwards, 
-    MikrogravitaceDva 10s ease-in-out infinite 2s;
+    animation: MikrogravitaceDva 10s ease-in-out infinite;
     will-change: transform;
 
 }
@@ -139,14 +106,8 @@
     left: 40%;
     height: 17%;
     z-index: 1;
-    animation: LogoPosunTri;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
     overflow: hidden;
-    animation-fill-mode: forwards;
-    animation: LogoPosunTri 2s ease-out 1 forwards, 
-    MikrogravitaceTri 10s ease-in-out infinite 2s;
+    animation: MikrogravitaceTri 10s ease-in-out infinite;
     will-change: transform;
 
 }
@@ -156,14 +117,9 @@
     left: 22%;
     height: 20%;
     z-index: 4;
-    animation: MikrogravitaceCtyri;
-    animation-duration: 10s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
     overflow: hidden;
     animation-fill-mode: forwards;
-    animation: LogoPosunCtyri 2s ease-out 1 forwards, 
-    MikrogravitaceCtyri 10s ease-in-out infinite 2s;
+    animation: MikrogravitaceCtyri 10s ease-in-out infinite;
     will-change: transform;
 }
 
